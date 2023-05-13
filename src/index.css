@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .content-empty {
+      content: "";
+    }
+  }
+  .triangle {
+    @apply content-empty inline-block w-[5px] h-[5px] border-b-2 border-r-2  border-transparent border-black ml-2 rotate-45;
+  }
+@layer component {
+    .hamburgerButton.open span:first-child {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        top: 9px;      
+    }
+    .hamburgerButton.open span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburgerButton.open span:last-child {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        top: -7px;
+    }
+
+    .show{
+      opacity: 1;
+      max-height: 200px; /* adjust this value according to your content */
+      transition: opacity 0.5s, max-height 0.5s;
+      overflow: hidden;
+    }
+    }
+    .hide{
+      opacity: 0;
+      max-height: 0;
+      transition: opacity 0.5s, max-height 0.5s;
+      overflow: hidden;
+    }
+    
+    
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Libre+Baskerville&display=swap');
+@font-face {
+  font-family: 'newFont';
+  src: url('./Font/AROLY.ttf') format('truetype');
+  font-weight: normal;
+}
+
