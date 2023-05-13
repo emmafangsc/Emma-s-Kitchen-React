@@ -6,7 +6,7 @@ function App() {
     <div className="bg-white h-screen">
       <Nav />
       <Carousel />
-      <Promo />
+      {/* <Promo /> */}
     </div>
   );
 }
