@@ -1,6 +1,4 @@
-import { FaPhoneAlt, FaFacebookF, FaUserCircle, FaCaretDown, FaAngleRight, FaEnvelope} from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { RiWhatsappFill } from "react-icons/ri";
+import {FaUserCircle, FaCaretDown, FaAngleRight, FaEnvelope, FaFacebook} from "react-icons/fa";
 import images from "../constants/images";
 import { useState } from "react";
 import React, {useRef} from "react";
@@ -44,20 +42,20 @@ const Nav = () => {
         <div>
             <div className="contact flex flex-col  md:flex-row justify-between bg-[#fef84c] text-[#111111] h-[6rem] md:h-[3rem] px-0 md:px-[10rem] ">
                 <div className="contact__phone flex flex-1 gap-2 items-center justify-center hover:opacity-[0.5] cursor-pointer">
-                    <FaPhoneAlt className="text-[20px]"/>
+                    <img  src={images.whatsapp} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/>
                     <p>+34 665487981</p>
                 </div>
                 <div className="contact__email flex-1 flex items-center justify-center gap-2 hover:opacity-[0.5] cursor-pointer">
                     <FaEnvelope className="text-[20px]"/>
                     <p className="text-[16px] font-Lato tracking-wide">xavier.figueras.garcia@gmail.com</p>
                 </div>
-                <div className="contact__social flex-1 flex justify-center  md:pb-0 items-center gap-8 ">            
-                    <RiWhatsappFill className="hover:opacity-[0.5] cursor-pointer text-[25px]"/>
-                    <AiFillInstagram className="hover:opacity-[0.5] cursor-pointer text-[25px]"/>
-                    <FaFacebookF className="hover:opacity-[0.5] cursor-pointer  text-[20px]"/>
+                <div className="contact__social flex-1 flex justify-center  md:pb-0 items-center gap-8 ">  
+                    <img src={images.instagram} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/>          
+                    <img src={images.linkedin} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/> 
+                    <FaFacebook className='hover:opacity-[0.5] cursor-pointer text-[25px]'/>
                 </div>
             </div>
-            <nav className='nav flex justify-between px-[2rem] h-[6rem] lg:px-[4rem] relative bg-navBackground bg-cover'>
+            <nav className='nav flex justify-between px-[2rem] h-[6rem] lg:px-[9rem] relative bg-navBackground bg-cover'>
                 <div className="logo flex">
                     <img src={images.Logo} className='logo' alt="logo" /> 
                 </div>
