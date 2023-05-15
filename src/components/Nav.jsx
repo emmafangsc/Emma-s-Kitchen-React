@@ -39,8 +39,13 @@ const Nav = () => {
      }
     
     return (
-        <div>
-            <div className="contact flex flex-col  lg:flex-row justify-between bg-[#fef84c] text-[#111111] h-[6rem] lg:h-[3rem] px-0 lg:px-[12rem] ">
+        <div className="Wrapper">
+            <div className="contact flex flex-col  lg:flex-row justify-between bg-[#FFDF12] text-[#111111] h-[6rem] lg:h-[3rem] px-0 lg:px-[12rem] ">
+                <div className="contact__social flex-1 flex justify-center  md:pb-0 items-center gap-8 ">  
+                    <img src={images.instagram} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/>          
+                    <img src={images.linkedin} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/> 
+                    <FaFacebook className='hover:opacity-[0.5] cursor-pointer text-[25px]'/>
+                </div>
                 <div className="contact__phone flex flex-1 gap-2 items-center justify-center hover:opacity-[0.5] cursor-pointer">
                     <img  src={images.whatsapp} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/>
                     <p>+34 665487981</p>
@@ -49,22 +54,18 @@ const Nav = () => {
                     <FaEnvelope className="text-[20px]"/>
                     <p className="text-[16px] font-Lato tracking-wide">xavier.figueras.garcia@gmail.com</p>
                 </div>
-                <div className="contact__social flex-1 flex justify-center  md:pb-0 items-center gap-8 ">  
-                    <img src={images.instagram} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/>          
-                    <img src={images.linkedin} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/> 
-                    <FaFacebook className='hover:opacity-[0.5] cursor-pointer text-[25px]'/>
-                </div>
+                
             </div>
             <nav className='nav flex justify-between px-[2rem] h-[6rem] md:px-[6rem] xl:px-[9rem] relative bg-navBackground bg-cover'>
-                <div className="logo flex">
-                    <img src={images.Logo} className='logo' alt="logo" /> 
+                <div className="logo flex items-center w-[200px] xl:w-[300px]">
+                    <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
-                    <ul className="flex flex-nowrap font-Lato">
-                        <li className="text-[18px] cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Home</a></li>
+                    <ul className="flex flex-nowrap font-Lato text-[14px] xl:text-[18px]">
+                        <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem] font-black"><a>Home</a></li>
                         <div className="subMenu group relative" >
-                            <li className="text-[18px] cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Company <span className="triangle"></span></a></li>
-                            <div className="courseMenu__content group-hover:block hidden absolute w-[11rem] bg-[#FFEFCD] justify-start p-[1rem] rounded-[3px]">
+                            <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Company <span className="triangle"></span></a></li>
+                            <div className="courseMenu__content group-hover:block hidden absolute z-2 w-[11rem] bg-[#FFEFCD] justify-start p-[1rem] rounded-[3px]">
                                 <ul>
                                     <li className="pb-[1rem] cursor-pointer hover:opacity-[0.5] text-[16px]">Executive Coaching</li>
                                     <li className="pb-[1rem] cursor-pointer hover:opacity-[0.5] text-[16px]">Other Course</li>
@@ -73,7 +74,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <div className="subMenu group relative">
-                            <li className="text-[18px] cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Personal<span className="triangle"></span></a></li>
+                            <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Individual<span className="triangle"></span></a></li>
                             <div className="subMenu__content group-hover:block hidden absolute w-[11rem] bg-[#FFEFCD] justify-start p-[1rem] rounded-[3px]">
                                 <ul>
                                     <li className="pb-[1rem] cursor-pointer hover:opacity-[0.5] text-[16px]">Life Coaching</li>
@@ -82,16 +83,17 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
-                        <li className="text-[18px] cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>About</a></li>
-                        <li className="text-[18px] cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Blog</a></li>
+                        <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Courses</a></li>
+                        <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>About me</a></li>
+                        <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Blog</a></li>
                     </ul>
                 </div>
                 <div className="right flex items-center ">
                     <div className="login flex  px-[1rem]">
-                            <FaUserCircle className="text-[30px] cursor-pointer"/>
+                            <div className="signUpButton bg-[black] text-[#FFDF12] py-1 px-2 text-[14px] flex justify-center shadow-md rounded">Sign Up</div>
                     </div>
                     <div className="flex flex-col justify-center relative" onClick={showLanguageMenu}>
-                        <div className="languageButton flex gap-[1px] justify-center items-center w-[4rem] cursor-pointer">
+                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-[#FFDF12] text-black cursor-pointer shadow-md rounded">
                             EN
                             <FaCaretDown />
                         </div>
@@ -113,6 +115,7 @@ const Nav = () => {
                     </div>
                 </div>
             </nav>
+            
             <div className={`overlayMenu bg-[#ff8c00] flex lg:hidden h-screen w-full p-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "opacity-100" : "opacity-0"}`}>
                 <ul className="text-[18px] w-full">
                     <div className="flex justify-between items-center p-[1rem] border-b border-[orange] hover:opacity-[0.5] cursor-pointer">
@@ -149,6 +152,7 @@ const Nav = () => {
                 </ul>
             </div>
         </div>
+        
     )
 }
 export default Nav;
