@@ -7,6 +7,7 @@ import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import linkedin from '../images/LinkedIn.png';
 import whatsapp from '../images/Whatsapp.png';
+import bg from '../images/BG.png';
 const images = {
     Logo,
     newLogo,
@@ -16,7 +17,8 @@ const images = {
     facebook,
     instagram,
     linkedin,
-    whatsapp
+    whatsapp,
+    bg
 };
 
 export default images;
