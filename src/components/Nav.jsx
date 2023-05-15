@@ -40,7 +40,7 @@ const Nav = () => {
     
     return (
         <div>
-            <div className="contact flex flex-col  md:flex-row justify-between bg-[#fef84c] text-[#111111] h-[6rem] md:h-[3rem] px-0 md:px-[10rem] ">
+            <div className="contact flex flex-col  lg:flex-row justify-between bg-[#fef84c] text-[#111111] h-[6rem] lg:h-[3rem] px-0 lg:px-[12rem] ">
                 <div className="contact__phone flex flex-1 gap-2 items-center justify-center hover:opacity-[0.5] cursor-pointer">
                     <img  src={images.whatsapp} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/>
                     <p>+34 665487981</p>
@@ -55,7 +55,7 @@ const Nav = () => {
                     <FaFacebook className='hover:opacity-[0.5] cursor-pointer text-[25px]'/>
                 </div>
             </div>
-            <nav className='nav flex justify-between px-[2rem] h-[6rem] lg:px-[9rem] relative bg-navBackground bg-cover'>
+            <nav className='nav flex justify-between px-[2rem] h-[6rem] md:px-[6rem] xl:px-[9rem] relative bg-navBackground bg-cover'>
                 <div className="logo flex">
                     <img src={images.Logo} className='logo' alt="logo" /> 
                 </div>
