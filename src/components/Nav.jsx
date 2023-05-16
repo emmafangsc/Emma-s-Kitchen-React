@@ -40,7 +40,7 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <div className="contact flex flex-col  lg:flex-row justify-between bg-[#FFDF12] text-[#111111] h-[6rem] lg:h-[3rem] px-0 lg:px-[12rem] ">
+            <div className="contact flex flex-col  lg:flex-row justify-between text-[#111111] h-[6rem] lg:h-[3rem] px-0 lg:px-[12rem] ">
                 <div className="contact__social flex-1 flex justify-center  md:pb-0 items-center gap-8 ">  
                     <img src={images.instagram} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/>          
                     <img src={images.linkedin} className='hover:opacity-[0.5] cursor-pointer w-[25px]'/> 
@@ -56,7 +56,7 @@ const Nav = () => {
                 </div>
                 
             </div>
-            <nav className='nav flex justify-between px-[2rem] h-[6rem] md:px-[6rem] xl:px-[9rem] relative bg-navBackground bg-cover'>
+            <nav className='nav flex justify-between px-[2rem] h-[6rem] md:px-[6rem] xl:px-[8rem] relative'>
                 <div className="logo flex items-center w-[200px] xl:w-[300px]">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>

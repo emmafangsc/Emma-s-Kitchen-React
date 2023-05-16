@@ -8,6 +8,9 @@ import instagram from '../images/instagram.png';
 import linkedin from '../images/LinkedIn.png';
 import whatsapp from '../images/Whatsapp.png';
 import bg from '../images/BG.png';
+import profile from '../images/profile_image.png';
+import arrow from '../images/arrow.png';
+import union from '../images/Union.png';
 const images = {
     Logo,
     newLogo,
@@ -18,7 +21,10 @@ const images = {
     instagram,
     linkedin,
     whatsapp,
-    bg
+    bg,
+    profile,
+    arrow,
+    union
 };
 
 export default images;
