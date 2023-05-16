@@ -8,10 +8,13 @@ function App() {
       <div className='navWrapper relative z-20'>
         <Nav />
       </div>
-
       <div className='promoWrapper z-10 relative'>
         <Profile />
       </div>
+      <div className='carouselWrapper z-10 relative'>
+        <Carousel />
+      </div>
+      
 
       <div className='overlay w-full absolute top-0 z-0'>
         <img src={images.bg}/>

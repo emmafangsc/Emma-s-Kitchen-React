@@ -21,7 +21,9 @@ const Profile = () =>{
                     </div>
                 </div>
                 <div className="arrow flex justify-center items-center">
+                    <div className="arrowImageWraper">
                     <img src={images.arrow} />
+                    </div>
                 </div>
             </div>
         </div>
