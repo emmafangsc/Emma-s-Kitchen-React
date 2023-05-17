@@ -28,7 +28,7 @@
 
     .show{
       opacity: 1;
-      max-height: 200px; /* adjust this value according to your content */
+      max-height: auto; /* adjust this value according to your content */
       transition: opacity 0.5s, max-height 0.5s;
       overflow: hidden;
     }

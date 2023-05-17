@@ -48,7 +48,7 @@ class Carousel extends Component {
   render() {
     return (
       <div className="slideContainer">
-        <div className="slide flex overflow-hidden h-[710px] relative border-[red] border-[1px]" 
+        <div className="slide flex flex-col overflow-hidden h-[710px] relative border-[red] border-[1px]" 
           onMouseEnter={() => {
           this.setState({ paused: true });
         }}
@@ -69,9 +69,9 @@ class Carousel extends Component {
             className="absolute left-0 text-3xl inset-y-1/2 text-[red] cursor-pointer z-10"
           /> */}
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
-          <div className="slide__background w-screen text-center relative  z-0">
+          <div className="flex slide__background w-screen text-center relative  z-0">
             <div className="profile w-full h-[650px] border-black border-[1px] pl-[200px] flex mt-[60px]">
-                  <div className="profile__image w-[330px] h-[570px]">
+                  <div className="profile__image w-[330px] h-[570px] ">
                       <img src={images.profile} />
                   </div>
                   <div className="profile__content flex flex-col justify-between items-center py-[40px] mx-[120px] h-[570px]">
@@ -95,6 +95,7 @@ class Carousel extends Component {
                   </div>
               </div>
           </div>
+          <div className="overlayImage flex">
             {carouselImages.map((slide, index) => {
               return (
                   <div className="slide__overlayImage absolute top-0 left-0">
@@ -111,6 +112,7 @@ class Carousel extends Component {
                   </div>
               );
             })}
+            </div>
           </Swipe>
           <div className="slide__indication absolute w-full flex justify-center bottom-5">
             {carouselImages.map((element, index) => {
