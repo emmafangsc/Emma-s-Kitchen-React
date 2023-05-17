@@ -8,9 +8,9 @@ function App() {
       <div className='navWrapper relative z-20'>
         <Nav />
       </div>
-      <div className='promoWrapper z-10 relative'>
+      {/* <div className='promoWrapper z-10 relative'>
         <Profile />
-      </div>
+      </div> */}
       <div className='carouselWrapper z-10 relative'>
         <Carousel />
       </div>

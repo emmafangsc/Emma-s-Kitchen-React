@@ -11,6 +11,7 @@ import bg from '../images/BG.png';
 import profile from '../images/profile_image.png';
 import arrow from '../images/arrow.png';
 import union from '../images/Union.png';
+import transparent from '../images/transparent.png';
 const images = {
     Logo,
     newLogo,
@@ -24,7 +25,8 @@ const images = {
     bg,
     profile,
     arrow,
-    union
+    union,
+    transparent
 };
 
 export default images;

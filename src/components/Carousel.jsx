@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { carouselImages } from "../constants/data";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
+import images from "../constants/images";
 
 class Carousel extends Component {
   constructor(props) {
@@ -46,8 +47,8 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="slideContainer ">
-        <div className="slide flex h-[564px] overflow-hidden relative" 
+      <div className="slideContainer">
+        <div className="slide flex h-[644px] overflow-hidden relative" 
           onMouseEnter={() => {
           this.setState({ paused: true });
         }}
@@ -60,18 +61,46 @@ class Carousel extends Component {
             className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
+          <div className="slide__background w-screen h-[700px] text-center relative  z-0">
+            <div className="profile w-full h-[644px] border-black border-[1px] pl-[200px] flex mt-[60px]">
+                  <div className="profile__image w-[330px] h-[570px]">
+                      <img src={images.profile} />
+                  </div>
+                  <div className="profile__content flex flex-col justify-between items-center py-[40px] mx-[120px] h-[570px]">
+                      <div className="title w-[280px] h-[110px] px-[40px]">
+                          <h1 className="font-[800] text-[36px] text-center ">Nice to meet you!</h1>
+                      </div>
+                      <div className="union flex items-center h-[60px]">
+                          <img src={images.union} width='350'/>
+                      </div>
+                      <div className="paragraph w-[500px] h-[220px]">
+                          <p className="font-[400] text-[18px] leading-[44px] text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
+                      </div>
+                      <div className="button bg-[#FFDF12] text-black py-[10px] px-[30px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[24px]">
+                          <button>Book a call</button>
+                      </div>
+                  </div>
+                  <div className="arrow flex justify-center items-center">
+                      <div className="arrowImageWraper">
+                      <img src={images.arrow} />
+                      </div>
+                  </div>
+              </div>
+          </div>
             {carouselImages.map((slide, index) => {
               return (
-                <img
-                  src={slide}
-                  alt="This is a carousel slide"
-                  key={index}
-                  className={
-                    index === this.state.currentSlide
-                      ? "block w-full h-auto object-cover"
-                      : "hidden"
-                  }
-                />
+                  <div className="slide__overlayImage absolute top-0 left-0 ">
+                    <img
+                      src={slide}
+                      alt="This is a carousel slide"
+                      key={index}
+                      className={
+                        index === this.state.currentSlide
+                          ? "block w-full h-auto object-cover"
+                          : "hidden"
+                      }
+                    />
+                  </div>
               );
             })}
           </Swipe>
@@ -97,7 +126,6 @@ class Carousel extends Component {
             className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
           />
         </div>
-        {/* <div className="test flex bg-repeat-round h-[500px]" style={{"background-image": `url(${images.layer})`}}></div> */}
       </div>
       
     );
