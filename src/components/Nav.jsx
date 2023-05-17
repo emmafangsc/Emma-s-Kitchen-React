@@ -40,7 +40,7 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <div className="contact flex flex-col  lg:flex-row justify-between text-[#111111] h-[6rem] lg:h-[3rem] px-0 lg:px-[12rem] ">
+            <div className="contact flex flex-col md:flex-row justify-between text-[#111111] h-[6rem] lg:h-[3rem] md:px-[2rem] lg:px-[6rem] xl:px-[12rem] ">
                 <div className="contact__social flex-1 flex justify-center  md:pb-0 items-center gap-8 ">  
                     <img src={images.instagram} className='hover:opacity-50 cursor-pointer w-[25px]'/>          
                     <img src={images.linkedin} className='hover:opacity-50 cursor-pointer w-[25px]'/> 
@@ -56,12 +56,12 @@ const Nav = () => {
                 </div>
                 
             </div>
-            <nav className='nav flex justify-between px-[2rem] h-[6rem] md:px-[6rem] xl:px-[8rem] relative'>
+            <nav className='nav flex justify-between px-[2rem] h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
                 <div className="logo flex items-center w-[200px] xl:w-[300px] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
-                    <ul className="flex flex-nowrap font-Lato text-[14px] xl:text-[18px]">
+                    <ul className="flex flex-nowrap font-Lato text-[16px] xl:text-[18px]">
                         <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem] font-black"><a>Home</a></li>
                         <div className="subMenu group relative" >
                             <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Company <span className="triangle"></span></a></li>
