@@ -56,8 +56,8 @@ const Nav = () => {
                 </div>
                 
             </div>
-            <nav className='nav flex justify-between px-[2rem] h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
-                <div className="logo flex items-center w-[200px] xl:w-[300px] cursor-pointer">
+            <nav className='nav flex justify-between px-[1rem] h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
+                <div className="logo flex items-center w-[150px] xl:w-[300px] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">

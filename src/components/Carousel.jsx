@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { carouselImages } from "../constants/data";
-// import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 import images from "../constants/images";
 
@@ -14,7 +14,7 @@ class Carousel extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
+   setInterval(() => {
       if (this.state.paused === false) {
         let newSlide =
           this.state.currentSlide === carouselImages.length - 1
@@ -24,6 +24,17 @@ class Carousel extends Component {
       }
     }, 3000);
   }
+  //  const id = setInterval(() => {
+  //     if (this.state.paused === false) {
+  //       let newSlide =
+  //         this.state.currentSlide === carouselImages.length - 1
+  //           ? 0
+  //           : this.state.currentSlide + 1;
+  //       this.setState({ currentSlide: newSlide });
+  //     }
+  //   }, 3000);
+  //   clearInterval(id);
+  // }
 
   nextSlide = () => {
     let newSlide =
@@ -56,18 +67,18 @@ class Carousel extends Component {
           this.setState({ paused: false });
         }}
         >
-          {/* test start */}
+          {/* big arrow */}
           <div
             onClick={this.prevSlide}
-            className="absolute left-5 text-3xl inset-y-1/2 cursor-pointer z-10 hidden md:block border-[1px] "
+            className="absolute left-5 text-3xl inset-y-1/2 cursor-pointer z-10 hidden md:block"
           >
             <img src={images.arrow} className="rotate-180 w-[60px] xl:w-auto"/>
           </div>
-          {/* test end */}
-          {/* <AiOutlineLeft
+          {/* big arrow */}
+          <AiOutlineLeft
             onClick={this.prevSlide}
-            className="absolute left-0 text-3xl inset-y-1/2 cursor-pointer z-10"
-          /> */}
+            className="absolute left-0 text-3xl inset-y-1/2 cursor-pointer z-10 sm:hidden"
+          />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
           <div className="flex slide__background w-full relative  z-0">
             <div className="flex profile w-full h-[350px] lg:h-[570px] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[250px] lg:mt-[60px] justify-between">
@@ -127,18 +138,18 @@ class Carousel extends Component {
               );
             })}
           </div>
-          {/* <AiOutlineRight
+          <AiOutlineRight
             onClick={this.nextSlide}
-            className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
-          /> */}
-          {/* test start */}
+            className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer sm:hidden"
+          />
+          {/* big arrow */}
           <div
             onClick={this.nextSlide}
             className="absolute right-5 text-3xl inset-y-1/2 cursor-pointer z-10 hidden md:block w-[60px] xl:w-auto"
           >
             <img src={images.arrow} />
           </div>
-          {/* test end */}
+          {/* big arrow */}
         </div>
       </div>
       
