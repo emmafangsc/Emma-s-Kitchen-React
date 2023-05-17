@@ -97,7 +97,7 @@ class Carousel extends Component {
           </div>
             {carouselImages.map((slide, index) => {
               return (
-                  <div className="slide__overlayImage absolute top-0 left-0 ">
+                  <div className="slide__overlayImage absolute top-0 left-0">
                     <img
                       src={slide}
                       alt="This is a carousel slide"
