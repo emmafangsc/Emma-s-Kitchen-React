@@ -116,8 +116,8 @@ class Carousel extends Component {
                 <div
                   className={
                     index === this.state.currentSlide
-                      ? "h-[12px] w-[22px] bg-black rounded-[8px] mx-2 mb-2 cursor-pointer"
-                      : "h-[12px] w-[22px] bg-[#000000] opacity-50 rounded-[8px] mx-2 mb-2 cursor-pointer"
+                      ? "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-black rounded-[8px] mx-2 mb-2 cursor-pointer"
+                      : "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-[#000000] opacity-50 rounded-[8px] mx-2 mb-2 cursor-pointer"
                   }
                   key={index}
                   onClick={() => {
