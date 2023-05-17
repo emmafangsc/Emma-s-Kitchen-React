@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { carouselImages } from "../constants/data";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+// import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 import images from "../constants/images";
 
@@ -48,7 +48,7 @@ class Carousel extends Component {
   render() {
     return (
       <div className="slideContainer">
-        <div className="slide flex h-[644px] overflow-hidden relative" 
+        <div className="slide flex overflow-hidden h-[710px] relative border-[red] border-[1px]" 
           onMouseEnter={() => {
           this.setState({ paused: true });
         }}
@@ -56,13 +56,21 @@ class Carousel extends Component {
           this.setState({ paused: false });
         }}
         >
-          <AiOutlineLeft
+          {/* test start */}
+          <div
             onClick={this.prevSlide}
-            className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
-          />
+            className="absolute left-5 text-3xl inset-y-1/2 text-[red] cursor-pointer z-10"
+          >
+            <img src={images.arrow} className="rotate-180"/>
+          </div>
+          {/* test end */}
+          {/* <AiOutlineLeft
+            onClick={this.prevSlide}
+            className="absolute left-0 text-3xl inset-y-1/2 text-[red] cursor-pointer z-10"
+          /> */}
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
-          <div className="slide__background w-screen h-[700px] text-center relative  z-0">
-            <div className="profile w-full h-[644px] border-black border-[1px] pl-[200px] flex mt-[60px]">
+          <div className="slide__background w-screen text-center relative  z-0">
+            <div className="profile w-full h-[650px] border-black border-[1px] pl-[200px] flex mt-[60px]">
                   <div className="profile__image w-[330px] h-[570px]">
                       <img src={images.profile} />
                   </div>
@@ -82,7 +90,7 @@ class Carousel extends Component {
                   </div>
                   <div className="arrow flex justify-center items-center">
                       <div className="arrowImageWraper">
-                      <img src={images.arrow} />
+                      {/* <img src={images.arrow} /> */}
                       </div>
                   </div>
               </div>
@@ -96,7 +104,7 @@ class Carousel extends Component {
                       key={index}
                       className={
                         index === this.state.currentSlide
-                          ? "block w-full h-auto object-cover"
+                          ? "block w-full h-[710px] object-cover"
                           : "hidden"
                       }
                     />
@@ -104,14 +112,14 @@ class Carousel extends Component {
               );
             })}
           </Swipe>
-          <div className="slide__indication absolute w-full flex justify-center bottom-10">
+          <div className="slide__indication absolute w-full flex justify-center bottom-5">
             {carouselImages.map((element, index) => {
               return (
                 <div
                   className={
                     index === this.state.currentSlide
-                      ? "h-2 w-2 bg-blue-700 rounded-full mx-2 mb-2 cursor-pointer"
-                      : "h-2 w-2 bg-white rounded-full mx-2 mb-2 cursor-pointer"
+                      ? "h-[12px] w-[22px] bg-[#FFDF12] rounded-[8px] mx-2 mb-2 cursor-pointer"
+                      : "h-[12px] w-[22px] bg-[#000000] opacity-50 rounded-[8px] mx-2 mb-2 cursor-pointer"
                   }
                   key={index}
                   onClick={() => {
@@ -121,10 +129,18 @@ class Carousel extends Component {
               );
             })}
           </div>
-          <AiOutlineRight
+          {/* <AiOutlineRight
             onClick={this.nextSlide}
             className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
-          />
+          /> */}
+          {/* test start */}
+          <div
+            onClick={this.nextSlide}
+            className="absolute right-5 text-3xl inset-y-1/2 text-[red] cursor-pointer z-10"
+          >
+            <img src={images.arrow} />
+          </div>
+          {/* test end */}
         </div>
       </div>
       
