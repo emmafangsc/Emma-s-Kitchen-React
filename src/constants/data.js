@@ -1,4 +1,4 @@
 import images from "./images";
-// export const carouselImages = [images.transparent, images.promo1, images.promo2];
-export const carouselImages = [images.transparent];
+export const carouselImages = [images.transparent, images.promo1, images.promo2];
+// export const carouselImages = [images.transparent];
 
