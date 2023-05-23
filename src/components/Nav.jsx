@@ -116,7 +116,7 @@ const Nav = () => {
                 </div>
             </nav>
             
-            <div className={`overlayMenu bg-black flex lg:hidden h-screen w-full p-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
+            <div className={`overlayMenu bg-black flex lg:hidden h-screen w-full px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
                 <ul className="text-[18px] w-full text-[#FFDF12]">
                     <div className="flex justify-between items-center py-6 border-b border-[#FFDF12] border-opacity-50 hover:opacity-50 cursor-pointer">
                         <li><a>Home</a></li>
