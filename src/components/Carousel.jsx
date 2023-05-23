@@ -78,7 +78,7 @@ class Carousel extends Component {
                   <div className="profile__image flex flex-1">
                       <img src={images.profile} />
                   </div>
-                  <div className="profile__content flex flex-1 flex-col justify-between items-center lg:py-[40px]">
+                  <div className="profile__content flex flex-1 flex-col justify-between items-center pt-[30px] lg:py-[40px]">
                       <div className="title md:w-[180px] lg:w-[280px] px-[40px]">
                       {/* <div className="title w-[230px] lg:w-[280px] px-[40px]"> */}
                           <h1 className="font-[800] text-[18px] lg:text-[36px] text-center">Nice to meet you!</h1>
