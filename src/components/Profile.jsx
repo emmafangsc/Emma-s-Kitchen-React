@@ -16,7 +16,7 @@ const Profile = () =>{
                     <div className="paragraph w-[500px] h-[220px]">
                         <p className="font-[400] text-[18px] leading-[44px] text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
                     </div>
-                    <div className="button bg-[#FFDF12] text-black py-[10px] px-[30px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[24px]">
+                    <div className="button bg-yellow text-black py-[10px] px-[30px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[24px]">
                         <button>Book a call</button>
                     </div>
                 </div>

@@ -11,6 +11,10 @@ module.exports = {
       
       backgroundImage: {
         'navBackground': "url('/src/images/layer.png')"
+      },
+
+      colors: {
+        'yellow': '#FFDF12'
       }
     },
   },
