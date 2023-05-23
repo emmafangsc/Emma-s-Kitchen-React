@@ -86,14 +86,15 @@ class Carousel extends Component {
                       <img src={images.profile} />
                   </div>
                   <div className="profile__content flex flex-1 flex-col justify-between items-center lg:py-[40px]">
-                      <div className="title w-[230px] lg:w-[280px] px-[40px]">
-                          <h1 className="font-[800] text-[30px] lg:text-[36px] text-center ">Nice to meet you!</h1>
+                      <div className="title md:w-[180px] lg:w-[280px] px-[40px]">
+                      {/* <div className="title w-[230px] lg:w-[280px] px-[40px]"> */}
+                          <h1 className="font-[800] text-[18px] lg:text-[36px] text-center">Nice to meet you!</h1>
                       </div>
-                      <div className="union flex items-center">
-                          <img src={images.union} width='350'/>
+                      <div className="union flex items-center w-[150px] lg:w-[350px]">
+                          <img src={images.union}/>
                       </div>
                       <div className="paragraph ">
-                          <p className="font-[400] text-[16px] leading-normal lg:text-[18px] lg:leading-[44px] text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
+                          <p className="font-[400] text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
                       </div>
                       <div className="button bg-black text-[#FFDF12] lg:bg-[#FFDF12] lg:text-black py-[5px] lg:py-[10px] px-[15px] lg:px-[30px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[18px] lg:text-[24px]">
                           <button>Book a call</button>
