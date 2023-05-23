@@ -14,7 +14,7 @@ class Carousel extends Component {
   }
 
   componentDidMount() {
-   setInterval(() => {
+   this.interval = setInterval(() => {
       if (this.state.paused === false) {
         let newSlide =
           this.state.currentSlide === carouselImages.length - 1
@@ -24,17 +24,10 @@ class Carousel extends Component {
       }
     }, 3000);
   }
-  //  const id = setInterval(() => {
-  //     if (this.state.paused === false) {
-  //       let newSlide =
-  //         this.state.currentSlide === carouselImages.length - 1
-  //           ? 0
-  //           : this.state.currentSlide + 1;
-  //       this.setState({ currentSlide: newSlide });
-  //     }
-  //   }, 3000);
-  //   clearInterval(id);
-  // }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
 
   nextSlide = () => {
     let newSlide =
