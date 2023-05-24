@@ -6,20 +6,17 @@ import images from './constants/images';
 import Profile from './components/Profile';
 function App() {
   return (
-    <div className="bg-white h-screen relative z-0">
+    <div className="relative">
       <div className='contactWrapper relative z-20'>
         <Contact />
       </div>
       <div className='navWrapper sticky top-0 z-20 '>
         <Nav />
       </div>
-      {/* <div className='promoWrapper z-10 relative'>
-        <Profile />
-      </div> */}
       <div className='carouselWrapper z-10 relative'>
         <Carousel />
       </div>
-      <div className='newsletterWrapper'>
+      <div className='newsletterWrapper relative z-10'>
         <Newsletter />
       </div>
 
