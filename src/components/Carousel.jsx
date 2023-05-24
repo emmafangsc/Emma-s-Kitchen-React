@@ -74,16 +74,16 @@ class Carousel extends Component {
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
           <div className="flex slide__background w-full relative  z-0">
-            <div className="flex profile w-full h-[350px] lg:h-[570px] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[250px] lg:mt-[60px] justify-between">
+            <div className="flex profile w-full h-[21rem] lg:h-[35rem] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
                   <div className="profile__image flex flex-1">
                       <img src={images.profile} />
                   </div>
                   <div className="profile__content flex flex-1 flex-col justify-between items-center pt-[20px] lg:py-[40px]">
-                      <div className="title md:w-[180px] lg:w-[280px] px-[40px]">
+                      <div className="title md:w-[11rem] lg:w-[17rem] px-[40px]">
                       {/* <div className="title w-[230px] lg:w-[280px] px-[40px]"> */}
                           <h1 className="font-[800] text-[18px] lg:text-[36px] text-center">Nice to meet you!</h1>
                       </div>
-                      <div className="union flex items-center w-[150px] lg:w-[350px]">
+                      <div className="union flex items-center w-[10rem] lg:w-[22rem]">
                           <img src={images.union}/>
                       </div>
                       <div className="paragraph ">
@@ -106,7 +106,7 @@ class Carousel extends Component {
                       key={index}
                       className={
                         index === this.state.currentSlide
-                          ? "block w-full h-[710px] object-cover"
+                          ? "block w-full h-[44rem] object-cover"
                           : "hidden"
                       }
                     />
