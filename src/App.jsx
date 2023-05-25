@@ -17,6 +17,7 @@ function App() {
       <div className='carouselWrapper z-10 relative'>
         <Carousel />
       </div>
+      
       <div className='newsletterWrapper relative z-10 mt-8'>
         <Newsletter />
       </div>
@@ -26,7 +27,6 @@ function App() {
       <div className='sectionWrapper relative z-10 mt-8'>
         <Section />
       </div>
-
       <div className='overlay w-full absolute top-0 z-0'>
         <img src={images.bg}/>
       </div>
