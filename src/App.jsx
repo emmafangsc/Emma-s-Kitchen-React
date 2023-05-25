@@ -1,8 +1,9 @@
+import images from './constants/images';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Carousel from './components/Carousel';
 import Newsletter from './components/Newsletter';
-import images from './constants/images';
+import Footer from './components/Footer'
 function App() {
   return (
     <div className="relative">
@@ -15,8 +16,11 @@ function App() {
       <div className='carouselWrapper z-10 relative'>
         <Carousel />
       </div>
-      <div className='newsletterWrapper relative z-10'>
+      <div className='newsletterWrapper relative z-10 mt-8'>
         <Newsletter />
+      </div>
+      <div className='footerWrapper relative z-10 mt-8'>
+        <Footer />
       </div>
 
       <div className='overlay w-full absolute top-0 z-0'>

@@ -1,5 +1,5 @@
 import images from "../constants/images";
-const Profile = () =>{
+const Profile = () => {
     return(
         <div>
             <div className="profile w-full h-[644px] border-black border-[1px] pl-[200px] flex mt-[60px]">

@@ -1,7 +1,7 @@
 import {FaEnvelope, FaFacebook} from "react-icons/fa";
 import images from "../constants/images";
 
-const Contact = () =>{
+const Contact = () => {
     return (
         <div className="contact flex flex-col md:flex-row justify-between text-[#111111] h-[6rem] lg:h-[3rem] md:px-[2rem] lg:px-[6rem] xl:px-[12rem] ">
                 <div className="contact__social flex-1 flex justify-center  md:pb-0 items-center gap-8 ">  
