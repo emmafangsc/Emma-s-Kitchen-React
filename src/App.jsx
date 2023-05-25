@@ -3,7 +3,8 @@ import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Carousel from './components/Carousel';
 import Newsletter from './components/Newsletter';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import Section from './components/Section'
 function App() {
   return (
     <div className="relative">
@@ -21,6 +22,9 @@ function App() {
       </div>
       <div className='footerWrapper relative z-10 mt-8'>
         <Footer />
+      </div>
+      <div className='sectionWrapper relative z-10 mt-8'>
+        <Section />
       </div>
 
       <div className='overlay w-full absolute top-0 z-0'>

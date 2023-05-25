@@ -14,6 +14,7 @@ import union from '../images/Union.png';
 import transparent from '../images/transparent.png';
 import footerImage from '../images/footer-image.png';
 import X from '../images/X-logo.png';
+import section1 from '../images/section1.png';
 const images = {
     Logo,
     newLogo,
@@ -30,7 +31,8 @@ const images = {
     union,
     transparent,
     footerImage,
-    X
+    X,
+    section1
 };
 
 export default images;
