@@ -5,7 +5,7 @@ const Section = () => {
     return (
         <div className="wrapper px-[2rem] lg:px-[12rem] ">
             <div className="section flex flex-col md:flex-row border-[1px] border-black">
-                <div className="section__image flex md:flex-1 h-[300px] md:h-auto">
+                <div className="section__image flex md:flex-1 h-[300px] md:h-auto md:pr-[4rem]">
                     <img src={images.section1} width="500"/>
                 </div>
                 <div className="section__content self-center px-8 md:flex-1">
