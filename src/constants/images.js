@@ -15,6 +15,11 @@ import transparent from '../images/transparent.png';
 import footerImage from '../images/footer-image.png';
 import X from '../images/X-logo.png';
 import section1 from '../images/section1.png';
+import aboutme from '../images/aboutme.png';
+import executivecoaching from '../images/executivecoaching.png';
+import footer from '../images/footer.png';
+import lifecoaching from '../images/lifecoaching.png';
+import testimonials from '../images/testimonials.png';
 const images = {
     Logo,
     newLogo,
@@ -32,7 +37,12 @@ const images = {
     transparent,
     footerImage,
     X,
-    section1
+    section1,
+    aboutme,
+    executivecoaching,
+    footer,
+    lifecoaching,
+    testimonials
 };
 
 export default images;

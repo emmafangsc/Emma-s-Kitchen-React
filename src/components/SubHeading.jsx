@@ -5,7 +5,7 @@ const SubHeading = ({title}) => {
         <div>
             <h1 className="font-[800] text-[24px] md:text-[36px] leading-[60px]">{title}</h1>
             <div className="line py-[1rem]">
-                <img src={images.union} width="550px"/>
+                <img src={images.union} width="550px" alt="union"/>
             </div>
         </div>
     )
