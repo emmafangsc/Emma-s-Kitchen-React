@@ -2,8 +2,8 @@ import images from './constants/images';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Carousel from './components/Carousel';
-import Newsletter from './components/Newsletter';
-import Footer from './components/Footer';
+// import Newsletter from './components/Newsletter';
+// import Footer from './components/Footer';
 import Section from './components/Section'
 function App() {
   return (
@@ -18,12 +18,12 @@ function App() {
         <Carousel />
       </div>
       
-      <div className='newsletterWrapper relative z-10 mt-8'>
+      {/* <div className='newsletterWrapper relative z-10 mt-8'>
         <Newsletter />
       </div>
       <div className='footerWrapper relative z-10 mt-8'>
         <Footer />
-      </div>
+      </div> */}
       <div className='sectionWrapper relative z-10 mt-8'>
         <Section />
       </div>
