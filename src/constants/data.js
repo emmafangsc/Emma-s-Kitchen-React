@@ -15,10 +15,10 @@ export const sections = [
         title: 'About me',
         content: 
         <div>
-            <p>Those who know me well know I suffer Jesus Syndrome. I enjoy helping others achieve their goals and made my mission out of it. For that reason, I stopped coding five years ago and devoted myself to becoming a better leader, coach, and person in general.</p>
-            <p>My education consisted of Multimedia Engineering, specializing in Videogames.</p>
-            <p>In my professional journey, I’ve led teams of all sorts and sizes across different countries, mostly in the game industry. I have also coached individuals based on co-active coaching and I keep myself active as a college lecturer at Universitat Tecnocampus Mataró.</p>
-            <p>I did not write a book yet but planted many trees and had one wonderful kid.</p>
+            <p>Those who know me well know I suffer Jesus Syndrome. I enjoy helping others achieve their goals and made my mission out of it. For that reason, I stopped coding five years ago and devoted myself to becoming a better leader, coach, and person in general.</p> <br/>
+            <p>My education consisted of Multimedia Engineering, specializing in Videogames.</p> <br/>
+            <p>In my professional journey, I’ve led teams of all sorts and sizes across different countries, mostly in the game industry. I have also coached individuals based on co-active coaching and I keep myself active as a college lecturer at Universitat Tecnocampus Mataró.</p> <br/>
+            <p>I did not write a book yet but planted many trees and had one wonderful kid.</p> 
         </div>,
 
         image: images.aboutme
