@@ -1,7 +1,6 @@
-import images from "../constants/images";
+// import images from "../constants/images";
 import SubHeading from "./SubHeading";
 import styles from "../constants/style";
-// import { section } from "../constants/data";
 const Section = ({title, content, image}) => {
     return (
 
@@ -24,5 +23,4 @@ const Section = ({title, content, image}) => {
         </div>
     )
 }
-
 export default Section;

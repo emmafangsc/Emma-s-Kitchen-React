@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Carousel from './components/Carousel';
 // import Newsletter from './components/Newsletter';
 // import Footer from './components/Footer';
-import Section from './components/Section'
+import HomeSection from './components/HomeSection'
 function App() {
   return (
     <div className="relative">
@@ -25,7 +25,7 @@ function App() {
         <Footer />
       </div> */}
       <div className='sectionWrapper relative z-10 mt-8'>
-        <Section />
+        <HomeSection />
       </div>
       <div className='overlay w-full absolute top-0 z-0'>
         <img src={images.bg}/>

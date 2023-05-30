@@ -1,6 +1,6 @@
 import images from "./images";
 export const carouselImages = [images.transparent, images.promo1, images.promo2];
-export const section = [
+export const sections = [
     {
         title: 'Life Coaching',
         content: 'Life coaching is a powerful tool for those seeking guidance and support in achieving their personal and professional goals. As a certified life coach, I offer a personalized approach to help you overcome obstacles, gain clarity, and create an action plan to reach your full potential. Together, we will work on enhancing your self-awareness, developing new skills, and fostering positive habits that will lead to a fulfilling and meaningful life. Let me support you on your journey towards success and happiness.',
@@ -13,13 +13,14 @@ export const section = [
     },
     {
         title: 'About me',
-        content: `Those who know me well know I suffer Jesus Syndrome. I enjoy helping others achieve their goals and made my mission out of it. For that reason, I stopped coding five years ago and devoted myself to becoming a better leader, coach, and person in general.'<br>
+        content: 
+        <div>
+            <p>Those who know me well know I suffer Jesus Syndrome. I enjoy helping others achieve their goals and made my mission out of it. For that reason, I stopped coding five years ago and devoted myself to becoming a better leader, coach, and person in general.</p>
+            {/* <p>My education consisted of Multimedia Engineering, specializing in Videogames.</p>
+            <p>In my professional journey, I’ve led teams of all sorts and sizes across different countries, mostly in the game industry. I have also coached individuals based on co-active coaching and I keep myself active as a college lecturer at Universitat Tecnocampus Mataró.</p>
+            <p>I did not write a book yet but planted many trees and had one wonderful kid.</p> */}
+        </div>,
 
-        'My education consisted of Multimedia Engineering, specializing in Videogames.' <br>
-        
-        "In my professional journey, I’ve led teams of all sorts and sizes across different countries, mostly in the game industry. I have also coached individuals based on co-active coaching and I keep myself active as a college lecturer at Universitat Tecnocampus Mataró." <br>
-        
-        'I did not write a book yet but planted many trees and had one wonderful kid.'}`,
         image: images.aboutme
     }
 ]
