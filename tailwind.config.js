@@ -15,7 +15,8 @@ module.exports = {
       },
 
       colors: {
-        'yellow': '#FFDF12'
+        'yellow': '#FFDF12',
+        'black': '#1D1D1B'
       }
     },
   },
