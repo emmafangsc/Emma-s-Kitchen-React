@@ -12,7 +12,6 @@ import profile from '../images/profile_image.png';
 import arrow from '../images/arrow.png';
 import union from '../images/Union.png';
 import transparent from '../images/transparent.png';
-import footerImage from '../images/footer-image.png';
 import X from '../images/X-logo.png';
 import section1 from '../images/section1.png';
 import aboutme from '../images/aboutme.png';
@@ -35,7 +34,6 @@ const images = {
     arrow,
     union,
     transparent,
-    footerImage,
     X,
     section1,
     aboutme,
