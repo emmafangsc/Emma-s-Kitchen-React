@@ -6,8 +6,8 @@ const Section = ({title, content, image}) => {
 
         <div className="wrapper px-[2rem] lg:px-[12rem]">
             <div className="section flex flex-col md:flex-row pt-24">
-                <div className="section__image flex md:flex-1 h-[300px] md:h-[600px] md:pr-[4rem]">
-                    <img src={image} alt="section" className="rounded-xl min-w-full"/>
+                <div className="section__image flex md:flex-1 md:pr-[4rem] h-[300px] md:h-auto ">
+                    <img src={image} alt="section" className="rounded-xl min-w-full object-cover"/>
                 </div>
                 <div className="section__content px-8 md:flex-1">
                     <SubHeading title={title} />
