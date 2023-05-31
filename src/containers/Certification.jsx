@@ -1,8 +1,8 @@
 import images from "../constants/images";
 const Certification = () => {
     return (
-        <div className="wrapper px-[2rem] lg:px-[12rem]">
-            <div className="certification border-[blue] border-[1px] h-[300px] flex py-12 px-32 justify-between">
+        <div className="wrapper lg:px-[12rem] flex justify-center">
+            <div className="certification h-[200px] md:h-[250px] flex pt-24 justify-between w-11/12 md:w-3/5">
                 <img src={images.X} className="object-cover flex"/>
                 <img src={images.X} className="object-cover flex"/>
                 <img src={images.X} className="object-cover flex"/>

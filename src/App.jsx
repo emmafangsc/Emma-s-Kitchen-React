@@ -7,7 +7,6 @@ import Certification from './containers/Certification'
 import Testimonial from './containers/Testimonial'
 import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
-// import Test from './containers/test';
 function App() {
   return (
     <div className="relative">
@@ -35,9 +34,7 @@ function App() {
       <div className='footerWrapper relative z-10 mt-8'>
         <Footer />
       </div>
-      {/* <div className='footerWrapper relative z-10 mt-8'>
-        <Test />
-      </div> */}
+      
 
       <div className='overlay w-full absolute top-0 z-0'>
         <img src={images.bg}/>
