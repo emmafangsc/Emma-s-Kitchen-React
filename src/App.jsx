@@ -5,6 +5,8 @@ import Carousel from './containers/Carousel';
 // import Newsletter from './components/Newsletter';
 // import Footer from './components/Footer';
 import HomeSection from './containers/HomeSection'
+import Certification from './containers/Certification'
+import Testimonial from './containers/Testimonial'
 function App() {
   return (
     <div className="relative">
@@ -27,6 +29,14 @@ function App() {
       <div className='sectionWrapper relative z-10 mt-8'>
         <HomeSection />
       </div>
+      <div className='certificationWrapper relative z-10 mt-8'>
+        <Certification />
+      </div>
+      <div className='testimonialWrapper relative z-10 mt-8'>
+        <Testimonial />
+      </div>
+
+
       <div className='overlay w-full absolute top-0 z-0'>
         <img src={images.bg}/>
       </div>
