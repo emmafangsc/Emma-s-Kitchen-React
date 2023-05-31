@@ -74,10 +74,10 @@ const Nav = () => {
                 </div>
                 <div className="right flex items-center ">
                     <div className="login flex  px-[1rem]">
-                            <div className="signUpButton bg-[black] text-yellow py-1 px-2 text-[14px] flex justify-center shadow-md rounded cursor-pointer hover:opacity-50">Sign Up</div>
+                            <div className="signUpButton bg-[#1D1D1B] text-yellow hover:bg-yellow hover:text-[#1D1D1B] py-1 px-2 text-[14px] flex justify-center shadow-md rounded cursor-pointer">Sign Up</div>
                     </div>
                     <div className="flex flex-col justify-center relative" onClick={showLanguageMenu}>
-                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black cursor-pointer hover:opacity-50 shadow-md rounded">
+                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-[#1D1D1B] hover:bg-[#1D1D1B] hover:text-yellow cursor-pointer shadow-md rounded">
                             EN
                             <FaCaretDown />
                         </div>

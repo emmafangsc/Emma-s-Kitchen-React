@@ -10,7 +10,7 @@ const Newsletter = () => {
                         <input type="text" placeholder="First name" name="first-name" required className="shadow-md w-[12rem] bg-[#000000] opacity-30 pl-[1rem] py-[4px]" />
                         <input type="text" placeholder="Last name" name="last-name" required className="shadow-md w-[12rem] bg-[#000000] opacity-30 pl-[1rem] py-[4px]" />
                         <input type="text" placeholder="Your email" name="email" required className="shadow-md w-[18rem] bg-[#000000] opacity-30 pl-[1rem] py-[4px]" />
-                        <button type="submit" className="shadow-md w-[12rem] bg-[#383838] pl-[1rem] py-1 rounded-lg" >subscribe</button>
+                        <button type="submit" className="shadow-md w-[12rem] bg-[#383838] hover:opacity-50 pl-[1rem] py-1 rounded-lg" >subscribe</button>
 
                     </div>
                 </div>
