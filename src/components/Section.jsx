@@ -17,7 +17,6 @@ const Section = ({title, content, image}) => {
                     </div>
                     
                 </div>
-                
             </div>
 
         </div>

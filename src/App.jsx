@@ -1,10 +1,10 @@
 import images from './constants/images';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
-import Carousel from './components/Carousel';
+import Carousel from './containers/Carousel';
 // import Newsletter from './components/Newsletter';
 // import Footer from './components/Footer';
-import HomeSection from './components/HomeSection'
+import HomeSection from './containers/HomeSection'
 function App() {
   return (
     <div className="relative">
