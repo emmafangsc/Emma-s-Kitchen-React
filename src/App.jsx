@@ -19,19 +19,19 @@ function App() {
       <div className='carouselWrapper z-10 relative'>
         <Carousel />
       </div>      
-      <div className='sectionWrapper relative z-10 mt-8'>
+      <div className='sectionWrapper relative z-10 mt-12'>
         <HomeSection />
       </div>
-      <div className='certificationWrapper relative z-10 mt-8'>
+      <div className='certificationWrapper relative z-10'>
         <Certification />
       </div>
-      <div className='testimonialWrapper relative z-10 mt-8'>
+      <div className='testimonialWrapper relative z-10'>
         <Testimonial />
       </div>
-      <div className='newsletterWrapper relative z-10 mt-8'>
+      <div className='newsletterWrapper relative z-10 '>
         <Newsletter />
       </div>
-      <div className='footerWrapper relative z-10 mt-8'>
+      <div className='footerWrapper relative z-10'>
         <Footer />
       </div>
       

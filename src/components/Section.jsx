@@ -5,7 +5,7 @@ const Section = ({title, content, image}) => {
     return (
 
         <div className="wrapper px-[2rem] lg:px-[12rem]">
-            <div className="section flex flex-col md:flex-row pt-24">
+            <div className="section flex flex-col md:flex-row pb-24">
                 <div className="section__image flex md:flex-1 md:pr-[4rem] h-[300px] md:h-auto">
                     <img src={image} alt="section" className="rounded-xl min-w-full object-cover"/>
                 </div>
