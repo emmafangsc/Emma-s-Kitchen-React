@@ -6,7 +6,11 @@ module.exports = {
     extend: {
       fontFamily: {
         'Lato': ['Lato', 'sans-serif'],
-        'newFont': 'newFont'
+        'Aroly': 'Aroly',
+        'OrkneyBold': 'OrkneyBold',
+        'OrkneyRegular': 'OrkneyRegular',
+        'OrkneyLight': 'OrkneyLight',
+        'Thinoo': 'Thinoo'
       },
       
       backgroundImage: {

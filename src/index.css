@@ -42,9 +42,30 @@
     
     
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Libre+Baskerville&display=swap');
+
 @font-face {
-  font-family: 'newFont';
+  font-family: 'Aroly';
   src: url('./Font/AROLY.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'OrkneyBold';
+  src: url('./Font/Orkney/Orkney\ Bold.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'OrkneyRegular';
+  src: url('./Font/Orkney/Orkney\ Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'OrkneyLight';
+  src: url('./Font/Orkney/Orkney\ Light.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Thinoo';
+  src: url('./Font/Thinoo/thinoobold.otf') format('truetype');
   font-weight: normal;
 }
 

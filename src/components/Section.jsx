@@ -11,7 +11,7 @@ const Section = ({title, content, image}) => {
                 </div>
                 <div className="section__content md:pl-8 md:flex-1">
                     <SubHeading title={title} />
-                    <div className="text font-[400] text-[14px] leading-normal md:text-[18px] lg:leading-relaxed text-justify indent-12">{content}</div>
+                    <div className="text font-[400] text-[14px] leading-normal md:text-[18px] lg:leading-relaxed text-justify indent-12 font-OrkneyLight">{content}</div>
                     <div className="button flex justify-end pt-8">
                         <button className={`bg-[#383838] text-yellow ${styles.sectionButton} hover:text-[#383838] hover:bg-yellow`} >Learn more</button>
                     </div>
