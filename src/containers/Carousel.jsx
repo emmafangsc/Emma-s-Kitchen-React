@@ -79,11 +79,13 @@ class Carousel extends Component {
                       <img src={images.profile} />
                   </div>
                   <div className="profile__content flex flex-1 flex-col justify-between items-center pt-[20px] lg:py-[40px]">
-                      <div className="title md:w-[11rem] lg:w-[17rem] px-[40px]">
-                      {/* <div className="title w-[230px] lg:w-[280px] px-[40px]"> */}
-                          <h1 className="font-[800] font-OrkneyBold text-[18px] lg:text-[36px] text-center">Nice to meet you!</h1>
+                      {/* <div className="title md:w-[11rem] lg:w-[17rem] px-[40px]"> */}
+                      <div className="title">
+                          <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Nice to </h1>
+                          <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">meet you!</h1>
                       </div>
-                      <div className="union flex items-center w-[10rem] lg:w-[22rem]">
+                      {/* </div> */}
+                      <div className="union flex items-center w-[10rem] md:w-[22rem]">
                           <img src={images.union}/>
                       </div>
                       <div className="paragraph ">
