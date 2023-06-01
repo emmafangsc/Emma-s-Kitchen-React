@@ -81,15 +81,15 @@ class Carousel extends Component {
                   <div className="profile__content flex flex-1 flex-col justify-between items-center pt-[20px] lg:py-[40px]">
                       <div className="title md:w-[11rem] lg:w-[17rem] px-[40px]">
                       {/* <div className="title w-[230px] lg:w-[280px] px-[40px]"> */}
-                          <h1 className="font-[800] text-[18px] lg:text-[36px] text-center">Nice to meet you!</h1>
+                          <h1 className="font-[800] font-OrkneyBold text-[18px] lg:text-[36px] text-center">Nice to meet you!</h1>
                       </div>
                       <div className="union flex items-center w-[10rem] lg:w-[22rem]">
                           <img src={images.union}/>
                       </div>
                       <div className="paragraph ">
-                          <p className="font-[400] text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
+                          <p className="font-[400] font-OrkneyLight text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
                       </div>
-                      <div className="button bg-black text-yellow lg:bg-yellow hover:bg-[#383838] hover:text-yellow lg:text-black py-[5px] lg:py-[10px] px-[15px] lg:px-[40px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[18px] lg:text-[24px]">
+                      <div className="button bg-black text-yellow font-OrkneyBold lg:bg-yellow hover:bg-[#383838] hover:text-yellow lg:text-black py-[5px] lg:py-[10px] px-[15px] lg:px-[40px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[18px] lg:text-[24px]">
                           <button>Book a call</button>
                       </div>
                   </div>

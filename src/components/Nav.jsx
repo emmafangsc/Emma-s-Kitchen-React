@@ -45,7 +45,7 @@ const Nav = () => {
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
-                    <ul className="flex flex-nowrap font-Lato text-[16px] xl:text-[18px]">
+                    <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
                         <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem] font-black"><a>Home</a></li>
                         <div className="subMenu group relative" >
                             <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Company <span className="triangle"></span></a></li>
@@ -57,7 +57,7 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="subMenu group relative">
+                        <div className="subMenu group relative font-OrkneyRegular">
                             <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Individual<span className="triangle"></span></a></li>
                             <div className="subMenu__content group-hover:block hidden absolute w-[11rem] bg-[black] justify-start p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow">
@@ -72,7 +72,7 @@ const Nav = () => {
                         <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Blog</a></li>
                     </ul>
                 </div>
-                <div className="right flex items-center ">
+                <div className="right flex items-center font-OrkneyRegular">
                     <div className="login flex  px-[1rem]">
                             <div className="signUpButton bg-black text-yellow hover:bg-yellow hover:text-black py-1 px-2 text-[14px] flex justify-center shadow-md rounded cursor-pointer">Sign Up</div>
                     </div>
@@ -100,7 +100,7 @@ const Nav = () => {
                 </div>
             </nav>
             
-            <div className={`overlayMenu bg-black flex lg:hidden h-screen w-full px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
+            <div className={`overlayMenu bg-black font-OrkneyRegular flex lg:hidden h-screen w-full px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
                 <ul className="text-[18px] w-full text-yellow">
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">
                         <li><a>Home</a></li>

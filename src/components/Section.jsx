@@ -13,7 +13,7 @@ const Section = ({title, content, image}) => {
                     <SubHeading title={title} />
                     <div className="text font-[400] text-[14px] leading-normal md:text-[18px] lg:leading-relaxed text-justify indent-12 font-OrkneyLight">{content}</div>
                     <div className="button flex justify-end pt-8">
-                        <button className={`bg-[#383838] text-yellow ${styles.sectionButton} hover:text-[#383838] hover:bg-yellow`} >Learn more</button>
+                        <button className={`bg-[#383838] text-yellow font-OrkneyBold ${styles.sectionButton} hover:text-[#383838] hover:bg-yellow`} >Learn more</button>
                     </div>
                     
                 </div>
