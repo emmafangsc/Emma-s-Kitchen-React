@@ -9,7 +9,7 @@ import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
 function App() {
   return (
-    <div className="relative">
+    <div className="relative m-auto max-w-screen-2xl">
       <div className='contactWrapper relative z-20'>
         <Contact />
       </div>
