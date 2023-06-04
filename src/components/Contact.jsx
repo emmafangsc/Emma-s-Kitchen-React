@@ -3,7 +3,7 @@ import images from "../constants/images";
 
 const Contact = () => {
     return (
-        <div className="contact flex flex-col md:flex-row justify-between font-OrkneyRegular text-[#111111] h-[6rem] lg:h-[3rem] md:px-[2rem] lg:px-[6rem] xl:px-[12rem] backdrop-blur-lg">
+        <div className="contact flex flex-col md:flex-row justify-between font-OrkneyRegular text-[#111111] h-[6rem] lg:h-[3rem] md:px-[2rem] lg:px-[6rem] xl:px-[12rem] backdrop-blur-lg bg-yellow/30">
                 <div className="contact__phone flex flex-1 gap-2 items-center justify-center hover:opacity-50 cursor-pointer">
                     <img  src={images.whatsapp} className='hover:opacity-50 cursor-pointer w-[25px]'/>
                     <p>+34 665487981</p>

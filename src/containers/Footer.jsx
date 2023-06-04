@@ -1,7 +1,7 @@
 import images from "../constants/images";
 const Footer = () => {
     return(
-        <div className="wrapper px-[2rem] lg:px-[12rem] bg-footerBackground md:h-[570px] font-OrkneyRegular">
+        <div className="wrapper px-[2rem] lg:px-[12rem] bg-footerBackground bg-no-repeat bg-cover md:h-[570px] font-OrkneyRegular">
             <div className="footer flex justify-between flex-col md:flex-row mt-24">
                 <div className="logo w-[8rem] h-[9rem]">
                     <img src={images.X}/>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <h2 className="font-OrkneyBold text-[18px] md:text-[20px]">Contact Me</h2>
                     <ul className="font-[400] text-[14px] md:text-[16px] list-disc">
                         <li className="cursor-pointer"><a>Write A Message</a></li>
-                        <li className="cursor-pointer"><a>Wahtsapp</a></li>
+                        <li className="cursor-pointer"><a>Whatsapp</a></li>
                         <li className="cursor-pointer"><a>Email</a></li>
                         <li className="cursor-pointer"><a>Policy</a></li>
                         <li className="cursor-pointer"><a>Cookies</a></li>
