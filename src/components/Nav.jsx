@@ -40,36 +40,36 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <nav className='nav flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative backdrop-blur-lg'>
+            <nav className='nav flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
                 <div className="logo flex items-center w-[9rem] md:w-[18rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
-                        <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem] font-black"><a>Home</a></li>
+                        <li className=" cursor-pointer px-[1rem] hover:text-white py-[2rem] font-black"><a>Home</a></li>
                         <div className="subMenu group relative" >
-                            <li className=" cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Company <span className="triangle"></span></a></li>
+                            <li className=" cursor-pointer px-[1rem] hover:text-white py-[2rem]"><a>Company <span className="triangle"></span></a></li>
                             <div className="courseMenu__content group-hover:block hidden absolute z-2 w-[11rem] bg-[black] justify-start p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow">
-                                    <li className="pb-[1rem] cursor-pointer hover:opacity-50 text-[16px]">Executive Coaching</li>
-                                    <li className="pb-[1rem] cursor-pointer hover:opacity-50 text-[16px]">Other Course</li>
-                                    <li className="cursor-pointer hover:opacity-50 text-[16px]">Other Course</li>
+                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Executive Coaching</li>
+                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Other Course</li>
+                                    <li className="cursor-pointer hover:text-white text-[16px]">Other Course</li>
                                 </ul>
                             </div>
                         </div>
                         <div className="subMenu group relative font-OrkneyRegular">
-                            <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Individual<span className="triangle"></span></a></li>
+                            <li className="cursor-pointer px-[1rem] hover:text-white py-[2rem]"><a>Individual<span className="triangle"></span></a></li>
                             <div className="subMenu__content group-hover:block hidden absolute w-[11rem] bg-[black] justify-start p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow">
-                                    <li className="pb-[1rem] cursor-pointer hover:opacity-50 text-[16px]">Life Coaching</li>
-                                    <li className="pb-[1rem] cursor-pointer hover:opacity-50 text-[16px]">Other Course</li>
-                                    <li className="cursor-pointer hover:opacity-50 text-[16px]">Other Course</li>
+                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Life Coaching</li>
+                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Other Course</li>
+                                    <li className="cursor-pointer hover:text-white text-[16px]">Other Course</li>
                                 </ul>
                             </div>
                         </div>
-                        <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Courses</a></li>
-                        <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>About me</a></li>
-                        <li className="cursor-pointer px-[1rem] hover:text-[grey] py-[2rem]"><a>Blog</a></li>
+                        <li className="cursor-pointer px-[1rem] hover:text-white py-[2rem]"><a>Courses</a></li>
+                        <li className="cursor-pointer px-[1rem] hover:text-white py-[2rem]"><a>About me</a></li>
+                        <li className="cursor-pointer px-[1rem] hover:text-white py-[2rem]"><a>Blog</a></li>
                     </ul>
                 </div>
                 <div className="right flex items-center font-OrkneyRegular">
@@ -102,38 +102,38 @@ const Nav = () => {
             
             <div className={`overlayMenu bg-black font-OrkneyRegular flex lg:hidden h-screen w-full px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
                 <ul className="text-[18px] w-full text-yellow">
-                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">
+                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
                         <li><a>Home</a></li>
                     </div>
-                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer" onClick={showSubMenu1}>
+                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu1}>
                         <li><a>Company</a></li>
                         <FaAngleRight className="text-[15px]"/>
                     </div>
                     <div className={`subMenu px-[1rem] ${subMenu1 ? "show" : "hide"}`}>
                         <ul className="text-[16px]">
-                            <li className="p-[1rem] border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">Executive Coaching</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">Other Course</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">Other Course</li>
+                            <li className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Executive Coaching</li>
+                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Other Course</li>
+                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Other Course</li>
                         </ul>
                     </div>
-                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer" onClick={showSubMenu2}>
+                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu2}>
                         <li><a>Individual</a></li>
                         <FaAngleRight className="text-[15px]"/>
                     </div>
                     <div className={`subMenu2 px-[1rem] ${subMenu2 ? "show" : "hide"}`}>
                         <ul className="text-[16px]">
-                            <li className="p-[1rem] border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">Life Coaching</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">Other Course</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">Other Course</li>
+                            <li className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Life Coaching</li>
+                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Other Course</li>
+                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Other Course</li>
                         </ul>
                     </div>
-                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">
+                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
                         <li><a>Courses</a></li>
                     </div>
-                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:opacity-50 cursor-pointer">
+                    <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
                         <li><a>About me</a></li>
                     </div>
-                    <div className="flex justify-between items-center py-6 hover:opacity-50 cursor-pointer">
+                    <div className="flex justify-between items-center py-6 hover:text-white cursor-pointer">
                         <li><a>Blog</a></li>
                     </div>
                 </ul>
