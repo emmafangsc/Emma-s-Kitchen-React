@@ -52,7 +52,7 @@ class Carousel extends Component {
   render() {
     return (
       <div className="slideContainer">
-        <div className="slide flex flex-col overflow-hidden relative pb-[80px]" 
+        <div className="slide flex flex-col overflow-hidden relative pb-[80px] " 
           onMouseEnter={() => {
           this.setState({ paused: true });
         }}
@@ -73,12 +73,12 @@ class Carousel extends Component {
             className="absolute left-0 text-3xl inset-y-1/2 cursor-pointer z-10 sm:hidden"
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
-          <div className="flex slide__background w-full relative  z-0">
-            <div className="flex profile w-full h-[21rem] lg:h-[35rem] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
-                  <div className="profile__image flex flex-1">
+          <div className="flex slide__background w-full relative z-0 h-[16rem] overflow-hidden">
+            <div className="flex profile w-full gap-[7rem] h-[21rem] lg:h-[35rem] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
+                  <div className="profile__image flex w-[25rem] items-center">
                       <img src={images.profile} />
                   </div>
-                  <div className="profile__content flex flex-1 flex-col justify-between items-center pt-[20px] lg:py-[40px]">
+                  <div className="profile__content flex w-[45rem] flex-col justify-between items-center pt-[20px] lg:py-[40px]">
                       {/* <div className="title md:w-[11rem] lg:w-[17rem] px-[40px]"> */}
                       <div className="title">
                           <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Nice to </h1>
@@ -88,8 +88,8 @@ class Carousel extends Component {
                       <div className="union flex items-center w-[10rem] md:w-[22rem]">
                           <img src={images.union}/>
                       </div>
-                      <div className="paragraph ">
-                          <p className="font-[400] font-OrkneyLight text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
+                      <div className="paragraph">
+                          <p className="font-[400] font-OrkneyLight text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
                       </div>
                       <div className="button bg-black text-yellow font-OrkneyBold lg:bg-yellow hover:bg-[#383838] hover:text-yellow lg:text-black py-[5px] lg:py-[10px] px-[15px] lg:px-[40px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[18px] lg:text-[24px]">
                           <button>Book a call</button>
@@ -108,7 +108,7 @@ class Carousel extends Component {
                       key={index}
                       className={
                         index === this.state.currentSlide
-                          ? "block w-screen h-[44rem] object-cover"
+                          ? "block w-screen h-[16rem] md:h-[44rem] object-cover"
                           : "hidden"
                       }
                     />
