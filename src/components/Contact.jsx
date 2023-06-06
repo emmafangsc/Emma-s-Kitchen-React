@@ -1,4 +1,4 @@
-import {FaEnvelope, FaFacebook} from "react-icons/fa";
+import {FaEnvelope} from "react-icons/fa";
 import images from "../constants/images";
 
 const Contact = () => {
@@ -15,7 +15,8 @@ const Contact = () => {
                 <div className="contact__social flex-1 flex justify-center md:pb-0 items-center gap-8 order-first md:order-last">  
                     <img src={images.instagram} className='hover:opacity-50 cursor-pointer w-[25px]'/>          
                     <img src={images.linkedin} className='hover:opacity-50 cursor-pointer w-[25px]'/> 
-                    <FaFacebook className='hover:opacity-50 cursor-pointer text-[25px]'/>
+                    <img src={images.facebook} className='hover:opacity-50 cursor-pointer w-[25px] self-center'/> 
+                    {/* <FaFacebook className='hover:opacity-50 cursor-pointer text-[25px]'/> */}
                 </div>
         </div>
     )
