@@ -10,7 +10,7 @@ import Footer from './containers/Footer';
 function App() {
   return (
     <div className="relative m-auto max-w-screen-2xl">
-      <div className='contactWrapper relative z-20 backdrop-blur-lg '>
+      <div className='contactWrapper relative z-20 backdrop-blur-lg'>
         <Contact />
       </div>
       <div className='navWrapper sticky top-0 z-20 backdrop-blur-md mt-[-5px] md:mt-[-10px]'>
