@@ -78,7 +78,7 @@ class Carousel extends Component {
                   <div className="profile__image flex w-[25rem] items-center">
                       <img src={images.profile} />
                   </div>
-                  <div className="profile__content flex w-[45rem] flex-col justify-between items-center pt-[20px] lg:py-[40px]">
+                  <div className="profile__content flex w-[45rem] flex-col md:justify-between items-center pt-[20px] lg:py-[40px]">
                       {/* <div className="title md:w-[11rem] lg:w-[17rem] px-[40px]"> */}
                       <div className="title">
                           <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Nice to </h1>
@@ -89,7 +89,7 @@ class Carousel extends Component {
                           <img src={images.union}/>
                       </div>
                       <div className="paragraph">
-                          <p className="font-[400] font-OrkneyLight text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
+                          <p className="line-clamp-3 font-[400] font-OrkneyLight text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-center my-4 md:my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
                       </div>
                       <div className="button bg-black text-yellow font-OrkneyBold lg:bg-yellow hover:bg-[#383838] hover:text-yellow lg:text-black py-[5px] lg:py-[10px] px-[15px] lg:px-[40px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[18px] lg:text-[24px]">
                           <button>Book a call</button>
@@ -117,7 +117,7 @@ class Carousel extends Component {
             })}
             </div>
           </Swipe>
-          <div className="slide__indication absolute w-full flex justify-center bottom-5">
+          <div className="slide__indication absolute w-full flex justify-center bottom-2 md:bottom-5 ">
             {carouselImages.map((element, index) => {
               return (
                 <div
