@@ -91,7 +91,7 @@ class Carousel extends Component {
                       <div className="paragraph">
                           <p className="line-clamp-3 md:line-clamp-none font-[400] font-OrkneyLight text-[14px] leading-normal md:text-[18px] md:leading-[44px] text-center my-4 md:my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
                       </div>
-                      <div className="button bg-black text-yellow font-OrkneyBold md:bg-yellow md:text-black hover:bg-[#383838] hover:text-yellow py-[5px] md:py-[10px] px-[15px] md:px-[40px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[18px] md:text-[24px]">
+                      <div className="button bg-black text-yellow font-OrkneyBold md:bg-yellow md:text-black hover:bg-[#383838] hover:text-yellow py-[5px] md:py-[10px] px-[15px] md:px-[40px] rounded-lg shadow-lg flex items-center justify-center font-[600] text-[18px] md:text-[24px] cursor-pointer">
                           <button>Book a call</button>
                       </div>
                   </div>

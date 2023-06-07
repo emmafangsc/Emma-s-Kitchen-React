@@ -84,10 +84,10 @@ const Nav = () => {
                         {languageMenu && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg" >
                                 <ul className="text-[12px] text-yellow">
-                                    <li className="pb-2 cursor-pointer hover:opacity-50"><a>ENGLISH</a></li>
-                                    <li className="pb-2 cursor-pointer hover:opacity-50"><a>SPANISH</a></li>
-                                    <li className="pb-2 cursor-pointer hover:opacity-50"><a>CATALAN</a></li>
-                                    <li className="cursor-pointer hover:opacity-50"><a>VIETNAMESE</a></li>
+                                    <li className="pb-2 cursor-pointer hover:text-white"><a>ENGLISH</a></li>
+                                    <li className="pb-2 cursor-pointer hover:text-white"><a>SPANISH</a></li>
+                                    <li className="pb-2 cursor-pointer hover:text-white"><a>CATALAN</a></li>
+                                    <li className="cursor-pointer hover:text-white"><a>VIETNAMESE</a></li>
                                 </ul>
                             </div>
                         )}
