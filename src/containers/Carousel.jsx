@@ -52,7 +52,7 @@ class Carousel extends Component {
   render() {
     return (
       <div className="slideContainer">
-        <div className="slide flex flex-col overflow-hidden relative pb-[80px] " 
+        <div className="slide flex flex-col overflow-hidden relative md:pb-[80px]" 
           onMouseEnter={() => {
           this.setState({ paused: true });
         }}
@@ -73,8 +73,8 @@ class Carousel extends Component {
             className="absolute left-0 text-3xl inset-y-1/2 cursor-pointer z-10 sm:hidden"
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
-          <div className="flex slide__background w-full relative z-0 h-[16rem] overflow-hidden">
-            <div className="flex profile w-full gap-[7rem] h-[21rem] lg:h-[35rem] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
+          <div className="flex slide__background w-full relative z-0 overflow-hidden">
+            <div className="flex profile w-full gap-[1rem] md:gap-[7rem] h-[16rem] lg:h-[35rem] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
                   <div className="profile__image flex w-[25rem] items-center">
                       <img src={images.profile} />
                   </div>
