@@ -74,7 +74,7 @@ class Carousel extends Component {
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
           <div className="flex slide__background w-full relative z-0 overflow-hidden">
-            <div className="flex profile w-full gap-[1rem] md:gap-[7rem] h-[16rem] md:h-[35rem] px-[1rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
+            <div className="flex profile w-full gap-[1rem] md:gap-[7rem] h-[16rem] md:h-[35rem] px-[2rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
                   <div className="profile__image flex w-[25rem] items-center">
                       <img src={images.profile} />
                   </div>
