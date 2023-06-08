@@ -11,6 +11,12 @@
   .triangle {
     @apply content-empty inline-block w-[5px] h-[5px] border-b-2 border-r-2  border-transparent border-black ml-2 rotate-45;
   }
+  .custom-link1 {
+    @apply relative hover:after:content-['Hello'] hover:after:absolute hover:after:bottom-1 hover:after:left-4 hover:after:text-red-500;
+  }
+  .custom-link {
+    @apply relative after:absolute after:content-[''] after:bottom-6 after:left-2 after:w-0 after:h-0.5 after:transform after:scale-x-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 after:ease-out hover:after:w-[80%] hover:after:transform hover:after:scale-x-100
+  }
 @layer component {
     .hamburgerButton.open span:first-child {
         transform: rotate(45deg);
