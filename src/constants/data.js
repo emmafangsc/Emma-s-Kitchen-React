@@ -4,18 +4,17 @@ export const slides = [
     {
         id: 1,
         image: images.transparent,
-        caption:{
-            title: 'Heading',
-            subtitle: 'Subheading'
-    }
+        caption: 'true',
     },
     {
         id: 2,
-        image: images.promo1
+        image: images.promo1,
+        caption: 'false'
     },
     {
         id: 3,
-        image: images.promo2
+        image: images.promo2,
+        caption: 'false'
     }
 ]
 export const sections = [

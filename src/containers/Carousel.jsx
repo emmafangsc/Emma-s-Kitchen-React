@@ -76,10 +76,10 @@ class Carousel extends Component {
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
           <div className="flex slide__background w-full relative z-0 overflow-hidden">
             <div className="flex profile w-full gap-[1rem] md:gap-[7rem] h-[16rem] md:h-[35rem] px-[2rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
-                  <div className="profile__image flex w-[25rem] items-center">
+                  <div className="profile__image flex w-[25rem] items-center border-yellow border-[1px]">
                       <img src={images.profile} />
                   </div>
-                  <div className="profile__content flex w-[45rem] flex-col md:justify-between items-center pt-[20px] md:py-[40px]">
+                  <div className="profile__content border-[red] border-[1px] flex w-[45rem] flex-col md:justify-between items-center pt-[20px] md:py-[40px]">
                       <div className="title">
                           <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Nice to </h1>
                           <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">meet you!</h1>
@@ -106,11 +106,29 @@ class Carousel extends Component {
                       alt="This is a carousel slide"
                       key={slide.id}
                       className={
-                        index === this.state.currentSlide
+                        `${index === this.state.currentSlide
                           ? "block w-screen h-[16rem] md:h-[44rem] object-cover"
-                          : "hidden"
+                          : "hidden"}
+                          relative`
                       }
                     />
+                    {slide.caption==='true' && (
+                    <div className="profile__content border-black border-[1px] absolute top-[4rem] right-[15rem] h-[16rem] md:h-[35rem] flex w-[35rem] flex-col md:justify-between items-center pt-[20px] md:py-[40px]">
+                      <div className="title">
+                          <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Nice to </h1>
+                          <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">meet you!</h1>
+                      </div>
+                      <div className="union flex items-center w-[10rem] md:w-[22rem]">
+                          <img src={images.union}/>
+                      </div>
+                      <div className="paragraph">
+                          <p className="line-clamp-3 md:line-clamp-none font-[400] font-OrkneyLight text-[14px] leading-normal md:text-[18px] md:leading-[44px] text-center my-4 md:my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
+                      </div>
+                      <div className="button shadow-boxShadow font-OrkneyBold bg-yellow text-black hover:bg-[#383838] hover:text-yellow py-[5px] md:py-[10px] px-[15px] md:px-[40px] rounded-lg flex items-center justify-center font-[600] text-[18px] md:text-[24px] cursor-pointer">
+                          <button>Book a call</button>
+                      </div>
+                  </div>
+                  )}
                   </div>
               );
             })}
