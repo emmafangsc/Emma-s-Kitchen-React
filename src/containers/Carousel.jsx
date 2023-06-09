@@ -97,7 +97,7 @@ class Carousel extends Component {
                   
               </div>
           </div> */}
-          <div className="slides flex w-full h-[16rem] md:h-[44rem] border-b-2 shadow-ShadowGrey">
+          <div className="slides flex w-full h-[16rem] md:h-[44rem] border-b-1 md:border-b-2 shadow-ShadowGrey">
             {slides.map((slide, index) => {
               return (
                   <div className="slides absolute top-0 left-0">
