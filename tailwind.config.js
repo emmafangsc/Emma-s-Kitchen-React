@@ -26,6 +26,7 @@ module.exports = {
       boxShadow: {
         'boxShadow': 'inset 0px -5px rgba(0,0,0,0.2)',
         'ShadowBlack': 'inset 0px -5px rgba(0,0,0,0.8)',
+        'ShadowGrey': 'inset 0px -3px rgba(0,0,0,0.2)',
       }
     },
   },
