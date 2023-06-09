@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { carouselImages } from "../constants/data";
+// import { slides } from "../constants/data";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 import images from "../constants/images";
+import { slides } from "../constants/data";
 
 class Carousel extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Carousel extends Component {
    this.interval = setInterval(() => {
       if (this.state.paused === false) {
         let newSlide =
-          this.state.currentSlide === carouselImages.length - 1
+          this.state.currentSlide === slides.length - 1
             ? 0
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
@@ -31,7 +32,7 @@ class Carousel extends Component {
 
   nextSlide = () => {
     let newSlide =
-      this.state.currentSlide === carouselImages.length - 1
+      this.state.currentSlide === slides.length - 1
         ? 0
         : this.state.currentSlide + 1;
     this.setState({ currentSlide: newSlide });
@@ -40,7 +41,7 @@ class Carousel extends Component {
   prevSlide = () => {
     let newSlide =
       this.state.currentSlide === 0
-        ? carouselImages.length - 1
+        ? slides.length - 1
         : this.state.currentSlide - 1;
     this.setState({ currentSlide: newSlide });
   };
@@ -79,12 +80,10 @@ class Carousel extends Component {
                       <img src={images.profile} />
                   </div>
                   <div className="profile__content flex w-[45rem] flex-col md:justify-between items-center pt-[20px] md:py-[40px]">
-                      {/* <div className="title md:w-[11rem] lg:w-[17rem] px-[40px]"> */}
                       <div className="title">
                           <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Nice to </h1>
                           <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">meet you!</h1>
                       </div>
-                      {/* </div> */}
                       <div className="union flex items-center w-[10rem] md:w-[22rem]">
                           <img src={images.union}/>
                       </div>
@@ -99,13 +98,13 @@ class Carousel extends Component {
               </div>
           </div>
           <div className="overlayImage flex">
-            {carouselImages.map((slide, index) => {
+            {slides.map((slide, index) => {
               return (
                   <div className="slide__overlayImage absolute top-0 left-0">
                     <img
-                      src={slide}
+                      src={slide.image}
                       alt="This is a carousel slide"
-                      key={index}
+                      key={slide.id}
                       className={
                         index === this.state.currentSlide
                           ? "block w-screen h-[16rem] md:h-[44rem] object-cover"
@@ -118,7 +117,7 @@ class Carousel extends Component {
             </div>
           </Swipe>
           <div className="slide__indication absolute w-full flex justify-center bottom-2 md:bottom-5 ">
-            {carouselImages.map((element, index) => {
+            {slides.map((element, index) => {
               return (
                 <div
                   className={

@@ -20,7 +20,8 @@ module.exports = {
 
       colors: {
         'yellow': '#FFDF12',
-        'black': '#1D1D1B'
+        'black': '#1D1D1B',
+        'grey': '#757575'
       },
       boxShadow: {
         'boxShadow': 'inset 0px -5px rgba(0,0,0,0.2)',

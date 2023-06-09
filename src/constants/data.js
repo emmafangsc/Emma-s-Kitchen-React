@@ -1,5 +1,23 @@
 import images from "./images";
-export const carouselImages = [images.transparent, images.promo1, images.promo2];
+// export const carouselImages = [images.transparent, images.promo1, images.promo2];
+export const slides = [
+    {
+        id: 1,
+        image: images.transparent,
+        caption:{
+            title: 'Heading',
+            subtitle: 'Subheading'
+    }
+    },
+    {
+        id: 2,
+        image: images.promo1
+    },
+    {
+        id: 3,
+        image: images.promo2
+    }
+]
 export const sections = [
     {
         title: 'Life Coaching',
