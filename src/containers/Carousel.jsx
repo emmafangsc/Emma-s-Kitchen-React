@@ -52,7 +52,7 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="slideContainer">
+      <div className="slideContainer group">
         <div className="slide flex flex-col overflow-hidden relative" 
           onMouseEnter={() => {
           this.setState({ paused: true });
@@ -63,10 +63,10 @@ class Carousel extends Component {
         >
           <div
             onClick={this.prevSlide}
-            className="absolute left-0 inset-y-1/2 cursor-pointer z-10 hidden md:flex items-center"
+            className="absolute left-8 inset-y-1/2 cursor-pointer z-10 hidden md:flex items-center"
           >
             <div className="arrow transform translate-x-1/2 rotate-90 cursor-pointer">
-              <span className="block w-12 lg:w-16 h-12 lg:h-16 border-b-[6px] border-r-[6px] border-black transform rotate-45 animate-fadeleft"></span>
+              <span className="opacity-0 group-hover:opacity-100 duration-1000 block w-12 lg:w-16 h-12 lg:h-16 border-b-[6px] border-r-[6px] border-black transform rotate-45 group-hover:animate-scale"></span>
               {/* <span class="block w-16 h-16 border-b-4 border-r-4 border-grey transform rotate-45 -m-2.5 delay-200  animate-fadeleft"></span> */}
               {/* <span class="block w-16 h-16 border-b-4 border-r-4 border-grey/30 transform rotate-45 -m-2.5 delay-400 animate-fadeleft"></span> */}
             </div>
@@ -147,13 +147,13 @@ class Carousel extends Component {
           {/* big arrow */}
           <div
             onClick={this.nextSlide}
-            className="absolute right-8 -translate-x-full inset-y-1/2 cursor-pointer z-10 hidden md:flex items-center"
+            className="absolute right-16 -translate-x-full inset-y-1/2 cursor-pointer z-10 hidden md:flex items-center"
           >
             
             <div className="arrow transform  rotate-90 cursor-pointer">
               {/* <span class="block w-16 h-16 border-t-[6px] border-l-[6px] rounded-md border-blagrey/30 transform rotate-45 scale-75 -m-5 "></span> */}
               {/* <span class="block w-16 h-16 border-t-[6px] border-l-[6px] rounded-md border-grey transform rotate-45 scale-90 -m-5 delay-200 animate-faderight"></span> */}
-              <span className="block w-12 lg:w-16 h-12 lg:h-16 border-t-[6px] border-l-[6px] border-black transform rotate-45 -m-5 delay-400 animate-faderight"></span>
+              <span className="opacity-0 group-hover:opacity-100 duration-1000 block w-12 lg:w-16 h-12 lg:h-16 border-t-[6px] border-l-[6px] border-black transform rotate-45 -m-5 group-hover:animate-scale"></span>
             </div>
           </div>
           {/* big arrow */}

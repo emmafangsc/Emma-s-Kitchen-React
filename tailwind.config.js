@@ -18,25 +18,25 @@ module.exports = {
               transform: 'rotate(45deg) translate(20px, 20px)'
           }
       },
-        faderight:{
+        scale:{
           '0%': {
-              opacity: '1',
-              transform: 'rotate(45deg) translate(20px, 20px)'
+              // opacity: '0',
+              transform: 'rotate(45deg) scale(0)'
           },
           '50%': {
-              opacity: '0.5',
+              // opacity: '0.5',
           },
 
           '100%': {
-              opacity: '0',
-              transform: 'rotate(45deg) translate(-20px, -20px)',
+              // opacity: '1',
+              transform: 'rotate(45deg) scale(1)',
           }
       }
       
       },
       animation: {
-        fadeleft: 'fadeleft 2s ease-in-out infinite',
-        faderight: 'faderight 2s ease-in-out infinite',
+        fadeleft: 'fadeleft 2s ease-in-out ',
+        scale: 'scale 1s ease-in-out',
       },
       fontFamily: {
         'Lato': ['Lato', 'sans-serif'],
