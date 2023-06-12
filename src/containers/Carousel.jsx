@@ -53,7 +53,7 @@ class Carousel extends Component {
   render() {
     return (
       <div className="slideContainer">
-        <div className="slide flex flex-col overflow-hidden relative" 
+        <div className="slide flex flex-col overflow-hidden relative border-[blue] border-[2px]" 
           onMouseEnter={() => {
           this.setState({ paused: true });
         }}
@@ -61,42 +61,22 @@ class Carousel extends Component {
           this.setState({ paused: false });
         }}
         >
-          {/* big arrow */}
           <div
             onClick={this.prevSlide}
-            className="absolute left-5 text-3xl inset-y-1/2 cursor-pointer z-10 hidden md:block"
+            className="absolute left-16  inset-y-1/2 cursor-pointer z-10 hidden md:flex border-[red] border-[1px] items-center"
           >
-            <img src={images.arrow} className="rotate-180 w-[60px] xl:w-auto"/>
+            <div class="arrow transform translate-x-1/2 rotate-90 cursor-pointer border-black border-[1px] ">
+              <span class="block w-16 h-16 border-b-4 border-r-4 border-black transform rotate-45 -m-2.5 animate-fade"></span>
+              <span class="block w-16 h-16 border-b-4 border-r-4 border-grey transform rotate-45 -m-2.5 delay-200  animate-fade"></span>
+              <span class="block w-16 h-16 border-b-4 border-r-4 border-grey/30 transform rotate-45 -m-2.5 delay-400 animate-fade"></span>
+            </div>
           </div>
-          {/* big arrow */}
           <AiOutlineLeft
             onClick={this.prevSlide}
             className="absolute left-0 text-3xl inset-y-1/2 cursor-pointer z-10 sm:hidden"
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
-          {/* <div className="flex slide__background w-full relative z-0 overflow-hidden">
-            <div className="flex profile w-full gap-[1rem] md:gap-[7rem] h-[16rem] md:h-[35rem] px-[2rem] sm:px-[4rem] md:px-[6rem] xl:px-[16rem] lg:mt-[4rem] justify-between">
-                  <div className="profile__image flex w-[25rem] items-center border-yellow border-[1px]">
-                      <img src={images.profile} />
-                  </div>
-                  <div className="profile__content border-[red] border-[1px] flex w-[45rem] flex-col md:justify-between items-center pt-[20px] md:py-[40px]">
-                      <div className="title">
-                          <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Nice to </h1>
-                          <h1 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">meet you!</h1>
-                      </div>
-                      <div className="union flex items-center w-[10rem] md:w-[22rem]">
-                          <img src={images.union}/>
-                      </div>
-                      <div className="paragraph">
-                          <p className="line-clamp-3 md:line-clamp-none font-[400] font-OrkneyLight text-[14px] leading-normal md:text-[18px] md:leading-[44px] text-center my-4 md:my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
-                      </div>
-                      <div className="button shadow-boxShadow font-OrkneyBold bg-yellow text-black hover:bg-[#383838] hover:text-yellow py-[5px] md:py-[10px] px-[15px] md:px-[40px] rounded-lg flex items-center justify-center font-[600] text-[18px] md:text-[24px] cursor-pointer">
-                          <button>Book a call</button>
-                      </div>
-                  </div>
-                  
-              </div>
-          </div> */}
+          
           <div className="slides flex w-full h-[16rem] md:h-[44rem] border-b-1 md:border-b-2 shadow-ShadowGrey">
             {slides.map((slide, index) => {
               return (
@@ -165,11 +145,21 @@ class Carousel extends Component {
             className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer sm:hidden"
           />
           {/* big arrow */}
-          <div
+          {/* <div
             onClick={this.nextSlide}
             className="absolute right-5 text-3xl inset-y-1/2 cursor-pointer z-10 hidden md:block w-[60px] xl:w-auto"
+          > */}
+          <div
+            onClick={this.nextSlide}
+            className="absolute right-32 inset-y-1/2 cursor-pointer z-10 hidden md:flex w-[60px] xl:w-auto items-center border-[red] border-[1px]"
           >
-            <img src={images.arrow} />
+            {/* absolute left-16  inset-y-1/2 cursor-pointer z-10 hidden md:flex border-[red] border-[1px] items-center */}
+            {/* <img src={images.arrow} /> */}
+            <div class="arrow transform translate-x-1/2  rotate-90 cursor-pointer border-black border-[1px]">
+              <span class="block w-16 h-16 border-t-4 border-l-4 border-blagrey/30 transform rotate-45 -m-2.5 animate-fade"></span>
+              <span class="block w-16 h-16 border-t-4 border-l-4 border-grey transform rotate-45 -m-2.5 delay-200  animate-fade"></span>
+              <span class="block w-16 h-16 border-t-4 border-l-4 border-black transform rotate-45 -m-2.5 delay-400 animate-fade"></span>
+            </div>
           </div>
           {/* big arrow */}
         </div>
