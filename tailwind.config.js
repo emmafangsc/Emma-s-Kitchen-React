@@ -4,6 +4,38 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeleft:{
+          '0%': {
+              opacity: '0',
+              transform: 'rotate(45deg) translate(-20px, -20px)'
+          },
+          '50%': {
+              opacity: '1'
+          },
+          '100%': {
+              opacity: '0',
+              transform: 'rotate(45deg) translate(20px, 20px)'
+          }
+      },
+        faderight:{
+          '0%': {
+              opacity: '0',
+              transform: 'rotate(45deg) translate(20px, 20px)'
+          },
+          '50%': {
+              opacity: '1'
+          },
+          '100%': {
+              opacity: '0',
+              transform: 'rotate(45deg) translate(-20px, -20px)'
+          }
+      }
+      },
+      animation: {
+        fadeleft: 'fadeleft 2s ease-in-out infinite',
+        faderight: 'faderight 2s ease-in-out infinite',
+      },
       fontFamily: {
         'Lato': ['Lato', 'sans-serif'],
         'Aroly': 'Aroly',

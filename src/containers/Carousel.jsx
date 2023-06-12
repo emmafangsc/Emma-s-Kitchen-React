@@ -63,12 +63,12 @@ class Carousel extends Component {
         >
           <div
             onClick={this.prevSlide}
-            className="absolute left-16  inset-y-1/2 cursor-pointer z-10 hidden md:flex border-[red] border-[1px] items-center"
+            className="absolute left-16  inset-y-1/2 cursor-pointer z-10 hidden md:flex items-center"
           >
-            <div class="arrow transform translate-x-1/2 rotate-90 cursor-pointer border-black border-[1px] ">
-              <span class="block w-16 h-16 border-b-4 border-r-4 border-black transform rotate-45 -m-2.5 animate-fade"></span>
-              <span class="block w-16 h-16 border-b-4 border-r-4 border-grey transform rotate-45 -m-2.5 delay-200  animate-fade"></span>
-              <span class="block w-16 h-16 border-b-4 border-r-4 border-grey/30 transform rotate-45 -m-2.5 delay-400 animate-fade"></span>
+            <div class="arrow transform translate-x-1/2 rotate-90 cursor-pointer">
+              <span class="block w-16 h-16 border-b-4 border-r-4 border-black transform rotate-45 -m-2.5 animate-fadeleft"></span>
+              <span class="block w-16 h-16 border-b-4 border-r-4 border-grey transform rotate-45 -m-2.5 delay-200  animate-fadeleft"></span>
+              <span class="block w-16 h-16 border-b-4 border-r-4 border-grey/30 transform rotate-45 -m-2.5 delay-400 animate-fadeleft"></span>
             </div>
           </div>
           <AiOutlineLeft
@@ -145,20 +145,15 @@ class Carousel extends Component {
             className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer sm:hidden"
           />
           {/* big arrow */}
-          {/* <div
-            onClick={this.nextSlide}
-            className="absolute right-5 text-3xl inset-y-1/2 cursor-pointer z-10 hidden md:block w-[60px] xl:w-auto"
-          > */}
           <div
             onClick={this.nextSlide}
-            className="absolute right-32 inset-y-1/2 cursor-pointer z-10 hidden md:flex w-[60px] xl:w-auto items-center border-[red] border-[1px]"
+            className="absolute right-32 inset-y-1/2 cursor-pointer z-10 hidden md:flex w-[60px] xl:w-auto items-center"
           >
-            {/* absolute left-16  inset-y-1/2 cursor-pointer z-10 hidden md:flex border-[red] border-[1px] items-center */}
-            {/* <img src={images.arrow} /> */}
-            <div class="arrow transform translate-x-1/2  rotate-90 cursor-pointer border-black border-[1px]">
-              <span class="block w-16 h-16 border-t-4 border-l-4 border-blagrey/30 transform rotate-45 -m-2.5 animate-fade"></span>
-              <span class="block w-16 h-16 border-t-4 border-l-4 border-grey transform rotate-45 -m-2.5 delay-200  animate-fade"></span>
-              <span class="block w-16 h-16 border-t-4 border-l-4 border-black transform rotate-45 -m-2.5 delay-400 animate-fade"></span>
+            
+            <div class="arrow transform translate-x-1/2  rotate-90 cursor-pointer">
+              <span class="block w-16 h-16 border-t-4 border-l-4 border-blagrey/30 transform rotate-45 -m-2.5 animate-faderight"></span>
+              <span class="block w-16 h-16 border-t-4 border-l-4 border-grey transform rotate-45 -m-2.5 delay-200  animate-faderight"></span>
+              <span class="block w-16 h-16 border-t-4 border-l-4 border-black transform rotate-45 -m-2.5 delay-400 animate-faderight"></span>
             </div>
           </div>
           {/* big arrow */}
