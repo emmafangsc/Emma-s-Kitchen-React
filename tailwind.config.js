@@ -7,11 +7,11 @@ module.exports = {
       keyframes: {
         fadeleft:{
           '0%': {
-              opacity: '0',
+              opacity: '0.75',
               transform: 'rotate(45deg) translate(-20px, -20px)'
           },
           '50%': {
-              opacity: '1'
+              opacity: '0.5'
           },
           '100%': {
               opacity: '0',
@@ -20,15 +20,15 @@ module.exports = {
       },
         faderight:{
           '0%': {
-              opacity: '0',
+              opacity: '0.75',
               transform: 'rotate(45deg) translate(20px, 20px)'
           },
           '50%': {
-              opacity: '1'
+              opacity: '0.5',
           },
           '100%': {
               opacity: '0',
-              transform: 'rotate(45deg) translate(-20px, -20px)'
+              transform: 'rotate(45deg) translate(-20px, -20px)',
           }
       }
       },
