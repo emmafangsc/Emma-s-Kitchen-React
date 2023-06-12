@@ -46,7 +46,7 @@ const Nav = () => {
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
-                        <li className=" cursor-pointer px-[1rem] py-[2rem] font-black custom-link"><a>Home</a></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] font-black custom-link1"><a>Home</a></li>
                         <div className="subMenu group relative" >
                             <li className=" cursor-pointer px-[1rem] custom-link py-[2rem]"><a>Company <span className="triangle"></span></a></li>
                             <div className="courseMenu__content group-hover:block hidden absolute z-2 w-[11rem] bg-[black] justify-start p-[1rem] rounded-[3px]">
