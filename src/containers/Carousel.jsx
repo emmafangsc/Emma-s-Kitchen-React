@@ -53,7 +53,7 @@ class Carousel extends Component {
   render() {
     return (
       <div className="slideContainer">
-        <div className="slide flex flex-col overflow-hidden relative border-[blue] border-[2px]" 
+        <div className="slide flex flex-col overflow-hidden relative" 
           onMouseEnter={() => {
           this.setState({ paused: true });
         }}

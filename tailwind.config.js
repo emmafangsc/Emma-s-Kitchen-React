@@ -7,7 +7,7 @@ module.exports = {
       keyframes: {
         fadeleft:{
           '0%': {
-              opacity: '0.75',
+              opacity: '1',
               transform: 'rotate(45deg) translate(-20px, -20px)'
           },
           '50%': {
@@ -20,17 +20,19 @@ module.exports = {
       },
         faderight:{
           '0%': {
-              opacity: '0.75',
+              opacity: '1',
               transform: 'rotate(45deg) translate(20px, 20px)'
           },
           '50%': {
               opacity: '0.5',
           },
+
           '100%': {
               opacity: '0',
               transform: 'rotate(45deg) translate(-20px, -20px)',
           }
       }
+      
       },
       animation: {
         fadeleft: 'fadeleft 2s ease-in-out infinite',
