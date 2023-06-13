@@ -36,7 +36,7 @@ module.exports = {
       },
       animation: {
         fadeleft: 'fadeleft 2s ease-in-out ',
-        scale: 'scale 1s ease-in-out',
+        scale: 'scale 0.5s ease-in-out',
       },
       fontFamily: {
         'Lato': ['Lato', 'sans-serif'],
