@@ -19,6 +19,7 @@ import executivecoaching from '../images/executivecoaching.png';
 import footer from '../images/footer.png';
 import lifecoaching from '../images/lifecoaching.png';
 import testimonials from '../images/testimonials.png';
+import signIn from '../images/signIn.png';
 const images = {
     Logo,
     newLogo,
@@ -40,7 +41,8 @@ const images = {
     executivecoaching,
     footer,
     lifecoaching,
-    testimonials
+    testimonials,
+    signIn
 };
 
 export default images;

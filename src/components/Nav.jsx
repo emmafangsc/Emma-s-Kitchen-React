@@ -40,7 +40,7 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <nav className='nav flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
+            <nav className='nav hidden  sm:flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
                 <div className="logo flex items-center w-[9rem] md:w-[18rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
@@ -93,11 +93,42 @@ const Nav = () => {
                         )}
                     </div>
                     <div className="hamburgerButton flex flex-col lg:hidden self-center pl-[1rem]" ref={buttonRef} onClick={()=>{toggleButton(); showHamburgerMenu(); closeLanguageMenu(); closeSubmenu()}} >
-                        <span  className="bg-black h-[3px] w-[25px]  mb-[5px] relative ease-in-out duration-300"></span>
                         <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
-                        <span  className="bg-black h-[3px] w-[25px]   relative ease-in-out duration-300"></span>
+                        <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
+                        <span  className="bg-black h-[3px] w-[25px] relative ease-in-out duration-300"></span>
                     </div>
                 </div>
+            </nav>
+            <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
+                <div className="flex items-center font-OrkneyRegular">
+                    <div className="hamburgerButton flex flex-col self-center" ref={buttonRef} onClick={()=>{toggleButton(); showHamburgerMenu(); closeLanguageMenu(); closeSubmenu()}} >
+                        <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
+                        <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
+                        <span  className="bg-black h-[3px] w-[25px] relative ease-in-out duration-300"></span>
+                    </div>
+                    <div className="login flex px-[1rem]">
+                        <img src={images.signIn} alt="signIn" className="w-[30px]"/>
+                    </div>
+                </div>
+                <div className="logo flex items-center w-[12rem] cursor-pointer">
+                    <img src={images.newLogo} className='logo' alt="logo"/> 
+                </div>
+                <div className="flex flex-col justify-center relative" onClick={showLanguageMenu}>
+                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded">
+                            EN
+                            <FaCaretDown />
+                        </div>
+                        {languageMenu && (
+                            <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg" >
+                                <ul className="text-[12px] text-yellow">
+                                    <li className="pb-2 cursor-pointer hover:text-white"><a>ENGLISH</a></li>
+                                    <li className="pb-2 cursor-pointer hover:text-white"><a>SPANISH</a></li>
+                                    <li className="pb-2 cursor-pointer hover:text-white"><a>CATALAN</a></li>
+                                    <li className="cursor-pointer hover:text-white"><a>VIETNAMESE</a></li>
+                                </ul>
+                            </div>
+                        )}
+                    </div>
             </nav>
             
             <div className={`overlayMenu bg-black font-OrkneyRegular flex lg:hidden h-screen w-full px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
