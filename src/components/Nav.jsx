@@ -101,12 +101,12 @@ const Nav = () => {
             </nav>
             <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
                 <div className="flex items-center font-OrkneyRegular">
-                    <div className="hamburgerButton flex flex-col self-center" ref={buttonRef} onClick={()=>{toggleButton(); showHamburgerMenu(); closeLanguageMenu(); closeSubmenu()}} >
+                    <div className="hamburgerButton flex flex-col self-center cursor-pointer" ref={buttonRef} onClick={()=>{toggleButton(); showHamburgerMenu(); closeLanguageMenu(); closeSubmenu()}} >
                         <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
                         <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
                         <span  className="bg-black h-[3px] w-[25px] relative ease-in-out duration-300"></span>
                     </div>
-                    <div className="login flex px-[1rem]">
+                    <div className="login flex px-[1rem] cursor-pointer">
                         <img src={images.signIn} alt="signIn" className="w-[30px]"/>
                     </div>
                 </div>

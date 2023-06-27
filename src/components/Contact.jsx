@@ -19,10 +19,12 @@ const Contact = () => {
                         <img src={images.facebook} className='hover:opacity-50 cursor-pointer w-[25px] self-center'/> 
                     </div>
             </div>
-            <div className="contact-mobile px-[1rem] flex sm:hidden justify-between font-OrkneyRegular text-[#111111] h-[3rem] border-[blue] border-[1px]">
-                    <div className="contact__phone flex gap-6 items-center justify-center hover:opacity-50 cursor-pointer">
+            <div className="contact-mobile px-[1rem] flex sm:hidden justify-between font-OrkneyRegular text-[#111111] h-[4rem]">
+                    <div className="contact__phone flex gap-6 items-center justify-center">
                         <img  src={images.whatsapp} className='hover:opacity-50 cursor-pointer w-[25px]'/>
-                        <FaEnvelope className="text-[25px]"/>
+                        <div className="bg-white w-[25px] h-[18px] relative">
+                            <FaEnvelope className="icon text-[25px] cursor-pointer hover:opacity-50 absolute -bottom-[3px]" />
+                        </div>
                     </div>
                     
                     <div className="contact__social  flex justify-center md:pb-0 items-center gap-6 order-first md:order-last">  

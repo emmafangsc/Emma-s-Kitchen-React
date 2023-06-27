@@ -20,6 +20,7 @@ import footer from '../images/footer.png';
 import lifecoaching from '../images/lifecoaching.png';
 import testimonials from '../images/testimonials.png';
 import signIn from '../images/signIn.png';
+import Email from '../images/Email.png';
 const images = {
     Logo,
     newLogo,
@@ -42,7 +43,8 @@ const images = {
     footer,
     lifecoaching,
     testimonials,
-    signIn
+    signIn,
+    Email
 };
 
 export default images;
