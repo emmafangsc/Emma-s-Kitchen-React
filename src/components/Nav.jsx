@@ -13,7 +13,7 @@ const Nav = () => {
     function showHamburgerMenu(){
         setHamburgerMenu(!hamburgerMenu);
     }
-
+    
     function closeLanguageMenu(){
         setLanguageMenu(false);
     }
@@ -110,7 +110,7 @@ const Nav = () => {
                         <img src={images.signIn} alt="signIn" className="w-[30px]"/>
                     </div>
                 </div>
-                <div className="logo flex items-center w-[12rem] cursor-pointer">
+                <div className="logo flex items-center w-[10rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
                 <div className="flex flex-col justify-center relative" onClick={showLanguageMenu}>
@@ -119,7 +119,7 @@ const Nav = () => {
                             <FaCaretDown />
                         </div>
                         {languageMenu && (
-                            <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg" >
+                            <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[3rem] right-0 rounded-[10px]" >
                                 <ul className="text-[12px] text-yellow">
                                     <li className="pb-2 cursor-pointer hover:text-white"><a>ENGLISH</a></li>
                                     <li className="pb-2 cursor-pointer hover:text-white"><a>SPANISH</a></li>

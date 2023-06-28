@@ -175,15 +175,15 @@ class Carousel extends Component {
         </div>
         <div className="profile__content-mobile flex items-center sm:hidden flex-col h-[16rem] mt-[1rem] border-b-1 shadow-ShadowGrey">
             <div className="title">
-              <h1 className="font-OrkneyBold text-[24px] text-center">Nice to meet you!</h1>
+              <h1 className="font-OrkneyBold text-[22px] text-center">Nice to meet you!</h1>
             </div>
-            <div className="union flex items-center w-[22rem] py-[1rem]">
+            <div className="union flex items-center w-[20rem] py-2">
                 <img src={images.union}/>
             </div>
-            <div className="paragraph w-[22rem]">
+            <div className="paragraph w-[20rem]">
                 <p className="line-clamp-3 font-[400] font-OrkneyLight text-[14px] leading-normal text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt eaque placeat numquam, nihil dignissimos laboriosam cupiditate earum, aperiam quo quasi corporis pariatur iusto aliquam iste totam libero architecto velit!</p>
             </div>
-            <div className="button w-[10rem] mt-[1rem] shadow-boxShadow font-OrkneyBold bg-yellow text-black hover:bg-grey hover:text-white py-[5px] px-[15px] rounded-lg flex items-center justify-center font-[600] text-[18px] cursor-pointer">
+            <div className="button mt-2 shadow-boxShadow font-OrkneyBold bg-yellow text-black hover:bg-grey hover:text-white py-[5px] px-[20px] rounded-lg flex items-center justify-center font-[600] text-[18px] cursor-pointer">
                 <button>Book a call</button>
             </div>
           </div>
