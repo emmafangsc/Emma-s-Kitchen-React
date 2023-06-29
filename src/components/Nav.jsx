@@ -2,21 +2,27 @@ import {FaUserCircle, FaCaretDown, FaAngleRight, FaEnvelope, FaFacebook} from "r
 import images from "../constants/images";
 import { useState } from "react";
 import React, {useRef, useEffect} from "react";
+import { Prev } from "react-bootstrap/esm/PageItem";
 
 const Nav = () => {
-    const [languageMenu, setLanguageMenu] = useState(false);
+    const [languageMenuDesktop, setLanguageMenuDesktop] = useState(false);
+    const [languageMenuMobile, setLanguageMenuMobile] = useState(false);
     const ref = useRef();
     useEffect(() => {
         const handleClickOutside = (event) => {
           if (!ref?.current?.contains(event.target)) {
-            setLanguageMenu(false);
-          }
+            setLanguageMenuDesktop(false);
+            setLanguageMenuMobile(false);
+          } 
         };
-        document.addEventListener("mousedown", handleClickOutside);
+        document.addEventListener("mouseup", handleClickOutside);
       }, [ref]);
 
-    function showLanguageMenu(){
-        setLanguageMenu(!languageMenu);
+    function showLanguageMenuDesktop(){
+        setLanguageMenuDesktop(!languageMenuDesktop);
+    }
+    function showLanguageMenuMobile(){
+        setLanguageMenuMobile(!languageMenuMobile);
     }
 
     const [hamburgerMenu, setHamburgerMenu] = useState(false);
@@ -82,12 +88,13 @@ const Nav = () => {
                     <div className="login flex  px-[1rem]">
                             <div className="signUpButton bg-black text-yellow hover:bg-yellow hover:text-black py-1 px-2 text-[14px] flex justify-center shadow-md rounded cursor-pointer">Sign Up</div>
                     </div>
-                    <div ref={ref} className="flex flex-col justify-center relative" onClick={showLanguageMenu}>
+                    {/* <div ref={ref} className="flex flex-col justify-center relative" onClick={()=>setLanguageMenuDesktop(true)}> */}
+                    <div ref={ref} className="flex flex-col justify-center relative" onClick={showLanguageMenuDesktop}>
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded">
                             EN
                             <FaCaretDown />
                         </div>
-                        {languageMenu && (
+                        {languageMenuDesktop && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg" >
                                 <ul className="text-[12px] text-yellow">
                                     <li className="pb-2 cursor-pointer hover:text-white"><a>ENGLISH</a></li>
@@ -105,7 +112,7 @@ const Nav = () => {
                     </div>
                 </div>
             </nav>
-            <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
+            <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] py-[1rem] relative'>
                 <div className="flex items-center font-OrkneyRegular">
                     <div className="hamburgerButton flex flex-col self-center cursor-pointer" ref={buttonRef} onClick={()=>{toggleButton(); showHamburgerMenu(); closeSubmenu()}} >
                         <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
@@ -119,12 +126,12 @@ const Nav = () => {
                 <div className="logo flex items-center w-[10rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
-                <div ref={ref} className="flex flex-col justify-center relative" onClick={showLanguageMenu}>
+                <div ref={ref} className="flex flex-col justify-center relative" onClick={showLanguageMenuMobile}>
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded">
                             EN
                             <FaCaretDown />
                         </div>
-                        {languageMenu && (
+                        {languageMenuMobile && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[3rem] right-0 rounded-[10px]" >
                                 <ul className="text-[12px] text-yellow">
                                     <li className="pb-2 cursor-pointer hover:text-white"><a>ENGLISH</a></li>
