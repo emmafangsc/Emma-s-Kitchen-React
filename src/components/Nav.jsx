@@ -7,16 +7,17 @@ import { Prev } from "react-bootstrap/esm/PageItem";
 const Nav = () => {
     const [languageMenuDesktop, setLanguageMenuDesktop] = useState(false);
     const [languageMenuMobile, setLanguageMenuMobile] = useState(false);
-    const ref = useRef();
+    const refDesktop = useRef();
+    const refMobile = useRef();
     useEffect(() => {
-        const handleClickOutside = (event) => {
+        const handleClickOutside = (event, ref, menu) => {
           if (!ref?.current?.contains(event.target)) {
-            setLanguageMenuDesktop(false);
-            setLanguageMenuMobile(false);
+            menu(false);
           } 
         };
-        document.addEventListener("mouseup", handleClickOutside);
-      }, [ref]);
+        document.addEventListener("mouseup", (event) => handleClickOutside(event, refDesktop, setLanguageMenuDesktop));
+        document.addEventListener("mouseup", (event) => handleClickOutside(event, refMobile, setLanguageMenuMobile));
+      }, [refDesktop, refMobile]);
 
     function showLanguageMenuDesktop(){
         setLanguageMenuDesktop(!languageMenuDesktop);
@@ -52,7 +53,7 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <nav className='nav hidden  sm:flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
+            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
                 <div className="logo flex items-center w-[9rem] md:w-[18rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
@@ -88,8 +89,7 @@ const Nav = () => {
                     <div className="login flex  px-[1rem]">
                             <div className="signUpButton bg-black text-yellow hover:bg-yellow hover:text-black py-1 px-2 text-[14px] flex justify-center shadow-md rounded cursor-pointer">Sign Up</div>
                     </div>
-                    {/* <div ref={ref} className="flex flex-col justify-center relative" onClick={()=>setLanguageMenuDesktop(true)}> */}
-                    <div ref={ref} className="flex flex-col justify-center relative" onClick={showLanguageMenuDesktop}>
+                    <div ref={refDesktop} className="flex flex-col justify-center relative" onClick={showLanguageMenuDesktop}>
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded">
                             EN
                             <FaCaretDown />
@@ -126,7 +126,7 @@ const Nav = () => {
                 <div className="logo flex items-center w-[10rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
-                <div ref={ref} className="flex flex-col justify-center relative" onClick={showLanguageMenuMobile}>
+                <div ref={refMobile} className="flex flex-col justify-center relative" onClick={showLanguageMenuMobile}>
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded">
                             EN
                             <FaCaretDown />
