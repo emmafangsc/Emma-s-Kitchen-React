@@ -11,10 +11,11 @@ import Footer from './containers/Footer';
 function App() {
   return (
     <div className="relative m-auto max-w-screen-2xl">
-      <div className='contactWrapper relative z-20 backdrop-blur-lg bg-yellow/60'>
+      {/* <div className='contactWrapper relative z-20 backdrop-blur-lg bg-yellow/60'>
+        
+      </div> */}
+      <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
         <Contact />
-      </div>
-      <div className='navWrapper sticky top-0 z-20 backdrop-blur-md mt-[-5px] md:mt-[-10px] bg-yellow/40'>
         <Nav />
       </div>
       <div className='carouselWrapper z-10 relative'>

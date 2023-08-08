@@ -53,7 +53,7 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative'>
+            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative mt-[-5px] md:mt-[-10px]'>
                 <div className="logo flex items-center w-[9rem] md:w-[18rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
