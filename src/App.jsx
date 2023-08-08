@@ -10,7 +10,7 @@ import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
 function App() {
   return (
-    <div className="relative m-auto max-w-screen-2xl">
+    <div className="relative m-auto max-w-screen-2xl bg-bgBody">
       {/* <div className='contactWrapper relative z-20 backdrop-blur-lg bg-yellow/60'>
         
       </div> */}
@@ -38,9 +38,9 @@ function App() {
       </div>
       
 
-      <div className='overlay w-full absolute top-0 z-0'>
+      {/* <div className='overlay w-full absolute top-0 z-0'>
         <img src={images.bg}/>
-      </div>
+      </div> */}
     </div>
   );
 }

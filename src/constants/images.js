@@ -1,6 +1,7 @@
 import Logo from '../images/logo_big.png';
 import newLogo from '../images/newLogo.png';
 import layer from '../images/layer.png';
+import promo0 from '../images/promo0.png';
 import promo1 from '../images/promo_image_1.png';
 import promo2 from '../images/promo_image_2.png';
 import facebook from '../images/facebook.png';
@@ -25,6 +26,7 @@ const images = {
     Logo,
     newLogo,
     layer,
+    promo0,
     promo1,
     promo2,
     facebook,
