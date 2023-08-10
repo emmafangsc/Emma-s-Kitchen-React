@@ -28,7 +28,7 @@ function App() {
         <div className='testimonialWrapper relative z-10 -mt-40 sm:-mt-0'>
           <Testimonial />
         </div>
-        <div className='newsletterWrapper relative z-10 '>
+        <div className='newsletterWrapper relative z-10'>
           <Newsletter />
         </div>
       </div>
