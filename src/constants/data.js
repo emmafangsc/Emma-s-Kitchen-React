@@ -3,8 +3,8 @@ import images from "./images";
 export const slides = [
     {
         id: 1,
-        image: images.transparent,
-        caption: 'true',
+        image: images.promo0,
+        caption: 'false',
     },
     {
         id: 2,

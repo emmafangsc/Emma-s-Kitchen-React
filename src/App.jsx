@@ -11,37 +11,34 @@ import Footer from './containers/Footer';
 function App() {
   return (
     <div className="relative m-auto max-w-screen-2xl">
-      {/* <div className='contactWrapper relative z-20 backdrop-blur-lg bg-yellow/60'>
-        
-      </div> */}
-      <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
-        <Contact />
-        <Nav />
-      </div>
-      <div className='carouselWrapper z-10 relative'>
-        <Carousel />
-      </div>      
-      <div className='sectionWrapper relative z-10 mt-12'>
-        <HomeSection />
-      </div>
-      <div className='certificationWrapper relative z-10'>
-        <Certification />
-      </div>
-      <div className='testimonialWrapper relative z-10'>
-        <Testimonial />
-      </div>
-      <div className='newsletterWrapper relative z-10 '>
-        <Newsletter />
+      <div className='bg-bgBody bg-no-repeat'>
+        <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
+          <Contact />
+          <Nav />
+        </div>
+        <div className='carouselWrapper z-10 relative'>
+          <Carousel />
+        </div>      
+        <div className='sectionWrapper relative z-10 mt-12'>
+          <HomeSection />
+        </div>
+        <div className='certificationWrapper relative z-10'>
+          <Certification />
+        </div>
+        <div className='testimonialWrapper relative z-10'>
+          <Testimonial />
+        </div>
+        <div className='newsletterWrapper relative z-10 '>
+          <Newsletter />
+        </div>
       </div>
       <div className='footerWrapper relative z-10'>
         <Footer />
       </div>
-      
 
-      <div className='overlay w-full absolute top-0 z-0'>
-        <img src={images.bg}/>
-      </div>
     </div>
+
+    
   );
 }
 export default App;
