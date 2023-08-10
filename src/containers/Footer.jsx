@@ -36,6 +36,9 @@ const Footer = () => {
                         <li className="cursor-pointer"><a>Cookies</a></li>
                     </ul>
                 </div>
+                <div className="scrollUp flex sm:hidden self-end mt-4 mb-16 cursor-pointer">
+                    <a href="#nav"><img src={images.scrollUp}/></a>
+                </div>
             </div>
 
         </div>

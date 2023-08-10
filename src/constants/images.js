@@ -22,6 +22,7 @@ import lifecoaching from '../images/lifecoaching.png';
 import testimonials from '../images/testimonials.png';
 import signIn from '../images/signIn.png';
 import Email from '../images/Email.png';
+import scrollUp from '../images/scrollUp.png';
 const images = {
     Logo,
     newLogo,
@@ -46,7 +47,8 @@ const images = {
     lifecoaching,
     testimonials,
     signIn,
-    Email
+    Email,
+    scrollUp
 };
 
 export default images;

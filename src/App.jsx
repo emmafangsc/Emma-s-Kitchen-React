@@ -10,8 +10,7 @@ import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
 function App() {
   return (
-    <div className="relative m-auto max-w-screen-2xl">
-      <div className='bg-bgBody bg-no-repeat'>
+    <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat" id='nav'>
         <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
           <Contact />
           <Nav />
@@ -31,7 +30,6 @@ function App() {
         <div className='newsletterWrapper relative z-10'>
           <Newsletter />
         </div>
-      </div>
       <div className='footerWrapper relative z-10'>
         <Footer />
       </div>
