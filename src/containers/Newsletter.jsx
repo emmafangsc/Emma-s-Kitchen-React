@@ -1,7 +1,7 @@
 import SubHeading from '../components/SubHeading';
 const Newsletter = () => {
      return(
-        <div className="wrapper lg:px-[12rem] p-24">
+        <div className="wrapper lg:px-[12rem] py-24">
             <form action="newsletter.php" method="post" >
                 <div className="newsletter-container px-8 lg:px-0">
                     <SubHeading title={"Newsletter"}/>

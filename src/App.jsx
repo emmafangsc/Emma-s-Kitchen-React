@@ -19,13 +19,13 @@ function App() {
         <div className='carouselWrapper z-10 relative'>
           <Carousel />
         </div>      
-        <div className='sectionWrapper relative z-10 mt-12'>
+        <div className='sectionWrapper relative z-10 mt-16'>
           <HomeSection />
         </div>
         <div className='certificationWrapper relative z-10'>
           <Certification />
         </div>
-        <div className='testimonialWrapper relative z-10'>
+        <div className='testimonialWrapper relative z-10 -mt-40 sm:-mt-0'>
           <Testimonial />
         </div>
         <div className='newsletterWrapper relative z-10 '>
