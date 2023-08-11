@@ -52,7 +52,7 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="slideContainer group">
+      <div className="slideContainer group mt-8 sm:mt-0 relative">
         <div className="slide flex flex-col overflow-hidden relative" 
           onMouseEnter={() => {
           this.setState({ paused: true });
@@ -75,7 +75,7 @@ class Carousel extends Component {
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
           
-          <div className="slides flex w-full h-[16rem] md:h-[44rem] md:border-b-2 sm:shadow-ShadowGrey">
+          <div className="slides flex w-full h-[22rem] md:h-[44rem] md:border-b-2 sm:shadow-ShadowGrey">
             {slides.map((slide, index) => {
               return (
                   <div className="slides absolute top-0 left-0">
@@ -85,7 +85,7 @@ class Carousel extends Component {
                       key={slide.id}
                       className={
                         `${index === this.state.currentSlide
-                          ? "block w-screen h-[16rem] md:h-[44rem] object-cover"
+                          ? "block w-screen h-[22rem] md:h-[44rem]"
                           : "hidden"}
                           relative`
                       }
@@ -121,23 +121,6 @@ class Carousel extends Component {
             </div>
           </Swipe>
           
-          <div className="slide__indication absolute w-full flex justify-center bottom-2 md:bottom-5 ">
-            {slides.map((element, index) => {
-              return (
-                <div
-                  className={
-                    index === this.state.currentSlide
-                      ? "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-black rounded-[8px] mx-2 mb-2 cursor-pointer"
-                      : "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-[#000000] opacity-50 rounded-[8px] mx-2 mb-2 cursor-pointer"
-                  }
-                  key={index}
-                  onClick={() => {
-                    this.setCurrentSlide(index);
-                  }}
-                ></div>
-              );
-            })}
-          </div>
           <AiOutlineRight
             onClick={this.nextSlide}
             className="absolute right-0 text-3xl inset-y-1/2 cursor-pointer sm:hidden"
@@ -154,6 +137,23 @@ class Carousel extends Component {
           </div>
           {/* big arrow */}
         </div>
+        <div className="slide__indication absolute w-full flex justify-center -bottom-16 md:bottom-5">
+            {slides.map((element, index) => {
+              return (
+                <div
+                  className={
+                    index === this.state.currentSlide
+                      ? "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-black rounded-[8px] mx-2 mb-2 cursor-pointer"
+                      : "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-[#000000] opacity-50 rounded-[8px] mx-2 mb-2 cursor-pointer"
+                  }
+                  key={index}
+                  onClick={() => {
+                    this.setCurrentSlide(index);
+                  }}
+                ></div>
+              );
+            })}
+          </div>
         {/* <div className="profile__content-mobile flex items-center sm:hidden flex-col h-[16rem] mt-[1rem] border-b-1 shadow-ShadowGrey">
             <div className="title">
               <h1 className="font-OrkneyBold text-[22px] text-center">Nice to meet you!</h1>
