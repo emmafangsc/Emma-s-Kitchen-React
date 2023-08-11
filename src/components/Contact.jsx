@@ -1,7 +1,28 @@
 import {FaEnvelope} from "react-icons/fa";
 import images from "../constants/images";
+import { useState, useRef, useEffect } from "react";
 
 const Contact = () => {
+    const [whatsappNumber, setWhatsappNumber] = useState(false);
+    const whatsappRef = useRef();
+    const [emailNumber, setEmailNumber] = useState(false);
+    const emailRef = useRef();
+
+    useEffect(() => {
+        const handleClickOutside = (event, ref, whatsappNumber) => {
+          if (!ref?.current?.contains(event.target)) {
+            whatsappNumber(false);
+          } 
+        };
+        document.addEventListener("mouseup", (event) => handleClickOutside(event, whatsappRef, setWhatsappNumber));
+        document.addEventListener("mouseup", (event) => handleClickOutside(event, emailRef, setEmailNumber));
+      }, [whatsappRef, emailRef]);
+    function toggleWhatsappNumber(){
+        setWhatsappNumber(!whatsappNumber);
+    }
+    function toggleEmailNumber(){
+        setEmailNumber(!emailNumber);
+    }
     return (
         <div>
             <div className="contact hidden sm:flex flex-row justify-between font-OrkneyRegular text-[#111111] h-[6rem] lg:h-[3rem] md:px-[2rem] lg:px-[6rem] xl:px-[12rem]">
@@ -21,9 +42,20 @@ const Contact = () => {
             </div>
             <div className="contact-mobile px-[1rem] flex sm:hidden justify-between font-OrkneyRegular text-[#111111] h-[4rem]">
                     <div className="contact__phone flex gap-6 items-center justify-center">
-                        <img  src={images.whatsapp} className='hover:opacity-50 cursor-pointer w-[25px]'/>
-                        <div className="bg-white w-[25px] h-[18px] relative">
-                            <FaEnvelope className="icon text-[25px] cursor-pointer hover:opacity-50 absolute -bottom-[3px]" />
+                        <div ref={whatsappRef} className="flex gap-1"> 
+                            <div onClick={toggleWhatsappNumber} ><img src={images.whatsapp} className='hover:opacity-50 cursor-pointer w-[25px]'/></div>
+                            {whatsappNumber && (
+                            <div className="whatsappNumber">93888155</div>
+                            )}
+                        </div>
+                        <div ref={emailRef} className="flex gap-1">
+                            <div onClick={toggleEmailNumber} className="bg-white w-[25px] h-[18px] relative self-center">
+                                <FaEnvelope className="icon text-[25px] cursor-pointer hover:opacity-50 absolute -bottom-[3px]" />
+                            </div>
+                            {/* <div onClick={toggleEmailNumber} ><img src={images.Email} className='hover:opacity-50 cursor-pointer w-[30px]'/></div> */}
+                            {emailNumber && (
+                            <div className="emailNumber">xavierfiguerassp@gmail.com</div>
+                            )}
                         </div>
                     </div>
                     
