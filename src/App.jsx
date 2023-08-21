@@ -8,6 +8,7 @@ import Certification from './containers/Certification';
 import Testimonial from './containers/Testimonial';
 import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
+import Blog from './containers/Blog';
 function App() {
   return (
     <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat" id='nav'>
@@ -33,7 +34,9 @@ function App() {
       <div className='footerWrapper relative z-10'>
         <Footer />
       </div>
-
+      <div className='h-screen bg-[yellow]'>
+        <Blog />
+      </div>
     </div>
 
     
