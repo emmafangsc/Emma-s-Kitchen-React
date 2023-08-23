@@ -21,14 +21,13 @@ function Blog() {
   return (
     <div>
       <h1>Blog</h1>
-      <h2>{posts}</h2>
       <ul>
-        {/* {posts.map((post, key) => (
+        {posts.map((post, key) => (
           <li key={key}>
-            <h2>{post.title}</h2>
-            <p>{post.content}</p>
+            <h2 className='text-[green] bg-[grey]'>{post.title}</h2>
+            <p className='text-[blue]'>{post.content}</p>
           </li>
-        ))} */}
+        ))}
 
       </ul>
     </div>

@@ -20,15 +20,11 @@ if (!$conn) {
 $sql = "SELECT * FROM posts";
 $result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-        echo "Column 1: " . $row["id"] . "<br>";
-        echo "Column 2: " . $row["title"] . "<br>";
-        echo "Column 3: " . $row["content"] . "<br><br>";
-    }
-} else {
-    echo "0 results";
+while ($row = mysqli_fetch_assoc($result)) {
+  $items[] = $row;
 }
+
+echo json_encode($items);
 // Close connection
 mysqli_close($conn);
 ?>
