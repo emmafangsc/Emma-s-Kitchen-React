@@ -52,7 +52,7 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="slideContainer group mt-8 sm:mt-0 relative md:border-b-4 sm:shadow-ShadowGrey">
+      <div className="slideContainer group relative md:border-b-4 sm:shadow-ShadowGrey">
         <div className="slide flex flex-col overflow-hidden relative" 
           onMouseEnter={() => {
           this.setState({ paused: true });
@@ -87,7 +87,7 @@ class Carousel extends Component {
                         `${index === this.state.currentSlide
                           ? "block w-screen h-[22rem] md:h-[44rem]"
                           : "hidden"}
-                          relative`
+                          relative object-cover`
                       }
                     />
                     {/* {slide.caption==='true' && (
@@ -137,7 +137,7 @@ class Carousel extends Component {
           </div>
           {/* big arrow */}
         </div>
-        <div className="slide__indication absolute w-full flex justify-center -bottom-16 md:bottom-5">
+        <div className="slide__indication absolute w-full flex justify-center -bottom-10 md:bottom-5">
             {slides.map((element, index) => {
               return (
                 <div

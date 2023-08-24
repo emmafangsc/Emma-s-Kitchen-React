@@ -40,8 +40,8 @@ const Contact = () => {
                         <img src={images.facebook} className='hover:opacity-50 cursor-pointer w-[25px] self-center'/> 
                     </div>
             </div>
-            <div className="contact-mobile px-[1rem] flex sm:hidden justify-between font-OrkneyRegular text-[#111111] h-[4rem]">
-                    <div className="contact__phone flex gap-6 items-center justify-center">
+            <div className="contact-mobile px-[1rem] flex sm:hidden justify-between items-end font-OrkneyRegular text-[#111111] h-[2.5rem]">
+                    <div className="contact__phone flex gap-3 items-center justify-center">
                         <div ref={whatsappRef} className="flex gap-1"> 
                             <div onClick={toggleWhatsappNumber} ><img src={images.whatsapp} className='hover:opacity-50 cursor-pointer w-[25px]'/></div>
                             {whatsappNumber && (
@@ -59,7 +59,7 @@ const Contact = () => {
                         </div>
                     </div>
                     
-                    <div className="contact__social  flex justify-center md:pb-0 items-center gap-6 order-first md:order-last">  
+                    <div className="contact__social flex justify-center md:pb-0 items-center gap-3 order-first md:order-last">  
                         <img src={images.instagram} className='hover:opacity-50 cursor-pointer w-[25px]'/>          
                         <img src={images.linkedin} className='hover:opacity-50 cursor-pointer w-[25px]'/> 
                         <img src={images.facebook} className='hover:opacity-50 cursor-pointer w-[25px] self-center'/> 

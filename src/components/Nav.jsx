@@ -112,7 +112,7 @@ const Nav = () => {
                     </div>
                 </div>
             </nav>
-            <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] py-[1rem] relative'>
+            <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] py-[0.5rem] relative'>
                 <div className="flex items-center font-OrkneyRegular">
                     <div className="hamburgerButton flex flex-col self-center cursor-pointer" ref={buttonRef} onClick={()=>{toggleButton(); showHamburgerMenu(); closeSubmenu()}} >
                         <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>

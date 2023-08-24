@@ -34,9 +34,6 @@ function App() {
       <div className='footerWrapper relative z-10'>
         <Footer />
       </div>
-      <div className='h-screen bg-[yellow]'>
-        <Blog />
-      </div>
     </div>
 
     
