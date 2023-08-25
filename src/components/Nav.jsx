@@ -89,8 +89,8 @@ const Nav = () => {
                     <div className="login flex  px-[1rem]">
                             <div className="signUpButton bg-black text-yellow hover:bg-yellow hover:text-black py-1 px-2 text-[14px] flex justify-center shadow-md rounded cursor-pointer">Sign Up</div>
                     </div>
-                    <div ref={refDesktop} className="flex flex-col justify-center relative" onClick={showLanguageMenuDesktop}>
-                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded">
+                    <div ref={refDesktop} className="flex flex-col justify-center relative">
+                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuDesktop}>
                             EN
                             <FaCaretDown />
                         </div>
@@ -126,8 +126,8 @@ const Nav = () => {
                 <div className="logo flex items-center w-[10rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>
-                <div ref={refMobile} className="flex flex-col justify-center relative" onClick={showLanguageMenuMobile}>
-                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded">
+                <div ref={refMobile} className="flex flex-col justify-center relative border-[red] border-[1px]" >
+                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuMobile}>
                             EN
                             <FaCaretDown />
                         </div>
