@@ -11,7 +11,7 @@ import Footer from './containers/Footer';
 import Blog from './containers/Blog';
 function App() {
   return (
-    <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat" id='nav'>
+    <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat h-screen" id='nav' >
         <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
           <Contact />
           <Nav />
@@ -33,6 +33,10 @@ function App() {
         </div>
       <div className='footerWrapper relative z-10'>
         <Footer />
+      </div>
+      
+      <div className="scrollUp flex sm:hidden self-end mt-4 mb-16 cursor-pointer fixed z-30 -bottom-12 right-0">
+          <a href="#nav"><img src={images.scrollUp}/></a>
       </div>
     </div>
 

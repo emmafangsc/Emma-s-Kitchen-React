@@ -137,7 +137,7 @@ class Carousel extends Component {
           </div>
           {/* big arrow */}
         </div>
-        <div className="slide__indication absolute w-full flex justify-center -bottom-10 md:bottom-5">
+        <div className="slide__indication absolute w-full flex justify-center bottom-3 md:bottom-5">
             {slides.map((element, index) => {
               return (
                 <div

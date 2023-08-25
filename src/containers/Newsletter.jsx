@@ -11,7 +11,7 @@ const Newsletter = () => {
                         <input type="text" placeholder="Last name" name="last-name" required className="shadow-md w-full sm:w-[12rem] bg-[#000000] opacity-30 pl-[1rem] py-[4px]" />
                         <input type="text" placeholder="Your email" name="email" required className="shadow-md w-full sm:w-[18rem] bg-[#000000] opacity-30 pl-[1rem] py-[4px]" />
                         {/* <div> */}
-                            <button type="submit" className="self-end shadow-md w-[12rem] bg-[#383838] hover:opacity-50 pl-[1rem] py-1 rounded-lg" >subscribe</button>
+                            <button type="submit" className="self-end shadow-md text-center w-[10rem] md:w-[12rem] bg-[#383838] hover:opacity-50 pl-[1rem] py-1 rounded-lg" >subscribe</button>
                         {/* </div> */}
                     </div>
                 </div>
