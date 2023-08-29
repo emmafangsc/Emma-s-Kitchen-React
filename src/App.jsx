@@ -1,4 +1,3 @@
-import images from './constants/images';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 // import Nav from './containers/test';
@@ -8,40 +7,37 @@ import Certification from './containers/Certification';
 import Testimonial from './containers/Testimonial';
 import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
+import BackToTopButton from './components/BackToTopButton';
 function App() {
+  
   return (
-    <div className="relative m-auto max-w-screen-2xl bg-bgBody">
-      {/* <div className='contactWrapper relative z-20 backdrop-blur-lg bg-yellow/60'>
-        
-      </div> */}
-      <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
-        <Contact />
-        <Nav />
-      </div>
-      <div className='carouselWrapper z-10 relative'>
-        <Carousel />
-      </div>      
-      <div className='sectionWrapper relative z-10 mt-12'>
-        <HomeSection />
-      </div>
-      <div className='certificationWrapper relative z-10'>
-        <Certification />
-      </div>
-      <div className='testimonialWrapper relative z-10'>
-        <Testimonial />
-      </div>
-      <div className='newsletterWrapper relative z-10 '>
-        <Newsletter />
-      </div>
+    <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat" id='nav' >
+        <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
+          <Contact />
+          <Nav />
+        </div>
+        <div className='carouselWrapper z-10 relative'>
+          <Carousel />
+        </div>      
+        <div className='sectionWrapper relative z-10 mt-16'>
+          <HomeSection />
+        </div>
+        <div className='certificationWrapper relative z-10'>
+          <Certification />
+        </div>
+        <div className='testimonialWrapper relative z-10 '>
+          <Testimonial />
+        </div>
+        <div className='newsletterWrapper relative z-10'>
+          <Newsletter />
+        </div>
       <div className='footerWrapper relative z-10'>
         <Footer />
       </div>
-      
-
-      {/* <div className='overlay w-full absolute top-0 z-0'>
-        <img src={images.bg}/>
-      </div> */}
+      <BackToTopButton/>
     </div>
+
+    
   );
 }
 export default App;

@@ -50,7 +50,7 @@ module.exports = {
       backgroundImage: {
         'navBackground': "url('/src/images/layer.png')",
         'footerBackground': "url('/src/images/footer.png')",
-        'bgBody':"url('/src/images/BG.png')"
+        'bgBody': "url('/src/images/BG.png')"
       },
 
       colors: {

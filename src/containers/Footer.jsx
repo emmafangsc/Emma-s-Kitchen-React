@@ -2,8 +2,8 @@ import images from "../constants/images";
 const Footer = () => {
     return(
         <div className="wrapper px-[2rem] lg:px-[12rem] bg-footerBackground bg-no-repeat bg-cover md:h-[570px] font-OrkneyRegular">
-            <div className="footer flex justify-between flex-col md:flex-row mt-24">
-                <div className="logo w-[8rem] h-[9rem]">
+            <div className="footer flex justify-between flex-col md:flex-row">
+                <div className="logo w-[8rem] self-center sm:self-start pb-12">
                     <img src={images.X}/>
                 </div>
                 <div className="menu leading-[3rem]">
@@ -36,6 +36,7 @@ const Footer = () => {
                         <li className="cursor-pointer"><a>Cookies</a></li>
                     </ul>
                 </div>
+                
             </div>
 
         </div>
