@@ -1,8 +1,7 @@
-import {FaUserCircle, FaCaretDown, FaAngleRight, FaEnvelope, FaFacebook} from "react-icons/fa";
+import {FaCaretDown, FaAngleRight} from "react-icons/fa";
 import images from "../constants/images";
 import { useState } from "react";
 import React, {useRef, useEffect} from "react";
-import { Prev } from "react-bootstrap/esm/PageItem";
 import { translations } from "../constants/languageData";
 
 const Nav = () => {
