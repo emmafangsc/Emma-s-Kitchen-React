@@ -1,8 +1,7 @@
-import {FaUserCircle, FaCaretDown, FaAngleRight, FaEnvelope, FaFacebook} from "react-icons/fa";
+import {FaCaretDown, FaAngleRight} from "react-icons/fa";
 import images from "../constants/images";
 import { useState } from "react";
 import React, {useRef, useEffect} from "react";
-import { Prev } from "react-bootstrap/esm/PageItem";
 import { translations } from "../constants/languageData";
 
 const Nav = () => {
@@ -55,7 +54,7 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:h-[6rem] md:px-[4rem] xl:px-[6rem] relative mt-[-5px] md:mt-[-10px]'>
+            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:pt-12 lg:pb-8 md:px-[4rem] xl:px-[6rem] relative mt-[-5px] md:mt-[-10px]'>
                 <div className="logo flex items-center w-[9rem] md:w-[18rem] cursor-pointer">
                     <img src={images.newLogo} className='logo' alt="logo"/> 
                 </div>

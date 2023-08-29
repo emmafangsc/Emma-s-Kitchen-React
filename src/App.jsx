@@ -1,4 +1,3 @@
-import images from './constants/images';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 // import Nav from './containers/test';
@@ -8,10 +7,11 @@ import Certification from './containers/Certification';
 import Testimonial from './containers/Testimonial';
 import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
-import Blog from './containers/Blog';
+import BackToTopButton from './components/BackToTopButton';
 function App() {
+  
   return (
-    <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat h-screen" id='nav' >
+    <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat" id='nav' >
         <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
           <Contact />
           <Nav />
@@ -25,7 +25,7 @@ function App() {
         <div className='certificationWrapper relative z-10'>
           <Certification />
         </div>
-        <div className='testimonialWrapper relative z-10 -mt-40 sm:-mt-0'>
+        <div className='testimonialWrapper relative z-10 '>
           <Testimonial />
         </div>
         <div className='newsletterWrapper relative z-10'>
@@ -34,10 +34,7 @@ function App() {
       <div className='footerWrapper relative z-10'>
         <Footer />
       </div>
-      
-      <div className="scrollUp flex sm:hidden self-end mt-4 mb-16 cursor-pointer fixed z-30 -bottom-12 right-0">
-          <a href="#nav"><img src={images.scrollUp}/></a>
-      </div>
+      <BackToTopButton/>
     </div>
 
     
