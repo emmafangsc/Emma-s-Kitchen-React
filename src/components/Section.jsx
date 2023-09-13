@@ -4,7 +4,7 @@ import styles from "../constants/style";
 const Section = ({title, content, image}) => {
     return (
 
-        <div className="wrapper px-[2rem] md:px-[4rem] lg:px-[12rem] pt-64 sm:p-32">
+        <div className="wrapper px-[2rem] md:px-[4rem] lg:px-[12rem] sm:p-32">
             <div className="section flex flex-col md:flex-row md:gap-[7rem] justify-center">
                 <div className="section__image flex md:w-[25rem] h-[18rem] md:h-auto md:items-start">
                     <img src={image} alt="section" className="rounded-xl min-w-full object-cover"/>

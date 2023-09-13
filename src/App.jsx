@@ -8,10 +8,12 @@ import Testimonial from './containers/Testimonial';
 import Newsletter from './containers/Newsletter';
 import Footer from './containers/Footer';
 import BackToTopButton from './components/BackToTopButton';
+import images from './constants/images';
 function App() {
   
   return (
-    <div className="relative m-auto max-w-screen-2xl bg-bgBody bg-no-repeat" id='nav' >
+    <div className="relative m-auto max-w-screen-2xl " id='nav' >
+      <div className='absolute top-0 left-0'><img src={images.bg}/></div>
         <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
           <Contact />
           <Nav />
