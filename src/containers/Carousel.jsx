@@ -2,7 +2,6 @@ import React, { Component } from "react";
 // import { slides } from "../constants/data";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
-import images from "../constants/images";
 import { slides } from "../constants/data";
 
 class Carousel extends Component {
@@ -75,19 +74,19 @@ class Carousel extends Component {
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
           
-          <div className="slides flex w-full h-[22rem] md:h-[44rem] md:border-b-2 sm:shadow-ShadowGrey">
+          <div className="slides flex w-full md:border-b-2 sm:shadow-ShadowGrey">
             {slides.map((slide, index) => {
               return (
-                  <div className="slides absolute top-0 left-0">
+                  <div className="slides">
                     <img
                       src={slide.image}
                       alt="This is a carousel slide"
                       key={slide.id}
                       className={
                         `${index === this.state.currentSlide
-                          ? "block w-screen h-[22rem] md:h-[44rem]"
+                          ? "block w-full h-[22rem] md:h-[auto]"
                           : "hidden"}
-                          relative object-cover`
+                          object-cover`
                       }
                     />
                     {/* {slide.caption==='true' && (

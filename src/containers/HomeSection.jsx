@@ -4,7 +4,7 @@ import Section from "../components/Section";
 const HomeSection = () => {
     return (
         <div>
-            <div className="pb-32 md:pb-0 ">
+            <div className="pb-32 md:pb-0">
                 <Section  title={sections.section1.title1} content={sections.section1.content1} image={sections.section1.image1} />
             </div>
             <div className="section2 pb-32 md:pb-0">

@@ -3,18 +3,18 @@ import images from "./images";
 export const slides = [
     {
         id: 1,
-        image: images.promo0,
-        caption: 'false',
+        image: images.promo1,
+        // caption: 'false',
     },
     {
         id: 2,
-        image: images.promo1,
-        caption: 'false'
+        image: images.promo2,
+        // caption: 'false'
     },
     {
         id: 3,
-        image: images.promo2,
-        caption: 'false'
+        image: images.promo3,
+        // caption: 'false'
     }
 ]
     const section1 = 
