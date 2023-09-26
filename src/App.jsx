@@ -13,14 +13,15 @@ function App() {
   
   return (
     <div className="relative m-auto max-w-screen-2xl " id='nav' >
-      <div className='absolute top-0 left-0'><img src={images.bg} alt="background"/></div>
-        <div className='navWrapper sticky top-0 z-20 backdrop-blur-md bg-yellow/25'>
+      {/* <div className='absolute top-0 left-0'><img src={images.bg} alt="background"/></div> */}
+        <div className='navWrapper sticky top-0 z-20 bg-yellow'>
           <Contact />
           <Nav />
         </div>
         <div className='carouselWrapper z-10 relative'>
           <Carousel />
-        </div>      
+        </div>
+        <div className='promoBG'><img src={images.Vector10} alt="background"/></div>      
         <div className='sectionWrapper relative z-10 mt-16'>
           <HomeSection />
         </div>

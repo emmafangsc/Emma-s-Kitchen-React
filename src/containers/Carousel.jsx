@@ -51,7 +51,7 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className="slideContainer group relative md:border-b-4 sm:shadow-ShadowGrey">
+      <div className="slideContainer group relative">
         <div className="slide flex flex-col overflow-hidden relative" 
           onMouseEnter={() => {
           this.setState({ paused: true });
@@ -77,17 +77,17 @@ class Carousel extends Component {
           <div className="slides flex w-full md:border-b-2 sm:shadow-ShadowGrey">
             {slides.map((slide, index) => {
               return (
-                  <div className="slides">
+                  <div className="slides" key={slide.id}>
                     <img
                       src={slide.image}
                       alt="This is a carousel slide"
-                      key={slide.id}
-                      className={
-                        `${index === this.state.currentSlide
-                          ? "block w-full h-[22rem] md:h-[auto]"
+                      // key={slide.id}
+                      className={`
+                        ${index === this.state.currentSlide
+                          ? "block w-screen h-[22rem] md:h-auto"
                           : "hidden"}
-                          object-cover`
-                      }
+                          object-cover
+                          `}
                     />
                     {/* {slide.caption==='true' && (
                     <div className="flex absolute top-0 left-0 w-full h-[16rem] md:h-[44rem]">

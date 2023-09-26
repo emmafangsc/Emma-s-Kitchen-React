@@ -26,6 +26,7 @@ import Email from '../images/Email.png';
 import scrollUp from '../images/scrollUp.png';
 import headerBG from '../images/headerBG.png';
 import footerBG from '../images/footerBG.png';
+import Vector10 from '../images/Vector10.png';
 const images = {
     Logo,
     newLogo,
@@ -54,7 +55,8 @@ const images = {
     Email,
     scrollUp,
     headerBG,
-    footerBG
+    footerBG,
+    Vector10
 };
 
 export default images;
