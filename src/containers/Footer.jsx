@@ -1,7 +1,7 @@
 import images from "../constants/images";
 const Footer = () => {
     return(
-        <div className="wrapper px-[2rem] lg:px-[12rem] bg-footerBackground bg-no-repeat bg-cover md:h-[570px] font-OrkneyRegular">
+        <div className="wrapper px-[2rem] lg:px-[12rem] bg-footerBackground bg-no-repeat bg-cover pb-[8rem] font-OrkneyRegular">
             <div className="footer flex justify-between flex-col md:flex-row">
                 <div className="logo w-[8rem] self-center sm:self-start pb-12">
                     <img src={images.X}/>
