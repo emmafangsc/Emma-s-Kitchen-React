@@ -28,11 +28,11 @@ const Contact = () => {
             <div className="contact hidden sm:flex flex-row justify-between font-OrkneyRegular text-[#111111] h-[6rem] lg:h-[3rem] md:px-[2rem] lg:px-[6rem] xl:px-[12rem]">
                     <div className="contact__phone flex flex-1 gap-2 items-center justify-center hover:opacity-50 cursor-pointer">
                         <img  src={images.whatsapp} alt="whatsup" className='hover:opacity-50 cursor-pointer w-[25px]'/>
-                        <p>+34 665487981</p>
+                        <p>+45 93888155</p>
                     </div>
                     <div className="contact__email flex-1 flex items-center justify-center gap-2 hover:opacity-50 cursor-pointer">
                         <FaEnvelope className="text-[20px]"/>
-                        <p className="text-[16px] tracking-wide">xavier.figueras.garcia@gmail.com</p>
+                        <p className="text-[16px] tracking-wide">portfolio@gmail.com</p>
                     </div>
                     <div className="contact__social flex-1 flex justify-center md:pb-0 items-center gap-8 order-first md:order-last">  
                         <img src={images.instagram} alt="instagram" className='hover:opacity-50 cursor-pointer w-[25px]'/>          

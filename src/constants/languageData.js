@@ -1,87 +1,51 @@
 const home = {
     english: "Home",
-    spanish: "Inicio",
-    vietnamese: "trang chủ",
-    catalan: "casa"
+    chinese: "首页"
 }
-const company = {
-    english: "company",
-    spanish: "compañía",
-    vietnamese: "công ty",
-    catalan: "empresa"
+const menu1 = {
+    english: "Section1",
+    chinese: "第一章"
 }
-const individuals = {
-    english: "individuals",
-    spanish: "individuos",
-    vietnamese: "cá nhân",
-    catalan: "individus"
+const menu2 = {
+    english: "Section2",
+    chinese: "第二章"
 }
-const courses = {
-    english: "Courses",
-    spanish: "Cursos",
-    vietnamese: "Khóa học",
-    catalan: "Cursos"
-}
+
 const aboutme = {
     english: "About me",
-    spanish: "Acerca de mí",
-    vietnamese: "Về tôi",
-    catalan: "Sobre mi"
+    chinese: "关于我"
 }
 const blog = {
     english: "Blog",
-    spanish: "Blog",
-    vietnamese: "Blog",
-    catalan: "Bloc"
+    chinese: "博客"
 }
 const signup = {
     english: "Sign Up",
-    spanish: "inscribirse",
-    vietnamese: "đăng ký",
-    catalan: "Registra't"
+    chinese: "注册"
 }
 const english = {
     english: "ENGLISH",
-    spanish: "INGLÉS",
-    vietnamese: "TIẾNG ANH",
-    catalan: "ANGLÈS't"
+    chinese: "英文"
 }
-const spanish = {
-    english: "SPANISH",
-    spanish: "ESPAÑOL",
-    vietnamese: "NGƯỜI TÂY BAN NHA",
-    catalan: "ESPANYOL"
+const chinese = {
+    english: "CHINESE",
+    chinese: "中文"
 }
-const vietnamese = {
-    english: "VIETNAMESE",
-    spanish: "VIETNAMITA",
-    vietnamese: "TIẾNG VIỆT",
-    catalan: "VIETNAM"
-}
-const catalan = {
-    english: "CATALAN",
-    spanish: "CATALÁN",
-    vietnamese: "CATALAN",
-    catalan: "CATALÀ"
-}
+
 const languagebutton = {
     english: "EN",
-    spanish: "ES",
-    vietnamese: "VN",
-    catalan: "CA"
+    chinese: "CN",
+   
 }
 export const translations = {
     home,
-    company,
-    individuals,
-    courses,
+    menu1,
+    menu2,
     aboutme,
     blog,
     signup,
     english,
-    spanish,
-    vietnamese,
-    catalan,
+    chinese,
     languagebutton
   };
   

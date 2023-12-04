@@ -25,9 +25,7 @@ function App() {
         <div className='sectionWrapper relative z-10 mt-16'>
           <HomeSection />
         </div>
-        <div className='certificationWrapper relative z-10'>
-          <Certification />
-        </div>
+        
         <div className='testimonialWrapper relative z-10 '>
           <Testimonial />
         </div>

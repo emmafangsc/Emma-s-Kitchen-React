@@ -24,7 +24,7 @@ const BackToTopButton = () => {
     return (
         <div>
             {backToTopButton && (
-            <div onClick={scrollUp} className="scrollUp flex sm:hidden self-end mt-4 mb-16 cursor-pointer fixed z-30 -bottom-12 right-0">
+            <div onClick={scrollUp} className="scrollUp flex self-end mt-4 mb-16 cursor-pointer fixed z-30 -bottom-12 right-0 sm:right-6">
                 <button><img src={images.scrollUp} alt="scrollUp Button"/></button>
             </div>
         )}

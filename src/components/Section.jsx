@@ -4,12 +4,12 @@ import styles from "../constants/style";
 const Section = ({title, content, image}) => {
     return (
 
-        <div className="wrapper px-[2rem] md:px-[4rem] lg:px-[12rem]">
-            <div className="section flex flex-col md:flex-row md:gap-[7rem] justify-center">
-                <div className="section__image flex md:w-[25rem] h-[18rem] md:h-auto md:items-start">
+        <div className="wrapper px-[2rem] md:px-[4rem] lg:px-[12rem] h-[500px] flex items-center">
+            <div className="section flex flex-col md:flex-row md:gap-[7rem] justify-center items-center">
+                <div className="section__image flex flex-1  md:items-start ">
                     <img src={image} alt="section" className="rounded-xl min-w-full object-cover"/>
                 </div>
-                <div className="section__content md:w-[45rem]">
+                <div className="section__content flex-1">
                     <SubHeading title={title} />
                     <div className="text font-[400] text-[14px] leading-normal md:text-[18px] lg:leading-relaxed text-justify indent-12 font-OrkneyLight">{content}</div>
                     <div className="button flex justify-end pt-8">
