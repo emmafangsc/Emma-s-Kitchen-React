@@ -3,14 +3,17 @@ const home = {
     chinese: "首页"
 }
 const menu1 = {
-    english: "Section1",
-    chinese: "第一章"
+    english: "Cooking Class",
+    chinese: "烹饪课程"
 }
 const menu2 = {
-    english: "Section2",
-    chinese: "第二章"
+    english: "Private Dining",
+    chinese: "私人宴会"
 }
-
+const gallery ={
+    english: "Gallery",
+    chinese: "图册"
+}
 const aboutme = {
     english: "About me",
     chinese: "关于我"
@@ -41,6 +44,7 @@ export const translations = {
     home,
     menu1,
     menu2,
+    gallery,
     aboutme,
     blog,
     signup,

@@ -61,9 +61,9 @@ const Nav = () => {
                 <div className="menu hidden lg:flex justify-center items-center">
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
                         <li className="cursor-pointer px-[1rem] py-[2rem] font-black custom-link1"><a>{language === 'english' ? translations.home.english : translations.home.chinese}</a></li>
-                        <div className="subMenu group relative" >
-                            <li className=" cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.menu1.english : translations.menu1.chinese} <span className="triangle"></span></a></li>
-                            <div className="courseMenu__content group-hover:block hidden absolute z-2 w-[6rem] bg-[black] justify-start p-[1rem] rounded-[3px]">
+                        <div className="subMenu group relative flex justify-center" >
+                            <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.menu1.english : translations.menu1.chinese} <span className="triangle"></span></a></li>
+                            <div className="courseMenu__content group-hover:flex hidden absolute top-20 z-2 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow ">
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item1</li>
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item2</li>
@@ -71,9 +71,9 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="subMenu group relative font-OrkneyRegular">
+                        <div className="subMenu group relative flex justify-center font-OrkneyRegular">
                             <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.menu2.english :  translations.menu2.chinese}<span className="triangle"></span></a></li>
-                            <div className="subMenu__content group-hover:block hidden absolute w-[6rem] bg-[black] justify-start p-[1rem] rounded-[3px]">
+                            <div className="subMenu__content group-hover:block hidden absolute top-20 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow">
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item1</li>
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item2</li>
@@ -81,6 +81,7 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
+                        <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.gallery.english : translations.gallery.chinese}</a></li>
                         <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</a></li>
                         <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.blog.english : translations.blog.chinese}</a></li>
                     </ul>

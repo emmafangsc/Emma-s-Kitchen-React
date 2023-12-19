@@ -4,9 +4,9 @@ import styles from "../constants/style";
 const Section = ({title, content, image}) => {
     return (
 
-        <div className="wrapper px-[2rem] md:px-[4rem] lg:px-[12rem] h-[500px] flex items-center">
+        <div className="wrapper px-[2rem] md:px-[4rem] lg:px-[6rem] h-[500px] flex items-center">
             <div className="section flex flex-col md:flex-row md:gap-[7rem] justify-center items-center">
-                <div className="section__image flex flex-1  md:items-start ">
+                <div className="section__image flex flex-1  md:items-start">
                     <img src={image} alt="section" className="rounded-xl min-w-full object-cover"/>
                 </div>
                 <div className="section__content flex-1">
