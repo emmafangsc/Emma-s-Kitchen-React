@@ -18,10 +18,10 @@ const Footer = () => {
 
                     </p>
                 </div>
-                {/* <div className="overlayBG absolute bottom-0 w-full">
+                <div className="overlayBG absolute bottom-0 w-full">
                     <img src={images.footerBG} alt="footer" className="w-full" />
 
-                </div> */}
+                </div>
             </div>
         </div>
     )
