@@ -4,29 +4,50 @@ export const slides = [
     {
         id: 1,
         image: images.carousel1,
-        // caption: 'false',
+        caption: {
+            title: "Open the door to Sichuan flavor",
+            content: "Check out my collection of super authentic Sichuan recipes."
+        }
     },
     {
         id: 2,
         image: images.carousel2,
-        // caption: 'false'
+        caption: {
+            title: "Level up your Sichuan cooking",
+            content: "Learn to cook delicious food on our cooking course."
+        }
     },
     {
         id: 3,
         image: images.carousel3,
-        // caption: 'false'
+        caption: {
+            title: "Welcome to my blog",
+            content: "I unlock Sichuan cuisine secrets and share my passition for Sichuan cusine."
+        }
     }
 ]
     const section1 = 
     {
-        title1: 'Section1',
-        content1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?',
+        title1: 'Come to Sichuan cooking class!',
+        content1:
+        <div>
+            <p>Do you love to cook and would you like to become even better at it? Or are you perhaps looking for a different, fun and not least tasty activity that you can do with your friends, family or colleagues? Then you should go to Sichuan cooking class at Emma's Kitchen!</p>
+
+            ​<p>In our premises in the heart of Copenhagen, we offer a cooking course with a focus on food culture, useful tips and tricks and great culinary experiences. We are located very close to a metro station, and with the good options for public transport, you can easily get here if you come from a bit outside the city, for example Lyngby or Herlev.</p>
+            ​<p>Come to our Sichuan cooking class and let yourself be inspired by our cooking universe!</p>
+
+        </div>,
         image1: images.section1
     }
     const section2 = 
     {
-        title2: 'Section2',
-        content2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?',
+        title2: 'Have a fantastic meal with a private chef',
+        content2: 
+        <div>
+             ​<p>Are you looking for a special and interesting food experience that you can share with family, friends or as an activity for a work event? Then you can spoil yourself, your colleagues and your loved ones with a completely unique private dining experience in Luna's Kitchen. Here you get a fantastic dinner, which is prepared together with your own private chef.</p>
+             ​<p>With a kitchen centrally located in Copenhagen, we hold private dining parties for customers who come from the entire area around the capital, including Lyngby and Herlev. We cook with fresh, quality ingredients, and we specialize in Italian cooking, which is mostly about promoting the qualities and taste potential of the individual ingredients. You can therefore look forward to an evening with a focus on both fantastic food and great company.</p>
+
+        </div>,
         image2: images.section2
     }
     const section3 = 
@@ -34,7 +55,9 @@ export const slides = [
         title3: 'About me',
         content3: 
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p>
+            ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p>
+            ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p>
+            ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p>
         </div>,
 
         image3: images.section3

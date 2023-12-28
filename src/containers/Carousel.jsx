@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { slides } from "../constants/data";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 import { slides } from "../constants/data";
@@ -74,42 +73,52 @@ class Carousel extends Component {
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
           
-          <div className="slides flex w-full md:border-b-2 sm:shadow-ShadowGrey ">
+          <div className="slides flex w-full md:border-b-2 sm:shadow-ShadowGrey justify-center">
+            
             {slides.map((slide, index) => {
               return (
-                  <div className="slides relative" key={slide.id}>
+                  <div className={`carousel-item flex slides relative justify-center min-h-[400px] md:h-[650px]
+                  ${index === this.state.currentSlide
+                    ? "block w-full"
+                    : "hidden"}
+                    `} 
+                    key={slide.id}>
                     <img
                       src={slide.image}
                       alt="This is a carousel slide"
-                      // key={slide.id}
-                      className={`
-                        ${index === this.state.currentSlide
-                          ? "block w-screen md:h-[700px] "
-                          : "hidden"}
-                          object-cover
-                          `}
+                      className="w-screen object-cover"
+                      
                     />
-                    <div className="slide__indication absolute w-full flex justify-center bottom-3 md:bottom-5">
-                    {slides.map((element, index) => {
-                      return (
-                        <div
-                          className={
-                            index === this.state.currentSlide
-                              ? "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-black rounded-[8px] mx-2 mb-2 cursor-pointer"
-                              : "h-[8px] md:h-[12px] w-[16px] md:w-[22px] bg-[#000000] opacity-50 rounded-[8px] mx-2 mb-2 cursor-pointer"
-                          }
-                          key={index}
-                          onClick={() => {
-                            this.setCurrentSlide(index);
-                          }}
-                        ></div>
-                      );
-                    })}
-                  </div>
+                    <div className="overlayBG w-full h-full bg-black absolute opacity-40">
+
+                    </div>
+                    <div className="caption absolute self-center flex flex-col items-center">
+                      <h1 className="md:leading-[60px] text-white font-bold text-[32px] md:text-[48px] text-center font-OrkneyRegular ">{slide.caption.title}</h1>
+                      <p className="py-[2rem] md:leading-[44px] text-[19px] md:text-[24px] text-center text-white px-[1rem] font-OrkneyLight max-w-[700px]">{slide.caption.content}</p>
+                      <button className="button shadow-boxShadow text-[16px] md:text-[20px] font-OrkneyLight bg-yellow w-[180px] md:w-[220px] h-[44px] md:h-[50px] rounded-[4px] cursor-pointer hover:text-yellow hover:bg-blackButton">Emma's Recipes</button>
+                    </div>
                   </div>
               );
             })}
+            <div className="slide__indication absolute w-full flex justify-center bottom-3 md:bottom-5">
+            {slides.map((element, index) => {
+              return (
+                <div
+                  className={
+                    index === this.state.currentSlide
+                      ? "h-[8px] md:h-[12px] w-[12px]  bg-[#000000] opacity-70 rounded-[8px] mx-[22px] mb-2 cursor-pointer"
+                      : "h-[8px] md:h-[12px] w-[12px]  bg-[#000000] opacity-30 rounded-[8px] mx-[22px] mb-2 cursor-pointer"
+                  }
+                  key={index}
+                  onClick={() => {
+                    this.setCurrentSlide(index);
+                  }}
+                ></div>
+              );
+            })}
             </div>
+            
+          </div>
           </Swipe>
           
           <AiOutlineRight
