@@ -55,13 +55,13 @@ const Nav = () => {
     return (
         <div className="Wrapper">
             <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:pt-12 lg:pb-8 md:px-[4rem] xl:px-[6rem] relative mt-[-5px] md:mt-[-10px]'>
-                <div className="logo flex items-center text-[18px] md:text-[36px] text-black font-bold cursor-pointer">
-                    My portfolio
+                <div className="logo flex items-center text-[18px] md:text-[32px] xl:text-[36px] text-black font-bold cursor-pointer ">
+                    Emma'a Kitchen
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
                         <li className="cursor-pointer px-[1rem] py-[2rem] font-black custom-link1"><a>{language === 'english' ? translations.home.english : translations.home.chinese}</a></li>
-                        <div className="subMenu group relative flex justify-center" >
+                        <div className="subMenu group relative flex justify-center">
                             <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.menu1.english : translations.menu1.chinese} <span className="triangle"></span></a></li>
                             <div className="courseMenu__content group-hover:flex hidden absolute top-20 z-2 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow ">
@@ -83,13 +83,13 @@ const Nav = () => {
                         </div>
                         <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.gallery.english : translations.gallery.chinese}</a></li>
                         <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</a></li>
-                        <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.blog.english : translations.blog.chinese}</a></li>
+                        {/* <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.blog.english : translations.blog.chinese}</a></li> */}
                     </ul>
                 </div>
                 <div className="right flex items-center font-OrkneyRegular">
-                    <div className="login flex  px-[1rem]">
+                    {/* <div className="login flex  px-[1rem]">
                             <div className="signUpButton bg-black text-yellow hover:bg-yellow hover:text-black py-1 px-2  w-[5rem] text-[14px] flex justify-center shadow-md rounded cursor-pointer">{language === 'english' ? translations.signup.english : translations.signup.chinese}</div>
-                    </div>
+                    </div> */}
                     <div ref={refDesktop} className="flex flex-col justify-center relative">
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[3rem] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuDesktop}>
                         {language === 'english' ? translations.languagebutton.english : translations.languagebutton.chinese}

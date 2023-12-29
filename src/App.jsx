@@ -13,7 +13,6 @@ function App() {
   
   return (
     <div className="relative m-auto max-w-screen-2xl overflow-hidden" id='nav' >
-      {/* <div className='absolute top-0 left-0'><img src={images.bg} alt="background"/></div> */}
         <div className='navWrapper sticky top-0 z-20 bg-yellow'>
           <Contact />
           <Nav />
