@@ -2,7 +2,7 @@ import images from "../constants/images";
 const Footer = () => {
     return(
         <div>
-            <div className="yellow-line w-[990px] h-[1px] bg-[#FFFB23] m-auto"></div>
+            <div className="yellow-line w-[90%] xl:w-[990px] h-[1px] bg-[#FFFB23] m-auto"></div>
             <div className="footer h-[183px] flex justify-center items-center relative">
                 <div className="content w-[750px] flex flex-col justify-between font-OrkneyRegular px-[1rem]">
                     <div className="content-top flex justify-center">

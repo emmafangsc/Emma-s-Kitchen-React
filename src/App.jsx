@@ -12,8 +12,8 @@ import images from './constants/images';
 function App() {
   
   return (
-    <div className="relative m-auto max-w-screen-2xl overflow-hidden" id='nav' >
-        <div className='navWrapper sticky top-0 z-20 bg-yellow'>
+    <div className="relative m-auto max-w-screen-2xl" id='nav' >
+        <div className='header sticky top-0 z-20 bg-yellow'>
           <Contact />
           <Nav />
         </div>
@@ -31,7 +31,7 @@ function App() {
         <div className='newsletterWrapper relative z-10'>
           <Newsletter />
         </div>
-      <div className='footerWrapper relative z-10'>
+      <div className='footerWrapper relative z-10 '>
         <Footer />
       </div>
       <BackToTopButton/>
