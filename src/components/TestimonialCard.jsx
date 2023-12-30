@@ -15,7 +15,7 @@ const TestimonialCard = ({title, content})=>{
                         {testimonials.map((testimonial, index)=>(
                         // <div className="">
                             <div className={`content flex flex-col text-center items-center md:h-[500px] lg:h-[400px] ${index===currentIndex  ? 'block' : 'hidden'}`} >
-                                <h2 className="text-[30px] py-[2rem] font-OrkneyBold ">{testimonial.title}</h2>
+                                <h2 className="text-[30px]  pt-[2rem] pb-[1rem] font-OrkneyBold ">{testimonial.title}</h2>
                                 <p className="text-[15px] md:text-[18px] leading-[32px] md:leading-[40px] text-justify font-OrkneyRegular">{testimonial.content}</p>
                                 <p className="text-[20px] font-semibold pt-[2rem]">{testimonial.author}</p>
                                 

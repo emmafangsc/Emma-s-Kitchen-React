@@ -1,20 +1,17 @@
-// import Contact from './components/Contact';
-// import Nav from './components/Nav';
-// import Carousel from './containers/Carousel';
-// import HomeSection from './containers/HomeSection';
-// import Certification from './containers/Certification';
-// import Testimonial from './containers/Testimonial';
-// import Newsletter from './containers/Newsletter';
-// import Footer from './containers/Footer';
-// import BackToTopButton from './components/BackToTopButton';
-// import images from './constants/images';
-import Home from "./pages/Home";
-function App() {
+import Contact from '../components/Contact';
+import Nav from '../components/Nav';
+import Carousel from '../containers/Carousel';
+import HomeSection from '../containers/HomeSection';
+import Testimonial from '../containers/Testimonial';
+import Newsletter from '../containers/Newsletter';
+import Footer from '../containers/Footer';
+import BackToTopButton from '../components/BackToTopButton';
+import images from '../constants/images';
+function Home() {
   
   return (
     <div className="relative m-auto max-w-screen-2xl" id='nav' >
-      <Home />
-        {/* <div className='header sticky top-0 z-20 bg-yellow'>
+        <div className='header sticky top-0 z-20  bg-yellow'>
           <Contact />
           <Nav />
         </div>
@@ -35,11 +32,11 @@ function App() {
       <div className='footerWrapper relative z-10 '>
         <Footer />
       </div>
-      <BackToTopButton/> */}
+      <BackToTopButton/>
     </div>
 
     
   );
 }
-export default App;
+export default Home;
 
