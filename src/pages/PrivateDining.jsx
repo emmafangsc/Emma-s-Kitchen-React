@@ -1,6 +1,6 @@
 import Contact from "../components/Contact";
 import Nav from "../components/Nav";
-function CookingClass() {
+function PrivateDining() {
     return(
         <div>
             <div className='header sticky top-0 z-20  bg-yellow'>
@@ -11,4 +11,4 @@ function CookingClass() {
     )
 }
 
-export default CookingClass;
+export default PrivateDining;
