@@ -98,8 +98,8 @@ const Nav = () => {
                         {languageMenuDesktop && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg w-[6rem]" >
                                 <ul className="text-[12px] text-yellow text-center">
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('english')} ><a>{language === 'english' ? translations.english.english : translations.english.chinese}</a></li>
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('chinese')}><a>{language === 'english' ? translations.chinese.english : translations.chinese.chinese}</a></li>                                        
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('english')} >{language === 'english' ? translations.english.english : translations.english.chinese}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('chinese')}>{language === 'english' ? translations.chinese.english : translations.chinese.chinese}</li>                                        
                                 </ul>
                             </div>
                         )}
@@ -133,8 +133,8 @@ const Nav = () => {
                         {languageMenuMobile && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[3rem] right-0 rounded-[10px] w-[7rem]" >
                                 <ul className="text-[12px] text-yellow">
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('english')}><a>{language === 'english' ? translations.english.english : translations.english.chinese}</a></li>
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('chinese')}><a>{language === 'english' ? translations.chinese.english : translations.chinese.chinese}</a></li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('english')}>{language === 'english' ? translations.english.english : translations.english.chinese}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={()=>setLanguage('chinese')}>{language === 'english' ? translations.chinese.english : translations.chinese.chinese}</li>
                                 </ul>
                             </div>
                         )}
@@ -144,10 +144,10 @@ const Nav = () => {
             <div className={`overlayMenu bg-black font-OrkneyRegular flex lg:hidden h-screen w-full px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
                 <ul className="text-[18px] w-full text-yellow">
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
-                        <li><a>{language === 'english' ? translations.home.english : translations.home.chinese}</a></li>
+                        <li>{language === 'english' ? translations.home.english : translations.home.chinese}</li>
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu1}>
-                        <li><a>{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</a></li>
+                        <li>{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</li>
                         <FaAngleRight className="text-[15px]"/>
                     </div>
                     <div className={`subMenu px-[1rem] ${subMenu1 ? "show" : "hide"}`}>
@@ -158,7 +158,7 @@ const Nav = () => {
                         </ul>
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu2}>
-                        <li><a>{language === 'english' ? translations.menu2.english : translations.menu2.chinese}</a></li>
+                        <li>{language === 'english' ? translations.menu2.english : translations.menu2.chinese}</li>
                         <FaAngleRight className="text-[15px]"/>
                     </div>
                     <div className={`subMenu2 px-[1rem] ${subMenu2 ? "show" : "hide"}`}>
@@ -170,10 +170,10 @@ const Nav = () => {
                     </div>
                     
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
-                        <li><a>{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</a></li>
+                        <li>{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</li>
                     </div>
                     <div className="flex justify-between items-center py-6 hover:text-white cursor-pointer">
-                        <li><a>{language === 'english' ? translations.blog.english : translations.blog.chinese}</a></li>
+                        <li>{language === 'english' ? translations.blog.english : translations.blog.chinese}</li>
                     </div>
                 </ul>
             </div>

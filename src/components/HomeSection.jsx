@@ -1,6 +1,6 @@
 import images from "../constants/images";
 import { sections } from "../constants/data";
-import Section from "../components/Section";
+import Section from "./Section";
 const HomeSection = () => {
     return (
         <div>

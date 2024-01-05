@@ -1,7 +1,7 @@
 import images from "../constants/images";
 // import Section from "../components/Section";
 // import { sections } from "../constants/data";
-import TestimonialCard from "../components/TestimonialCard";
+import TestimonialCard from "./TestimonialCard";
 const Testimonial = () => {
     return (
         <div className="testimonials">

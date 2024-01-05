@@ -1,4 +1,4 @@
-import SubHeading from '../components/SubHeading';
+import SubHeading from './SubHeading';
 const Newsletter = () => {
      return(
         <div className="wrapper xl:px-[12rem] py-24">

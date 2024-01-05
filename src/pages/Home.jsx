@@ -1,10 +1,10 @@
 import Contact from '../components/Contact';
 import Nav from '../components/Nav';
-import Carousel from '../containers/Carousel';
-import HomeSection from '../containers/HomeSection';
-import Testimonial from '../containers/Testimonial';
-import Newsletter from '../containers/Newsletter';
-import Footer from '../containers/Footer';
+import Carousel from '../components/Carousel';
+import HomeSection from '../components/HomeSection';
+import Testimonial from '../components/Testimonial';
+import Newsletter from '../components/Newsletter';
+import Footer from '../components/Footer';
 import BackToTopButton from '../components/BackToTopButton';
 import images from '../constants/images';
 function Home() {
