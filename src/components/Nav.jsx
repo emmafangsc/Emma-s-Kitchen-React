@@ -81,7 +81,7 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
-                        <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a href="/gallery">{language === 'english' ? translations.gallery.english : translations.gallery.chinese}</a></li>
+                        <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a href="/gallery">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</a></li>
                         <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a href="/about-me">{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</a></li>
                         {/* <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.blog.english : translations.blog.chinese}</a></li> */}
                     </ul>

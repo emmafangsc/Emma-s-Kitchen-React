@@ -10,9 +10,9 @@ const menu2 = {
     english: "Private Dining",
     chinese: "私人宴会"
 }
-const gallery ={
-    english: "Gallery",
-    chinese: "图册"
+const recipes ={
+    english: "Recipes",
+    chinese: "食谱"
 }
 const aboutme = {
     english: "About me",
@@ -44,7 +44,7 @@ export const translations = {
     home,
     menu1,
     menu2,
-    gallery,
+    recipes,
     aboutme,
     blog,
     signup,
