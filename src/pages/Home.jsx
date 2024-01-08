@@ -29,10 +29,10 @@ function Home() {
         <div className='newsletterWrapper relative z-10'>
           <Newsletter />
         </div>
-      <div className='footerWrapper relative z-10 '>
-        <Footer />
-      </div>
-      <BackToTopButton/>
+        <div className='footerWrapper relative z-10 '>
+          <Footer />
+        </div>
+        <BackToTopButton/>
     </div>
 
     

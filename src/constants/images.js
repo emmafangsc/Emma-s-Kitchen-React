@@ -1,4 +1,3 @@
-
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import linkedin from '../images/LinkedIn.png';
@@ -20,6 +19,7 @@ import section2 from '../images/section2.png';
 import section3 from '../images/section3.png';
 import section4 from '../images/section4.png';
 import footerBG from '../images/footerBG.png';
+import headerBG from '../images/headerBG.png';
 const images = {
     facebook,
     instagram,
@@ -41,7 +41,8 @@ const images = {
     section2,
     section3,
     section4,
-    footerBG
+    footerBG,
+    headerBG
 };
 
 export default images;
