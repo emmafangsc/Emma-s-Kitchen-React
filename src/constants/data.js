@@ -65,18 +65,21 @@ export const slides = [
     export const testimonials = 
     [
         {
+        id: 1,
         title: 'Testimonial 1',
         content: 'The feedback I have received has all been very positive, that it was a super good event, that it was fun to cook with the colleagues, that the food was good and that you were phenomenal at keeping an overview in an occasionally rather hectic kitchen. several members who have already expressed their desire for us to do a new cooking event for next year.',
         author: "Emma"
         // image: images.section4
         },
         {
+            id: 2,
             title: 'Testimonial 2',
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?',
             author: "Ted"
             // image: images.section4
         },
         {
+            id: 3,
             title: 'Testimonial 3',
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?',
             author: "Marie"

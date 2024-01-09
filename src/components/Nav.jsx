@@ -1,8 +1,9 @@
 import {FaCaretDown, FaAngleRight} from "react-icons/fa";
 import images from "../constants/images";
-import { useState } from "react";
-import React, {useRef, useEffect} from "react";
+// import { useState } from "react";
+import {useRef, useEffect, useState} from "react";
 import { translations } from "../constants/languageData";
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     const [languageMenuDesktop, setLanguageMenuDesktop] = useState(false);
@@ -60,9 +61,9 @@ const Nav = () => {
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
-                        <li className="cursor-pointer px-[1rem] py-[2rem] font-black custom-link1"><a href="/home">{language === 'english' ? translations.home.english : translations.home.chinese}</a></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] font-black hover:text-grey"><NavLink to="/home" className={({isActive})=>isActive ? "active" : ""} >{language === 'english' ? translations.home.english : translations.home.chinese}</NavLink></li>
                         <div className="subMenu group relative flex justify-center">
-                            <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a href="/cooking-class">{language === 'english' ? translations.menu1.english : translations.menu1.chinese} <span className="triangle"></span></a></li>
+                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-grey"><NavLink to="/cooking-class" className={({isActive})=>isActive ? "active" : ""}>{language === 'english' ? translations.menu1.english : translations.menu1.chinese} <span className="triangle"></span></NavLink></li>
                             <div className="courseMenu__content group-hover:flex hidden absolute top-20 z-2 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow ">
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item1</li>
@@ -72,7 +73,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <div className="subMenu group relative flex justify-center font-OrkneyRegular">
-                            <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a href="/private-dining">{language === 'english' ? translations.menu2.english :  translations.menu2.chinese}<span className="triangle"></span></a></li>
+                            <li className="cursor-pointer px-[1rem] hover:text-grey py-[2rem]"><NavLink to="/private-dining" ClassName="active">{language === 'english' ? translations.menu2.english :  translations.menu2.chinese}<span className="triangle"></span></NavLink></li>
                             <div className="subMenu__content group-hover:block hidden absolute top-20 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow">
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item1</li>
@@ -81,15 +82,11 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
-                        <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a href="/gallery">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</a></li>
-                        <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a href="/about-me">{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</a></li>
-                        {/* <li className="cursor-pointer px-[1rem] custom-link py-[2rem]"><a>{language === 'english' ? translations.blog.english : translations.blog.chinese}</a></li> */}
+                        <li className="cursor-pointer px-[1rem] hover:text-grey py-[2rem]"><NavLink to="/gallery" ClassName="active">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</NavLink></li>
+                        <li className="cursor-pointer px-[1rem] hover:text-grey py-[2rem]"><NavLink to="/about-me" ClassName="active">{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</NavLink></li>
                     </ul>
                 </div>
                 <div className="right flex items-center font-OrkneyRegular">
-                    {/* <div className="login flex  px-[1rem]">
-                            <div className="signUpButton bg-black text-yellow hover:bg-yellow hover:text-black py-1 px-2  w-[5rem] text-[14px] flex justify-center shadow-md rounded cursor-pointer">{language === 'english' ? translations.signup.english : translations.signup.chinese}</div>
-                    </div> */}
                     <div ref={refDesktop} className="flex flex-col justify-center relative">
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[3rem] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuDesktop}>
                         {language === 'english' ? translations.languagebutton.english : translations.languagebutton.chinese}
