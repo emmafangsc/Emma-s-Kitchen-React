@@ -25,15 +25,15 @@ const Features = () => {
                     <div className="leftArrow rotate-90 cursor-pointer" onClick={Prev}>
                         <span className="block w-[12px] h-[12px] border-b-[1px] border-r-[1px] border-black rotate-45 hover:border-grey"></span>
                     </div>
-                    {startIndex + 3 < features.length && (
+                    {/* {startIndex + 3 < features.length && (
                         <div className="rightArrow rotate-90 cursor-pointer" onClick={Next}>
                             <span className="block w-[12px] h-[12px] border-t-[1px] border-l-[1px] border-black rotate-45 hover:border-grey"></span>
                         </div>
 
-                    )}
-                    {/* <div className="rightArrow rotate-90 cursor-pointer" onClick={Next}>
+                    )} */}
+                    <div className="rightArrow rotate-90 cursor-pointer" onClick={Next}>
                         <span className="block w-[12px] h-[12px] border-t-[1px] border-l-[1px] border-black rotate-45 hover:border-grey"></span>
-                    </div> */}
+                    </div>
                 </div>
             </div>
             <div className="features flex flex-col lg:flex-row gap-[30px] justify-start items-start px-4 w-full overflow-hidden">

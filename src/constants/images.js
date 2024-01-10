@@ -24,6 +24,12 @@ import cookingSection from '../images/cookingSection.png';
 import feature1 from '../images/feature1.png';
 import feature2 from '../images/feature2.png';
 import feature3 from '../images/feature3.png';
+import feature4 from '../images/feature4.png';
+import feature5 from '../images/feature5.png';
+import feature6 from '../images/feature6.png';
+import feature7 from '../images/feature7.png';
+import feature8 from '../images/feature8.png';
+import feature9 from '../images/feature9.png';
 const images = {
     facebook,
     instagram,
@@ -50,7 +56,13 @@ const images = {
     cookingSection,
     feature1,
     feature2,
-    feature3
+    feature3,
+    feature4,
+    feature5,
+    feature6,
+    feature7,
+    feature8,
+    feature9,
 };
 
 export default images;

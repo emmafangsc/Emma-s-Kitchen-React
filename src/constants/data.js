@@ -121,13 +121,37 @@ export const slides = [
             id: 4,
             title: 'Steamed pork belly with rice flour',
             content: "",
-            image: images.feature3
+            image: images.feature4
         },
         {
             id: 5,
             title: 'Steamed pork belly with rice flour',
             content: "",
-            image: images.feature3
+            image: images.feature5
+        },
+        {
+            id: 6,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature6
+        },
+        {
+            id: 7,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature7
+        },
+        {
+            id: 8,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature8
+        },
+        {
+            id: 9,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature9
         },
     ]
     export const sections = {section1, section2, section3};
