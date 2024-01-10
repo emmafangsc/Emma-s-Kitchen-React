@@ -1,6 +1,6 @@
 const Feature = ({title, image, content})=>{
     return(
-        <div className="feature-container flex items-start justify-start bg-yellow w-[400px]">
+        <div className="feature-container flex items-start justify-start bg-yellow w-[450px]">
                 <div className="feature flex flex-col items-center">
                     <div className="feature1-image flex w-full justify-start">
                         <img src={image}  alt="feature" className="h-[540px] object-cover"/>
