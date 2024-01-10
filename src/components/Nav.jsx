@@ -63,14 +63,7 @@ const Nav = () => {
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
                         <li className="cursor-pointer px-[1rem] py-[2rem] font-black hover:text-white"><NavLink to="/home" >{language === 'english' ? translations.home.english : translations.home.chinese}</NavLink></li>
                         <div className="subMenu group relative flex justify-center">
-                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/cooking-class" >{language === 'english' ? translations.menu1.english : translations.menu1.chinese} <span className="triangle"></span></NavLink></li>
-                            <div className="courseMenu__content group-hover:flex hidden absolute top-20 z-2 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
-                                <ul className="text-yellow ">
-                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item1</li>
-                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item2</li>
-                                    <li className="cursor-pointer hover:text-white text-[16px]">Item3</li>
-                                </ul>
-                            </div>
+                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/cooking-class" >{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</NavLink></li>
                         </div>
                         <div className="subMenu group relative flex justify-center font-OrkneyRegular">
                             <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/private-dining" >{language === 'english' ? translations.menu2.english :  translations.menu2.chinese}<span className="triangle"></span></NavLink></li>
@@ -145,14 +138,6 @@ const Nav = () => {
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu1}>
                         <li>{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</li>
-                        <FaAngleRight className="text-[15px]"/>
-                    </div>
-                    <div className={`subMenu px-[1rem] ${subMenu1 ? "show" : "hide"}`}>
-                        <ul className="text-[16px]">
-                            <li className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Item1</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Item2</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">Item3</li>
-                        </ul>
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu2}>
                         <li>{language === 'english' ? translations.menu2.english : translations.menu2.chinese}</li>

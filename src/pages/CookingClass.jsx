@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import BackToTopButton from "../components/BackToTopButton";
+import CookingSection from "../containers/CookingSection";
 function CookingClass() {
     return(
         <div className="relative m-auto max-w-screen-2xl" id='nav' >
@@ -13,6 +14,9 @@ function CookingClass() {
             </div>
             <div>
                 <Header />
+            </div>
+            <div className="mt-16">
+                <CookingSection />
             </div>
             <div className='newsletterWrapper relative z-10'>
             <Newsletter />

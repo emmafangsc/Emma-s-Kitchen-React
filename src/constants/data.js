@@ -1,5 +1,4 @@
 import images from "./images";
-// export const carouselImages = [images.transparent, images.promo1, images.promo2];
 export const slides = [
     {
         id: 1,
@@ -62,6 +61,17 @@ export const slides = [
 
         image3: images.section3
     }
+    export const cookingSection = 
+    {
+        title: "Come on a cooking course in Emma's Kitchen",
+        content: 
+        <div>
+            <p>Are you getting tired of always returning to the same old, boring dishes when you have to cook dinner? Would you like to develop your skills in the kitchen, learn about the qualities of different ingredients and become better at letting yourself be inspired? In Emma's Kitchen, you can attend a cooking course where you can learn all this and much more!</p>
+            ​<p>Learn to cook with either friends, colleagues or family in our cozy premises, located in the middle of Copenhagen. We arrange a cooking course according to your personal needs, and we welcome visitors who want to expand their culinary horizons from a larger area, including Herlev and Lyngby. See our selection of food courses here</p>
+        </div>,
+        image: images.cookingSection
+    }
+    
     export const testimonials = 
     [
         {
@@ -86,6 +96,7 @@ export const slides = [
             // image: images.section4
         },
     ]
+
     export const sections = {section1, section2, section3};
     
 
