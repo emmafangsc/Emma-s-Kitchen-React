@@ -21,6 +21,9 @@ import section4 from '../images/section4.png';
 import footerBG from '../images/footerBG.png';
 import headerBG from '../images/headerBG.png';
 import cookingSection from '../images/cookingSection.png';
+import feature1 from '../images/feature1.png';
+import feature2 from '../images/feature2.png';
+import feature3 from '../images/feature3.png';
 const images = {
     facebook,
     instagram,
@@ -44,7 +47,10 @@ const images = {
     section4,
     footerBG,
     headerBG,
-    cookingSection
+    cookingSection,
+    feature1,
+    feature2,
+    feature3
 };
 
 export default images;
