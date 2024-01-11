@@ -1,9 +1,9 @@
 const Feature = ({title, image, content})=>{
     return(
-        <div className="feature-container flex items-start justify-start bg-yellow w-[450px]">
+        <div className="feature-container flex items-start justify-start bg-yellow">
                 <div className="feature flex flex-col items-center">
                     <div className="feature1-image flex w-full justify-start">
-                        <img src={image}  alt="feature" className="h-[540px] object-cover"/>
+                        <img src={image}  alt="feature" className="h-[400px] md:h-[400px] xl:h-[540px] object-cover w-[700px]"/>
                     </div>
                     <div className="content flex flex-col px-[2rem] text-center items-center">
                         <h2 className="text-[18px] xl:text-[20px] py-2 font-OrkneyLight">{title}</h2>
