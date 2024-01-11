@@ -22,23 +22,26 @@ const Features = () => {
             </div>
             <div className="flex link-wrapper justify-end">
                 <div className="link inline-flex gap-[13px] pb-4 pr-4 ">
-                    {startIndex > 0  && (
+                    {startIndex > 0 ? (
                         <div className="leftArrow rotate-90 cursor-pointer" onClick={Prev}>
                             <span className="block w-[12px] h-[12px] border-b-[1px] border-r-[1px] border-black rotate-45 hover:border-grey"></span>
                         </div>
-                    )}
-                    {/* <div className="leftArrow rotate-90 cursor-pointer" onClick={Prev}>
-                        <span className="block w-[12px] h-[12px] border-b-[1px] border-r-[1px] border-black rotate-45 hover:border-grey"></span>
-                    </div> */}
-                    {startIndex + 3 < features.length && (
+                    ) : (
+                        <div className="leftArrow rotate-90 cursor-pointer">
+                            <span className="block w-[12px] h-[12px] border-b-[1px] border-r-[1px] border-beige rotate-45 "></span>
+                        </div>
+                    )
+                    }
+                    {startIndex + 3 < features.length ? (
                         <div className="rightArrow rotate-90 cursor-pointer" onClick={Next}>
                             <span className="block w-[12px] h-[12px] border-t-[1px] border-l-[1px] border-black rotate-45 hover:border-grey"></span>
                         </div>
-
-                    )}
-                    {/* <div className="rightArrow rotate-90 cursor-pointer" onClick={Next}>
-                        <span className="block w-[12px] h-[12px] border-t-[1px] border-l-[1px] border-black rotate-45 hover:border-grey"></span>
-                    </div> */}
+                    ) : (
+                        <div className="rightArrow rotate-90 cursor-pointer">
+                            <span className="block w-[12px] h-[12px] border-t-[1px] border-l-[1px] border-beige rotate-45"></span>
+                        </div>
+                    )
+                    }
                 </div>
             </div>
             <div className="features flex flex-col lg:flex-row gap-[30px] justify-start items-start px-4 w-full overflow-hidden">
