@@ -14,7 +14,7 @@ const CookingSection2 = () => {
                 </p>
                 <ul className="pt-4 pl-8 list-disc font-[400] text-[14px] leading-normal lg:leading-loose md:text-[18px] text-justify font-OrkneyLight">
                     <li>get a short cultural presentation</li>
-                    <li>​be introduced to the dishes we will make with organic ingredients of the best quality</li>
+                    <li>​be introduced to the dishes we will make with fresh ingredients of the best quality</li>
                     <li>​learn to enhance the taste experience with our expert guidance</li>
                     <li>and of course we round off by eating all the delicious food and enjoying the good company.</li>
                 </ul> 

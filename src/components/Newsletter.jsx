@@ -1,10 +1,10 @@
-import SubHeading from './SubHeading';
+import { SubHeading1 } from './SubHeading';
 const Newsletter = () => {
      return(
         <div className="wrapper xl:px-[12rem] py-24">
             <form action="newsletter.php" method="post" >
                 <div className="newsletter-container px-8 md:px-16 xl:px-0">
-                    <SubHeading title={"Newsletter"}/>
+                    <SubHeading1 title={"Newsletter"}/>
                     <p className="font-[400] text-[14px] leading-normal lg:text-[18px] lg:leading-[44px] text-justify font-OrkneyRegular">be the first to hear my news, subscribe from my newsletter</p>
                     <div className="input-container flex flex-col gap-[1rem] md:flex-row justify-between pt-[2rem] text-[#f0f0f0] font-OrkneyRegular">
                         <input type="text" placeholder="First name" name="first-name" required className="shadow-md w-full sm:w-[12rem] bg-[#000000] opacity-30 pl-[1rem] py-[4px]" />

@@ -1,6 +1,5 @@
-// import images from "../constants/images";
-import SubHeading from "./SubHeading";
 import styles from "../constants/style";
+import { SubHeading2 } from "./SubHeading";
 const Section = ({title, content, image}) => {
     return (
 
@@ -10,7 +9,7 @@ const Section = ({title, content, image}) => {
                     <img src={image} alt="section" className="rounded-xl min-w-full object-cover md:h-[500px] lg:h-[700px]"/>
                 </div>
                 <div className="section__content flex-1">
-                    <SubHeading title={title} />
+                    <SubHeading2 title={title} />
                     <div className="text font-[400] text-[14px] leading-normal md:text-[18px] lg:leading-relaxed text-justify indent-12 font-OrkneyLight">{content}</div>
                     <div className="button flex justify-end pt-8">
                         <button className={`bg-[#383838] border-black border-[1px] text-yellow font-OrkneyBold ${styles.sectionButton} hover:text-white hover:bg-grey`} >Learn more</button>
@@ -22,4 +21,7 @@ const Section = ({title, content, image}) => {
         </div>
     )
 }
+
+
+
 export default Section;

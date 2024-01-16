@@ -28,7 +28,7 @@ const Features = () => {
     return (
         <div className="flex flex-col features px-[1rem] md:px-[4rem] xl:px-[6rem]">
             <div className="pt-4 lg:pt-0">
-                <h2 className="font-OrkneyBold text-[18px] md:text-[36px] text-center">Sichuan Food Inspirations</h2>   
+                <h2 className="font-OrkneyRegular text-[18px] md:text-[34px] pt-4 lg:pt-0 text-center">Sichuan Food Inspirations</h2>
             </div>
             <div className="flex link-wrapper justify-end">
                 <div className="link inline-flex gap-[13px] pb-4">

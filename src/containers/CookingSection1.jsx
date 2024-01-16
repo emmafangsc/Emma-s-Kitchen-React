@@ -1,4 +1,4 @@
-import Section from "../components/Section";
+import Section from "../components/OtherSection";
 import { cookingSection1 } from "../constants/data";
 const CookingSection1 = () => {
     return (
