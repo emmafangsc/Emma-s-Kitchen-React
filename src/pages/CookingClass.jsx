@@ -5,9 +5,10 @@ import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import BackToTopButton from "../components/BackToTopButton";
 import CookingSection1 from "../containers/CookingSection1";
-import Features from "../containers/Features";
+import CookingFeatures from "../containers/CookingFeatures";
 import Testimonial from "../components/Testimonial";
 import CookingSection2 from "../containers/CookingSection2";
+
 function CookingClass() {
     return (
         <div className="relative m-auto max-w-screen-2xl" id='nav' >
@@ -22,7 +23,7 @@ function CookingClass() {
                 <CookingSection1 />
             </div>
             <div className="mt-16">
-                <Features />
+                <CookingFeatures />
             </div>
             <div className="mt-16">
                 <CookingSection2 />

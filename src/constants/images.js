@@ -31,7 +31,14 @@ import feature7 from '../images/feature7.png';
 import feature8 from '../images/feature8.png';
 import feature9 from '../images/feature9.png';
 import cooking2 from '../images/cooking2.png';
-import cookingSection2 from '../images/cookingSection2.png';
+import dining1 from '../images/dining1.png';
+import dining2 from '../images/dining2.png';
+import dinnerfeature1 from '../images/dinnerfeature1.png';
+import dinnerfeature2 from '../images/dinnerfeature2.png';
+import dinnerfeature3 from '../images/dinnerfeature3.png';
+import dinnerfeature4 from '../images/dinnerfeature4.png';
+import dinnerfeature5 from '../images/dinnerfeature5.png';
+import dinnerfeature6 from '../images/dinnerfeature6.png';
 const images = {
     facebook,
     instagram,
@@ -66,7 +73,14 @@ const images = {
     feature8,
     feature9,
     cooking2,
-    cookingSection2
+    dining1,
+    dining2,
+    dinnerfeature1,
+    dinnerfeature2,
+    dinnerfeature3,
+    dinnerfeature4,
+    dinnerfeature5,
+    dinnerfeature6,
 };
 
 export default images;

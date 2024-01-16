@@ -72,6 +72,17 @@ export const slides = [
         image: images.cookingSection
     }
    
+    export const privateDining1 = 
+    {
+        title: "Have a fantastic meal with a private chef",
+        content: 
+        <div>
+            <p>Are you looking for a special and interesting food experience that you can share with family, friends or as an activity for a work event? Then you can spoil yourself, your colleagues and your loved ones with a completely unique private dining experience in Luna's Kitchen. Here you get a fantastic dinner, which is prepared together with your own private chef.</p>
+            ​<p>With a kitchen centrally located in Copenhagen, we hold private dining parties for customers who come from the entire area around the capital, including Lyngby and Herlev. We cook with fresh, quality ingredients, and we specialize in Italian cooking, which is mostly about promoting the qualities and taste potential of the individual ingredients. You can therefore look forward to an evening with a focus on both fantastic food and great company.</p>
+        </div>,
+        image: images.dining1
+    }
+   
     export const testimonials = 
     [
         {
@@ -153,6 +164,46 @@ export const slides = [
             content: "",
             image: images.feature9
         },
+    ]
+    export const diningFeatures =
+    [
+        {
+            id: 1,
+            title: 'Table 1',
+            content: "",
+            image: images.dinnerfeature1
+        },
+        {
+            id: 2,
+            title: 'Table 2',
+            content: "",
+            image: images.dinnerfeature2
+        },
+        {
+            id: 3,
+            title: 'Table3 ',
+            content: "",
+            image: images.dinnerfeature3
+        },
+        {
+            id: 4,
+            title: 'Table 4',
+            content: "",
+            image: images.dinnerfeature4
+        },
+        {
+            id: 5,
+            title: 'Table 5',
+            content: "",
+            image: images.dinnerfeature5
+        },
+        {
+            id: 6,
+            title: 'Table 6',
+            content: "",
+            image: images.dinnerfeature6
+        },
+        
     ]
     export const sections = {section1, section2, section3};
     

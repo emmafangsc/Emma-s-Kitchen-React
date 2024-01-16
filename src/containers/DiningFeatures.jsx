@@ -1,6 +1,6 @@
-import Feature from "../components/Feature";
+import {DiningFeature} from "../components/Feature";
 // import images from "../constants/images";
-import { features } from "../constants/data";
+import { diningFeatures } from "../constants/data";
 import React, { useState } from 'react';
 
 const Features = () => {
@@ -22,8 +22,8 @@ const Features = () => {
         }
     }
     const visibleFeatures = window.innerWidth >= 1024
-    ? features.slice(startIndex, startIndex + 3)
-    : features.slice(startIndex, startIndex + 1);
+    ? diningFeatures.slice(startIndex, startIndex + 3)
+    : diningFeatures.slice(startIndex, startIndex + 1);
 
     return (
         <div className="flex flex-col features px-[1rem] md:px-[4rem] xl:px-[6rem]">
@@ -42,7 +42,7 @@ const Features = () => {
                         </div>
                     )
                     }
-                    {(window.innerWidth >= 1024 ? startIndex + 3 : startIndex + 1) < features.length ? (
+                    {(window.innerWidth >= 1024 ? startIndex + 3 : startIndex + 1) < diningFeatures.length ? (
                         <div className="rightArrow rotate-90 cursor-pointer" onClick={Next}>
                             <span className="block w-[12px] h-[12px] border-t-[1px] border-l-[1px] border-black rotate-45 hover:border-grey"></span>
                         </div>
@@ -57,7 +57,7 @@ const Features = () => {
             <div className="features flex flex-col lg:flex-row gap-[30px] justify-start items-start w-full overflow-hidden ">
             {visibleFeatures.map((feature, index)=>(
                     <div key={feature.id}>
-                    <Feature title={feature.title} image={feature.image} content={feature.content}/>
+                    <DiningFeature title={feature.title} image={feature.image} content={feature.content}/>
                     </div>
                     ))}
             </div>
