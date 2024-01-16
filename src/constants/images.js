@@ -30,6 +30,8 @@ import feature6 from '../images/feature6.png';
 import feature7 from '../images/feature7.png';
 import feature8 from '../images/feature8.png';
 import feature9 from '../images/feature9.png';
+import cooking2 from '../images/cooking2.png';
+import cookingSection2 from '../images/cookingSection2.png';
 const images = {
     facebook,
     instagram,
@@ -63,6 +65,8 @@ const images = {
     feature7,
     feature8,
     feature9,
+    cooking2,
+    cookingSection2
 };
 
 export default images;

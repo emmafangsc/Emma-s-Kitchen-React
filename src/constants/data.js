@@ -61,7 +61,7 @@ export const slides = [
 
         image3: images.section3
     }
-    export const cookingSection = 
+    export const cookingSection1 = 
     {
         title: "Come on a cooking course in Emma's Kitchen",
         content: 
@@ -71,7 +71,7 @@ export const slides = [
         </div>,
         image: images.cookingSection
     }
-    
+   
     export const testimonials = 
     [
         {
