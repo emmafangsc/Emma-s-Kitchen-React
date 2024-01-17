@@ -17,7 +17,7 @@ function CookingClass() {
             <Nav />
             </div>
             <div>
-                <Header />
+                <Header title="Find inspiration for everyday life on our cooking course"/>
             </div>
             <div className="mt-16">
                 <CookingSection1 />

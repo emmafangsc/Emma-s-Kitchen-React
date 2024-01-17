@@ -17,7 +17,7 @@ function PrivateDining() {
             <Nav />
             </div>
             <div>
-                <Header />
+                <Header title="We offer a unique private dining experience"/>
             </div>
             <div className="mt-16">
                 <PrivateDining1 />

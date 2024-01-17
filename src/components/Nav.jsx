@@ -75,7 +75,7 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
-                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/gallery">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</NavLink></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/recipes">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</NavLink></li>
                         <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/about-me" >{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</NavLink></li>
                     </ul>
                 </div>
