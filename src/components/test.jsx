@@ -1,30 +1,30 @@
-import { useState } from "react";
-const Nav = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const handleMenuItemClick = (index) => {
-    setActiveIndex(index);
-  };
+import { useState, useRef, useEffect } from "react";
+const Search = () => {
+    const [showMenu, setShowMenu] = useState(false);
+    const dropdownRef = useRef(null);
+    function showDropdownMenu(){
+        setShowMenu(!showMenu);
+    }
+    
+    
     return (
-        <div className="Wrapper">
-            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:pt-12 lg:pb-8 md:px-[4rem] xl:px-[6rem] relative mt-[-5px] md:mt-[-10px]'>
-                <div className="logo flex items-center text-[18px] md:text-[32px] xl:text-[36px] text-black font-bold cursor-pointer ">
-                    Emma'a Kitchen
+        <div className="searchSection flex flex-col px-[1rem] md:px-[4rem] xl:px-[6rem] h-[300px]" >
+            <div className="searchBar flex">
+                <div className="search-left flex-1 flex flex-col font-OrkneyRegular text-[16px] xl:text-[18px]" ref={dropdownRef}>
+                    <div className="pl-3 w-1/2 py-4 bg-[grey] cursor-pointer" onClick={showDropdownMenu}>Choose a category</div>
+                    {
+                        showMenu && (
+                            <div className="pl-3 w-1/2 bg-[beige]">
+                                <ul className="flex flex-col gap-2">
+                                    <li>Vegetables</li>
+                                </ul>
+                            </div>
+                        )
+                    }
                 </div>
-                <div className="menu hidden lg:flex justify-center items-center">
-                <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
-                <li className={`home menu-item px-[1rem] py-[2rem] ${activeIndex === 0 ? 'active' : ''}`}
-    onClick={() => handleMenuItemClick(0)}>
-    <a href="/home" aria-label="Link to homepage">Home</a>
-</li>
-<li className={`cooking menu-item px-[1rem] py-[2rem] ${activeIndex === 1 ? 'active' : ''}`}
-    onClick={() => handleMenuItemClick(1)}>
-    <a href="/cooking-class" title="Link to cooking class">Cooking </a>
-</li>
-
-</ul>
-                </div>
-            </nav>
+            </div>
         </div>
     )
 }
-export default Nav;
+
+export default Search;

@@ -11,6 +11,9 @@
   .triangle {
     @apply content-empty inline-block w-[5px] h-[5px] border-b-2 border-r-2  border-transparent border-black ml-2 rotate-45;
   }
+  .triangle1 {
+    @apply content-empty inline-block w-[8px] h-[8px] border-b-2 border-r-2  border-transparent border-black ml-2 rotate-45;
+  }
   .active {
     @apply relative after:absolute after:content-[''] after:-bottom-2 after:left-0 after:w-[100%] after:h-0.5 after:transform after:scale-x-100 after:bg-white after:origin-bottom-left after:transition-transform after:duration-300 after:ease-out 
   }
