@@ -6,12 +6,12 @@ const Search = () => {
     }
     
     return (
-        <div className="searchSection flex flex-col px-[1rem] md:px-[4rem] xl:px-[6rem] h-[300px]" >
-            <h2 className="font-OrkneyLight text-[18px] md:text-[34px] pt-4 lg:pt-0 pb-16 text-center">Explore the recipe categories, select a meal and follow my cooking instructions to enjoy the authentic flavors of Sichuan in your kitchen.</h2>
-            <div className="searchBar flex">
+        <div className="searchSection flex flex-col px-[1rem] md:px-[4rem] xl:px-[6rem] py-16" >
+            <h2 className="font-OrkneyLight text-[18px] md:text-[26px] md:pb-16 pb-8 text-center">Explore the recipe categories, select a meal and follow my cooking instructions to enjoy the authentic flavors of Sichuan in your kitchen.</h2>
+            <div className="searchBar flex gap-8 flex-col md:flex-row font-OrkneyRegular text-[16px] xl:text-[18px]">
                 
-                <div className="search-left flex-1 flex flex-col font-OrkneyRegular text-[16px] xl:text-[18px]">
-                    <div className="flex items-center justify-between px-4 w-1/2 py-4 bg-[beige] cursor-pointer" onClick={showDropdownMenu}>
+                <div className="search-left flex-1 flex flex-col ">
+                    <div className="flex items-center justify-between px-4 xl:w-1/2 py-4 bg-[beige] cursor-pointer" onClick={showDropdownMenu}>
                         <div>Choose a category</div> 
                         <span className="triangle1"></span>
                     </div>
@@ -28,8 +28,8 @@ const Search = () => {
                     }
 
                 </div>
-                <div className="search-right flex-1">
-                    <input className="pl-3 py-2 w-full py-3 bg-[beige] outline-grey" placeholder="Search... "></input>
+                <div className="search-right flex-1 ">
+                    <input className="px-4 py-4 w-full py-3 bg-[beige] outline-grey" placeholder="Search... "></input>
                 </div>
                 
 

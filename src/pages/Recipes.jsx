@@ -2,6 +2,7 @@ import Contact from "../components/Contact";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Search from "../components/Search";
+import RecipeGallery from "../components/RecipeGallery";
 function Recipes() {
     return(
         <div>
@@ -12,9 +13,13 @@ function Recipes() {
             <div>
                 <Header title="Sichuan home cooking to satisfy your belly and soul"/>
             </div>
-            <div className="pt-16">
+            <div className="recipes-search">
                 <Search />
             </div>
+            <div className="recipes-gallery">
+                <RecipeGallery />
+            </div>
+            
                 
         </div>
     )
