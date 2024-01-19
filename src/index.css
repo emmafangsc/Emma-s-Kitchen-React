@@ -17,6 +17,7 @@
   .active {
     @apply relative after:absolute after:content-[''] after:-bottom-2 after:left-0 after:w-[100%] after:h-0.5 after:transform after:scale-x-100 after:bg-white after:origin-bottom-left after:transition-transform after:duration-300 after:ease-out 
   }
+
   /* .active {
     font-weight: 900;
   } */

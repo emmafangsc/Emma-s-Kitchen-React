@@ -67,12 +67,12 @@ function RecipeGallery() {
     
     function handleChange(pageNumber) {
         setCurrentPage(pageNumber);
+        
       }
-    
   
     return (
       <div>
-        <div className="recipeGallery grid grid-cols-3 gap-8 px-[1rem] md:px-[4rem] xl:px-[6rem] w-full flex-wrap ">
+        <div className="recipeGallery grid grid-cols-3 gap-8 px-[1rem] md:px-[4rem] xl:px-[6rem] w-full flex-wrap">
           {currentRecipes.map((recipe) => (
             <div className="individualRecipe "  key={recipe.id}>
                  <img src={recipe.image} alt="recipe" className="w-full h-[250px] object-cover"/>
@@ -81,7 +81,9 @@ function RecipeGallery() {
              </div>
           ))}
         </div>
-        <Pagination totalItems={recipes.length} itemsPerPage={itemsPerPage} handleClick={handleChange}/>
+        <div className="pagination px-[1rem] md:px-[4rem] xl:px-[6rem] flex justify-end">
+            <Pagination totalItems={recipes.length} itemsPerPage={itemsPerPage} handleClick={handleChange} currentPage={currentPage}/>
+        </div>
       </div>
     );}
 
