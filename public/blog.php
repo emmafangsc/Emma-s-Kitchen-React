@@ -4,9 +4,9 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 header("Access-Control-Allow-Headers: Content-Type");
 
 $servername = "localhost";
-$database = "u754894839_my_database";
-$username = "u754894839_my_database";
-$password = "My_database1";
+$database = "u754894839_blog";
+$username = "u754894839_blog";
+$password = "My_blog1";
 
 // Connect to the database
 $conn = mysqli_connect($servername, $username, $password, $database);

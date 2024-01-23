@@ -1,65 +1,28 @@
 import images from "../constants/images";
 import Pagination from "./Pagination";
 import { useState } from "react";
-
+import { recipes } from "../constants/data";
+// import axios from "axios";
 function RecipeGallery() {
-    const recipes = [
-        {
-            id: 1,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature1
-        },
-        {
-            id: 2,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature2
-        },
-        {
-            id: 3,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature3
-        },
-        {
-            id: 4,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature4
-        },
-        {
-            id: 5,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature5
-        },
-        {
-            id: 6,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature6
-        },
-        {
-            id: 7,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature7
-        },
-        {
-            id: 8,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature8
-        },
-        {
-            id: 9,
-            title: 'Steamed pork belly with rice flour',
-            content: "",
-            image: images.feature9
-        },
-    ];
-    const itemsPerPage = 6;
+    
+    // const [recipes, setRecipes] = useState([]);
+    // const [error, setError] = useState(null);
+
+    // useEffect(() => {
+    //     getRecipes();
+    //   }, []);
+    
+    
+    // function getRecipes() {
+    //     axios.get('https://emmaskitchen.emmafang.com/blog.php').then(function (response) {
+    //       console.log(response.data);
+    //       setRecipes(response.data);
+    //     }).catch(function (error) {
+    //       setError(error);
+    //     });
+    //   }
+      
+    const itemsPerPage = 9;
     const [currentPage, setCurrentPage] = useState(1);
     const startIndex = (currentPage-1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
@@ -76,8 +39,8 @@ function RecipeGallery() {
           {currentRecipes.map((recipe) => (
             <div className="individualRecipe "  key={recipe.id}>
                  <img src={recipe.image} alt="recipe" className="w-full h-[250px] object-cover"/>
-                <h2 className="text-[20px] md:text-[24px] font-OrkneyRegular pt-4">{recipe.title}</h2>
-                 <p className="font-[400] text-[14px] md:text-[16px] text-justify font-OrkneyLight pt-2">{recipe.content}</p>
+                <h2 className="text-[20px] font-OrkneyRegular pt-4">{recipe.title}</h2>
+                 <p className="font-[400] text-[14px] md:text-[16px] text-justify font-OrkneyLight pt-2">{recipe.body}</p>
              </div>
           ))}
         </div>

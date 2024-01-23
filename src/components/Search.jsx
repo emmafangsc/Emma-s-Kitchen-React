@@ -7,7 +7,7 @@ const Search = () => {
     
     return (
         <div className="searchSection flex flex-col px-[1rem] md:px-[4rem] xl:px-[6rem] py-8 md:py-16" >
-            <h2 className="font-OrkneyLight text-[18px] md:text-[26px] md:pb-16 pb-8 text-center">Explore the recipe categories, select a meal and follow my cooking instructions to enjoy the authentic flavors of Sichuan in your kitchen.</h2>
+            <h2 className="font-OrkneyLight text-[18px] md:text-[24px] md:pb-16 pb-8 text-center">Explore the recipe categories, select a meal and follow my cooking instructions to enjoy the authentic flavors of Sichuan in your kitchen.</h2>
             <div className="searchBar flex gap-8 flex-col md:flex-row font-OrkneyRegular text-[16px] xl:text-[18px]">
                 
                 <div className="search-left flex-1 flex flex-col ">

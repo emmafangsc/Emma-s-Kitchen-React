@@ -1,4 +1,115 @@
 import images from "./images";
+export const recipes = [
+        {
+            id: 1,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature1
+        },
+        {
+            id: 2,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature2
+        },
+        {
+            id: 3,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature3
+        },
+        {
+            id: 4,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature4
+        },
+        {
+            id: 5,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature5
+        },
+        {
+            id: 6,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature6
+        },
+        {
+            id: 7,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature7
+        },
+        {
+            id: 8,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature8
+        },
+        {
+            id: 9,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature9
+        },
+        {
+            id: 10,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature9
+        },
+        {
+            id: 11,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature8
+        },
+        {
+            id: 12,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature7
+        },
+        {
+            id: 13,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature6
+        },
+        {
+            id: 14,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature5
+        },
+        {
+            id: 15,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature4
+        },
+        {
+            id: 16,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature3
+        },
+        {
+            id: 17,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature2
+        },
+        {
+            id: 18,
+            title: 'Steamed pork belly with rice flour',
+            content: "",
+            image: images.feature1
+        },
+    ];
+
 export const slides = [
     {
         id: 1,

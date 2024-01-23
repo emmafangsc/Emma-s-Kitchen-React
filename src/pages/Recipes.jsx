@@ -3,6 +3,8 @@ import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Search from "../components/Search";
 import RecipeGallery from "../components/RecipeGallery";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 import BackToTopButton from "../components/BackToTopButton";
 import ScrollToTop from "../components/ScrollToTop";
 function Recipes() {
@@ -20,6 +22,10 @@ function Recipes() {
             </div>
             <div className="recipes-gallery">
                 <RecipeGallery />
+            </div>
+
+            <div className='footerWrapper relative z-10 mt-16'>
+                <Footer />
             </div>
             <BackToTopButton />
             <ScrollToTop />
