@@ -61,12 +61,12 @@ const Nav = () => {
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
-                        <li className="cursor-pointer px-[1rem] py-[2rem] font-black hover:text-white"><NavLink to="/home" >{language === 'english' ? translations.home.english : translations.home.chinese}</NavLink></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] font-black hover:text-white"><NavLink to="/home">{language === 'english' ? translations.home.english : translations.home.chinese}</NavLink></li>
                         <div className="subMenu group relative flex justify-center">
-                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/cooking-class" >{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</NavLink></li>
+                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/cooking-class">{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</NavLink></li>
                         </div>
                         <div className="subMenu group relative flex justify-center font-OrkneyRegular">
-                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/private-dining" >{language === 'english' ? translations.menu2.english :  translations.menu2.chinese}<span className="triangle"></span></NavLink></li>
+                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/private-dining">{language === 'english' ? translations.menu2.english :  translations.menu2.chinese}<span className="triangle"></span></NavLink></li>
                             <div className="subMenu__content group-hover:block hidden absolute top-20 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow">
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item1</li>
@@ -76,7 +76,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/recipes">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</NavLink></li>
-                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/about-me" >{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</NavLink></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/about-me">{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</NavLink></li>
                     </ul>
                 </div>
                 <div className="right flex items-center font-OrkneyRegular">
@@ -131,16 +131,16 @@ const Nav = () => {
                     </div>
             </nav>
             
-            <div className={`overlayMenu bg-black font-OrkneyRegular flex lg:hidden h-screen w-full px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
+            <div className={`overlayMenu bg-black font-OrkneyRegular flex lg:hidden h-full w-auto px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
                 <ul className="text-[18px] w-full text-yellow">
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
-                        <li>{language === 'english' ? translations.home.english : translations.home.chinese}</li>
+                        <li><NavLink to="/home">{language === 'english' ? translations.home.english : translations.home.chinese}</NavLink></li>
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu1}>
-                        <li>{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</li>
+                        <li><NavLink to="/cooking-class">{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</NavLink></li>
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu2}>
-                        <li>{language === 'english' ? translations.menu2.english : translations.menu2.chinese}</li>
+                        <li><NavLink to="/private-dining">{language === 'english' ? translations.menu2.english : translations.menu2.chinese}</NavLink></li>
                         <FaAngleRight className="text-[15px]"/>
                     </div>
                     <div className={`subMenu2 px-[1rem] ${subMenu2 ? "show" : "hide"}`}>
@@ -152,10 +152,10 @@ const Nav = () => {
                     </div>
                     
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
-                        <li>{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</li>
+                        <li><NavLink to="/recipes">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</NavLink></li>
                     </div>
                     <div className="flex justify-between items-center py-6 hover:text-white cursor-pointer">
-                        <li>{language === 'english' ? translations.blog.english : translations.blog.chinese}</li>
+                        <li><NavLink to="/about-me">{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</NavLink></li>
                     </div>
                 </ul>
             </div>

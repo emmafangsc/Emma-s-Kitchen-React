@@ -8,7 +8,7 @@ import Testimonial from "../components/Testimonial";
 import PrivateDining1 from "../containers/PrivateDining1";
 import PrivateDining2 from "../containers/PrivateDining2";
 import DiningFeatures from "../containers/DiningFeatures";
-
+import ScrollToTop from "../components/ScrollToTop";
 function PrivateDining() {
     return (
         <div className="relative m-auto max-w-screen-2xl" id='nav' >
@@ -38,6 +38,7 @@ function PrivateDining() {
                 <Footer />
             </div>
             <BackToTopButton/>
+            <ScrollToTop />
         </div>
     )
 }

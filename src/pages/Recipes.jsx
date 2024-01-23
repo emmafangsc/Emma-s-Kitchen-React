@@ -3,6 +3,8 @@ import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Search from "../components/Search";
 import RecipeGallery from "../components/RecipeGallery";
+import BackToTopButton from "../components/BackToTopButton";
+import ScrollToTop from "../components/ScrollToTop";
 function Recipes() {
     return(
         <div>
@@ -19,8 +21,8 @@ function Recipes() {
             <div className="recipes-gallery">
                 <RecipeGallery />
             </div>
-            
-                
+            <BackToTopButton />
+            <ScrollToTop />
         </div>
     )
 }

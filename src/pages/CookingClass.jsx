@@ -8,7 +8,7 @@ import CookingSection1 from "../containers/CookingSection1";
 import CookingFeatures from "../containers/CookingFeatures";
 import Testimonial from "../components/Testimonial";
 import CookingSection2 from "../containers/CookingSection2";
-
+import ScrollToTop from "../components/ScrollToTop";
 function CookingClass() {
     return (
         <div className="relative m-auto max-w-screen-2xl" id='nav' >
@@ -38,6 +38,7 @@ function CookingClass() {
                 <Footer />
             </div>
             <BackToTopButton/>
+            <ScrollToTop />
         </div>
     )
 }

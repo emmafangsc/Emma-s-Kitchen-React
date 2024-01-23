@@ -72,11 +72,11 @@ function RecipeGallery() {
   
     return (
       <div>
-        <div className="recipeGallery grid grid-cols-3 gap-8 px-[1rem] md:px-[4rem] xl:px-[6rem] w-full flex-wrap">
+        <div className="recipeGallery grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-[1rem] md:px-[4rem] xl:px-[6rem] w-full flex-wrap">
           {currentRecipes.map((recipe) => (
             <div className="individualRecipe "  key={recipe.id}>
                  <img src={recipe.image} alt="recipe" className="w-full h-[250px] object-cover"/>
-                <h2 className="text-[24px] font-OrkneyRegular pt-4">{recipe.title}</h2>
+                <h2 className="text-[20px] md:text-[24px] font-OrkneyRegular pt-4">{recipe.title}</h2>
                  <p className="font-[400] text-[14px] md:text-[16px] text-justify font-OrkneyLight pt-2">{recipe.content}</p>
              </div>
           ))}

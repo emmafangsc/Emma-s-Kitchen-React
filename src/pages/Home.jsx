@@ -7,6 +7,7 @@ import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import BackToTopButton from '../components/BackToTopButton';
 import images from '../constants/images';
+import ScrollToTop from '../components/ScrollToTop';
 function Home() {
   
   return (
@@ -33,6 +34,7 @@ function Home() {
           <Footer />
         </div>
         <BackToTopButton/>
+        <ScrollToTop />
     </div>
 
     
