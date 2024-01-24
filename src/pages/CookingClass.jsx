@@ -31,7 +31,7 @@ function CookingClass() {
             <div className="mt-16">
                 <Testimonial />
             </div>
-            <div className='newsletterWrapper mt-16 relative z-10'>
+            <div className='newsletterWrapper relative z-10'>
             <Newsletter />
             </div>
             <div className='footerWrapper relative z-10 '>

@@ -101,7 +101,7 @@ const Nav = () => {
                     </div>
                 </div>
             </nav>
-            <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] py-[0.5rem] relative '>
+            <nav className='nav-mobile flex sm:hidden justify-between px-[1rem] py-[1rem] relative '>
                 <div className="flex items-center font-OrkneyRegular">
                     <div className="hamburgerButton flex flex-col self-center cursor-pointer" ref={buttonRef} onClick={()=>{toggleButton(); showHamburgerMenu(); closeSubmenu()}} >
                         <span  className="bg-black h-[3px] w-[25px] mb-[5px] relative ease-in-out duration-300"></span>
@@ -112,8 +112,8 @@ const Nav = () => {
                         <img src={images.signIn} alt="signIn" className="w-[30px]"/>
                     </div>
                 </div>
-                <div className="logo flex items-center text-[20px] text-black font-bold cursor-pointer">
-                    My portfolio
+                <div className="logo flex items-center text-[24px] text-black font-bold cursor-pointer">
+                    Emma's Kitchen
                 </div>
                 <div ref={refMobile} className="flex flex-col justify-center relative" >
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[2.5rem] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuMobile}>

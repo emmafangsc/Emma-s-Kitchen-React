@@ -23,8 +23,10 @@ function Recipes() {
             <div className="recipes-gallery">
                 <RecipeGallery />
             </div>
-
-            <div className='footerWrapper relative z-10 mt-16'>
+            <div className='newsletter relative z-10'>
+                <Newsletter />
+            </div>
+            <div className='footerWrapper relative z-10'>
                 <Footer />
             </div>
             <BackToTopButton />
