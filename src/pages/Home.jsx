@@ -1,4 +1,4 @@
-import Contact from '../components/Contact';
+import Contact from '../components/ContactBar';
 import Nav from '../components/Nav';
 import Carousel from '../containers/Carousel';
 import HomeSection from '../containers/HomeSection';

@@ -154,7 +154,7 @@ export const slides = [
         title2: 'Have a fantastic meal with a private chef',
         content2: 
         <div>
-             ​<p>Are you looking for a special and interesting food experience that you can share with family, friends or as an activity for a work event? Then you can spoil yourself, your colleagues and your loved ones with a completely unique private dining experience in Luna's Kitchen. Here you get a fantastic dinner, which is prepared together with your own private chef.</p>
+             <p>Are you looking for a special and interesting food experience that you can share with family, friends or as an activity for a work event? Then you can spoil yourself, your colleagues and your loved ones with a completely unique private dining experience in Luna's Kitchen. Here you get a fantastic dinner, which is prepared together with your own private chef.</p>
              ​<p>With a kitchen centrally located in Copenhagen, we hold private dining parties for customers who come from the entire area around the capital, including Lyngby and Herlev. We cook with fresh, quality ingredients, and we specialize in Italian cooking, which is mostly about promoting the qualities and taste potential of the individual ingredients. You can therefore look forward to an evening with a focus on both fantastic food and great company.</p>
 
         </div>,
@@ -165,9 +165,10 @@ export const slides = [
         title3: 'About me',
         content3: 
         <div>
-            ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p>
-            ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p>
-            ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p>
+            <p>Hey there, I am Emma, a passionate food lover from Sichuan, China, which is known for its delicious and spicy cuisine! </p>
+            ​<p>Growing up in Sichuan, I was surrounded by all kinds of tasty food. I found it difficult to find the authentic Sichuan flavour from restaurants while living abroad, so I decided to create my own kitchen to recreate the authentic taste. I are on a mission to introduce the amazing Sichuan cuisine to as many people as possible. In Emma’s Kitchen, I will share every key step to get the most authentic flavour with you. </p>
+            {/* ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p> */}
+            {/* ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p> */}
         </div>,
 
         image3: images.section3
@@ -192,6 +193,16 @@ export const slides = [
             ​<p>With a kitchen centrally located in Copenhagen, we hold private dining parties for customers who come from the entire area around the capital, including Lyngby and Herlev. We cook with fresh, quality ingredients, and we specialize in Italian cooking, which is mostly about promoting the qualities and taste potential of the individual ingredients. You can therefore look forward to an evening with a focus on both fantastic food and great company.</p>
         </div>,
         image: images.dining1
+    }
+    export const aboutMeSection = 
+    {
+        title: "",
+        content: 
+        <div>
+            ​<p>Sichuan cuisine is one of the most popular and diverse cuisines in China and the world. The dishes of Sichuan cuisine are known for their deep and rich flavours, especially the taste of Sichuan pepper which is rare in other regional cuisines. Sichuan cuisine holds a reputation for its variety of seasonings used, as each dish requires different cooking methods. In Emma’s Kitchen, I will show you how to cook with different cooking methods include frying, steaming, braising and the most popular of which is stir-frying. </p>
+            ​<p>Emma’s Kitchen is the perfect destination for food lovers who want to experience the authentic taste of Sichuan cuisine. You will have the opportunity to try some of the most famous Sichuan dishes, such as Mapo Tofu, Kung Pao Chicken, and Chili Chicken. In addition, you will also get to taste many of the family daily dishes such as Double Cooked Pork Belly, Scrambled Eggs with Tomato, and Stir-fried Green Veggies. Emma’s Kitchen is a real food trip to Sichuan, where you can indulge in the rich and deep flavours of Sichuan cuisine.  </p>
+        </div>,
+        image: images.section3
     }
    
     export const testimonials = 

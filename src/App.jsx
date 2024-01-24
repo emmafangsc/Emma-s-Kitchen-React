@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import CookingClass from "./pages/CookingClass";
 import PrivateDining from "./pages/PrivateDining";
 import Recipes from "./pages/Recipes";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/AboutMeSection";
 function App() {
   
   return (

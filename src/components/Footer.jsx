@@ -14,7 +14,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <p className="content-bottom text-[12px] md:text-[15px] leading-[32px] text-center my-5">
-                    Copyright © 2023 emmafang. All rights reserved.
+                    Copyright © 2024 emmafang. All rights reserved.
 
                     </p>
                 </div>
