@@ -39,6 +39,8 @@ import dinnerfeature3 from '../images/dinnerfeature3.png';
 import dinnerfeature4 from '../images/dinnerfeature4.png';
 import dinnerfeature5 from '../images/dinnerfeature5.png';
 import dinnerfeature6 from '../images/dinnerfeature6.png';
+import connect from '../images/connect.png';
+import profile from '../images/profile.png';
 const images = {
     facebook,
     instagram,
@@ -81,6 +83,8 @@ const images = {
     dinnerfeature4,
     dinnerfeature5,
     dinnerfeature6,
+    connect,
+    profile
 };
 
 export default images;

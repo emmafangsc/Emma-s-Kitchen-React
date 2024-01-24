@@ -55,7 +55,7 @@ const Nav = () => {
     
     return (
         <div className="Wrapper">
-            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[4rem] lg:pt-12 lg:pb-8 md:px-[4rem] xl:px-[6rem] relative mt-[-5px] md:mt-[-10px]'>
+            <nav className='nav hidden sm:flex justify-between px-[1rem] h-[6rem] lg:pt-12 lg:pb-8 md:px-[4rem] xl:px-[6rem] relative mt-[-5px] md:mt-[-10px]'>
                 <div className="logo flex items-center text-[18px] md:text-[32px] xl:text-[36px] text-black font-bold cursor-pointer ">
                     Emma's Kitchen
                 </div>

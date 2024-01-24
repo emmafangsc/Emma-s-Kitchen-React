@@ -1,4 +1,4 @@
-import Contact from "../components/ContactBar";
+// import ContactBar from "../components/ContactBar";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Search from "../components/Search";
@@ -11,7 +11,7 @@ function Recipes() {
     return(
         <div>
             <div className='header sticky top-0 z-20  bg-yellow'>
-                <Contact />
+                {/* <ContactBar /> */}
                 <Nav />
             </div>
             <div>

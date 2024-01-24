@@ -2,7 +2,7 @@ import {FaEnvelope} from "react-icons/fa";
 import images from "../constants/images";
 import { useState, useRef, useEffect } from "react";
 
-const Contact = () => {
+const ContactBar = () => {
     const [whatsappNumber, setWhatsappNumber] = useState(false);
     const whatsappRef = useRef();
     const [emailNumber, setEmailNumber] = useState(false);
@@ -68,4 +68,4 @@ const Contact = () => {
         </div>
     )
 }
-export default Contact
+export default ContactBar

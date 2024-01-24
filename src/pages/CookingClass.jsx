@@ -1,4 +1,4 @@
-import Contact from "../components/ContactBar";
+// import ContactBar from "../components/ContactBar";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Newsletter from "../components/Newsletter";
@@ -13,7 +13,7 @@ function CookingClass() {
     return (
         <div className="relative m-auto max-w-screen-2xl" id='nav' >
             <div className='header sticky top-0 z-20  bg-yellow'>
-            <Contact />
+            {/* <ContactBar /> */}
             <Nav />
             </div>
             <div>
