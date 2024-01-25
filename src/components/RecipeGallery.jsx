@@ -1,4 +1,4 @@
-import images from "../constants/images";
+// import images from "../constants/images";
 import Pagination from "./Pagination";
 import { useState } from "react";
 import { recipes } from "../constants/data";

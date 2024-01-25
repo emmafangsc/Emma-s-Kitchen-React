@@ -23,7 +23,7 @@ const Newsletter = () => {
             fData.append('firstName', firstName);
             fData.append('lastName', lastName);
             fData.append('email', email);
-            axios.post(url, fData).then(response=>{window.location.href = "https://emmaskitchen.emmafang.com/thankyou.html"}).catch(error=>alert(error));
+            axios.post(url, fData).then(response=>{window.location.href = "https://emmaskitchen.emmafang.com/thank-you"}).catch(error=>alert(error));
         }
     }
      return(

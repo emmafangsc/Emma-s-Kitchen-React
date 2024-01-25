@@ -4,6 +4,7 @@ import CookingClass from "./pages/CookingClass";
 import PrivateDining from "./pages/PrivateDining";
 import Recipes from "./pages/Recipes";
 import AboutMe from "./pages/AboutMeSection";
+import Thankyou from "./pages/Thankyou";
 function App() {
   
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/private-dining" element={<PrivateDining />}/>
           <Route path="/recipes" element={<Recipes />}/>
           <Route path="/about-me" element={<AboutMe />}/>
+          <Route path="/thank-you" element={<Thankyou />}/>
         </Routes>
       </BrowserRouter>
         
