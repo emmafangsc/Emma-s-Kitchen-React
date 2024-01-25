@@ -5,7 +5,7 @@ function Thankyou() {
                 Thank you for connecting!
             </h1>
             <p className="py-[2rem] text-[18px]">you will receive the newest updates!</p>
-            <button onClick={() => window.location.href = '/home'} class="h-[2.5rem] mt-[2rem] bg-black text-white text-[16px] lg:text-[18px] px-6 rounded-3xl hover:bg-grey">Go Home</button>
+            <button onClick={() => window.location.href = '/home'} className="h-[2.5rem] mt-[2rem] bg-black text-white text-[16px] lg:text-[18px] px-6 rounded-3xl hover:bg-grey">Go Home</button>
         </div>
     )
 }
