@@ -1,26 +1,26 @@
 // import images from "../constants/images";
 import Pagination from "./Pagination";
-import { useState } from "react";
-import { recipes } from "../constants/data";
-// import axios from "axios";
+import { useState, useEffect } from "react";
+// import { recipes } from "../constants/data";
+import axios from "axios";
 function RecipeGallery() {
     
-    // const [recipes, setRecipes] = useState([]);
-    // const [error, setError] = useState(null);
+    const [recipes, setRecipes] = useState([]);
+    const [error, setError] = useState(null);
 
-    // useEffect(() => {
-    //     getRecipes();
-    //   }, []);
+    useEffect(() => {
+        getRecipes();
+      }, []);
     
     
-    // function getRecipes() {
-    //     axios.get('https://emmaskitchen.emmafang.com/blog.php').then(function (response) {
-    //       console.log(response.data);
-    //       setRecipes(response.data);
-    //     }).catch(function (error) {
-    //       setError(error);
-    //     });
-    //   }
+    function getRecipes() {
+        axios.get('https://emmaskitchen.emmafang.com/blog.php').then(function (response) {
+          console.log(response.data);
+          setRecipes(response.data);
+        }).catch(function (error) {
+          setError(error);
+        });
+      }
       
     const itemsPerPage = 9;
     const [currentPage, setCurrentPage] = useState(1);
