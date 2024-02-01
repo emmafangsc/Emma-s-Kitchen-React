@@ -1,27 +1,25 @@
-// import images from "../constants/images";
 import Pagination from "./Pagination";
 import { useState, useEffect } from "react";
-// import { recipes } from "../constants/data";
 import axios from "axios";
-function RecipeGallery() {
+const RecipeGallery = ({filteredData}) =>{
     
-    const [recipes, setRecipes] = useState([]);
-    const [error, setError] = useState(null);
+    // const [recipes, setRecipes] = useState([]);
+    // const [error, setError] = useState(null);
 
-    useEffect(() => {
-        getRecipes();
-      }, []);
+    // useEffect(() => {
+    //     getRecipes();
+    //   }, []);
     
     
-    function getRecipes() {
-        axios.get('https://emmaskitchen.emmafang.com/blog.php').then(function (response) {
-          console.log(response.data);
-          setRecipes(response.data);
-        }).catch(function (error) {
-          setError(error);
-        });
-      }
-      
+    // function getRecipes() {
+    //     axios.get('https://test.emmafang.com/blog.php').then(function (response) {
+    //       console.log(response.data);
+    //       setRecipes(response.data);
+    //     }).catch(function (error) {
+    //       setError(error);
+    //     });
+    //   }
+    const recipes = filteredData;
     const itemsPerPage = 9;
     const [currentPage, setCurrentPage] = useState(1);
     const startIndex = (currentPage-1) * itemsPerPage;
@@ -39,7 +37,7 @@ function RecipeGallery() {
           {currentRecipes.map((recipe) => (
             <div className="individualRecipe "  key={recipe.id}>
                  <img src={recipe.image} alt="recipe" className="w-full h-[250px] object-cover"/>
-                <h2 className="text-[20px] font-OrkneyRegular pt-4">{recipe.title}</h2>
+                 <h2 className="text-[20px] font-OrkneyRegular pt-4">{recipe.title}</h2>
                  <p className="font-[400] text-[14px] md:text-[16px] text-justify font-OrkneyLight pt-2">{recipe.body}</p>
              </div>
           ))}
