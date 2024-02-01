@@ -3,7 +3,7 @@ import { privateDining1 } from "../constants/data";
 const PrivateDining1 = () => {
     return (
         <div>
-            <Section title={privateDining1.title} content={privateDining1.content} image={privateDining1.image} buttonText="Learn more"/>
+            <Section title={privateDining1.title} content={privateDining1.content} image={privateDining1.image} buttonText="Contact me"/>
         </div>
     )
 }

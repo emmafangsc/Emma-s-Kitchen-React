@@ -1,8 +1,9 @@
 // import images from "../constants/images";
+import { NavLink } from "react-router-dom";
 import {SubHeading1} from "../components/SubHeading"
 import styles from "../constants/style";
 
-const HomeSection = ({title, content, image}) => {
+const HomeSection = ({title, content, image, link}) => {
     return (
 
         <div className="wrapper px-[2rem] md:px-[4rem] xl:px-[6rem] flex">
@@ -14,7 +15,7 @@ const HomeSection = ({title, content, image}) => {
                     <SubHeading1 title={title} />
                     <div className="text font-[400] text-[14px] leading-normal md:text-[18px] lg:leading-relaxed text-justify indent-12 font-OrkneyLight">{content}</div>
                     <div className="button flex justify-end pt-8">
-                        <button className={`bg-[#383838] border-black border-[1px] text-yellow font-OrkneyBold ${styles.sectionButton} hover:text-black hover:bg-yellow`} >Learn more</button>
+                        <NavLink to={link}><button className={`bg-[#383838] border-black border-[1px] text-yellow font-OrkneyBold ${styles.sectionButton} hover:text-black hover:bg-yellow`} >Learn more</button></NavLink>
                     </div>
                     
                 </div>

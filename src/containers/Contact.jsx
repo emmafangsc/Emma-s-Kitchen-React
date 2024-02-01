@@ -2,7 +2,7 @@ import images from "../constants/images";
 // import styles from "../constants/style";
 const Contact = () => {
     return (
-        <div className="contactSection">
+        <div className="contactSection" >
             <div className="contact-banner relative h-[300px] flex">
                     <img src={images.connect} alt="headerBG" className="w-full object-cover  "/>
                     <div className="overlayBG w-full h-full bg-black absolute opacity-10"></div>

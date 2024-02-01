@@ -3,9 +3,9 @@ export const CookingFeature = ({title, image, content})=>{
         <div className="feature-container flex items-start justify-start bg-yellow">
                 <div className="feature flex flex-col items-center">
                     <div className="feature1-image flex w-full justify-start">
-                        <img src={image}  alt="feature" className="h-[400px] md:h-[400px] xl:h-[540px] object-cover w-[700px]"/>
+                        <img src={image}  alt="feature" className="h-[400px] md:h-[400px] xl:h-[500px] object-cover w-[700px]"/>
                     </div>
-                    <div className="content flex flex-col px-[2rem] text-center items-center">
+                    <div className="content flex flex-col px-[2rem] text-center items-center w-full">
                         <h2 className="text-[18px] xl:text-[20px] py-2 font-OrkneyLight">{title}</h2>
                         <p className="text-[15px] leading-[32px] text-justify font-OrkneyRegular">{content}</p>
                         <div className="link flex self-end gap-[13px] items-center group">

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 import { slides } from "../constants/data";
+import { NavLink } from 'react-router-dom';
 
 class Carousel extends Component {
   constructor(props) {
@@ -95,7 +96,7 @@ class Carousel extends Component {
                     <div className="caption absolute self-center flex flex-col items-center px-6">
                       <h1 className="md:leading-[60px] text-white font-bold text-[32px] md:text-[48px] text-center font-OrkneyRegular ">{slide.caption.title}</h1>
                       <p className="py-[2rem] md:leading-[44px] text-[19px] md:text-[24px] text-center text-white px-[1rem] font-OrkneyLight max-w-[700px]">{slide.caption.content}</p>
-                      <button className="button shadow-boxShadow text-[16px] md:text-[20px] font-OrkneyLight bg-yellow w-[180px] md:w-[220px] h-[44px] md:h-[50px] rounded-[4px] cursor-pointer hover:text-white">Emma's Recipes</button>
+                      <NavLink to='/recipes'><button className="button shadow-boxShadow text-[16px] md:text-[20px] font-OrkneyLight bg-yellow w-[180px] md:w-[220px] h-[44px] md:h-[50px] rounded-[4px] cursor-pointer hover:text-white">Emma's Recipes</button></NavLink>
                     </div>
                   </div>
               );

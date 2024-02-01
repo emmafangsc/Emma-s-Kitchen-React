@@ -20,7 +20,7 @@ function AboutMe() {
             <div className="pt-16">
                 <AboutMeSection title="Welcome to Emma's Kitchen!"/>
             </div>
-            <div className="pt-16">
+            <div className="pt-16" id="contact">
                 <Contact />
             </div>
             <div className='newsletter relative z-10  '>

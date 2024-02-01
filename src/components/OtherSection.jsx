@@ -1,5 +1,7 @@
+import { NavLink } from "react-router-dom";
 import styles from "../constants/style";
 import { SubHeading2 } from "./SubHeading";
+import { HashLink } from 'react-router-hash-link';
 const Section = ({title, content, image, buttonText}) => {
     return (
 
@@ -12,7 +14,7 @@ const Section = ({title, content, image, buttonText}) => {
                     <SubHeading2 title={title} />
                     <div className="text font-[400] text-[14px] leading-normal md:text-[18px] lg:leading-relaxed text-justify indent-12 font-OrkneyLight">{content}</div>
                     <div className="button flex justify-end pt-8">
-                        <button className={`bg-[#383838] border-black border-[1px] text-yellow font-OrkneyBold ${styles.sectionButton} hover:text-black hover:bg-yellow`} >{buttonText}</button>
+                        <HashLink smooth to="/about-me#contact"><button className={`bg-[#383838] border-black border-[1px] text-yellow font-OrkneyBold ${styles.sectionButton} hover:text-black hover:bg-yellow`} >{buttonText}</button></HashLink>
                     </div>
                     
                 </div>
