@@ -12,22 +12,37 @@ import axios from "axios";
 function Recipes() {
     const [searchQuery, setSearchQuery] = useState('');
     const [APIData, setAPIData] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState('Select a category');
+    const [filteredData, setFilteredData] = useState([]);
     useEffect(() => {
         axios.get(`https://emmaskitchen.emmafang.com/search.php`)
           .then((response) => {
             setAPIData(response.data);
+            setFilteredData(response.data);
           })
       }, [])
 
+    const handleCategoryChange = (event) => {
+        setSelectedCategory(event.target.textContent);
+        if (selectedCategory === 'All category') {
+            setFilteredData(APIData.filter(item => item.title.toLowerCase().includes(searchQuery.toLowerCase())));
+          } else {
+            const filtered = APIData.filter(item => item.category === selectedCategory && item.title.toLowerCase().includes(searchQuery.toLowerCase()));
+            setFilteredData(filtered);
+          }
+        
+      };
+    
       const handleSearchInputChange = (event) => {
         setSearchQuery(event.target.value);
+        if (selectedCategory === 'All category') {
+          setFilteredData(APIData.filter(item => item.title.toLowerCase().includes(event.target.value.toLowerCase())));
+        } else {
+          const filtered = APIData.filter(item => item.category === selectedCategory && item.title.toLowerCase().includes(event.target.value.toLowerCase()));
+          setFilteredData(filtered);
+          console.log(filteredData);
+        }
       };
-
-      const filteredData = APIData.filter((post) => {
-        return Object.keys(post).some((key) => {
-          return post[key].toString().toLowerCase().includes(searchQuery.toLowerCase())
-        })
-      })
     return(
         <div>
             <div className='header sticky top-0 z-20  bg-yellow'>
@@ -38,7 +53,7 @@ function Recipes() {
                 <Header title="Sichuan home cooking to satisfy your belly and soul"/>
             </div>
             <div className="recipes-search">
-                <Search handleSearchInputChange={handleSearchInputChange}/>
+                <Search  handleCategoryChange={handleCategoryChange} handleSearchInputChange={handleSearchInputChange} selectedCategory={selectedCategory}/>
             </div>
             <div className="recipes-gallery">
                 <RecipeGallery filteredData={filteredData}/>

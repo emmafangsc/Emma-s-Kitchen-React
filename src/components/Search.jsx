@@ -1,6 +1,13 @@
 import { useState} from "react";
-const Search = ({handleSearchInputChange}) => {
+const Search = ({ handleCategoryChange, handleSearchInputChange, selectedCategory}) => {
     const [showMenu, setShowMenu] = useState(false);
+    const categories = [
+        { name: 'All category', value: '' },
+        { name: 'vegetarian', value: 'Vegetarian' },
+        { name: 'chicken', value: 'Chicken' },
+        { name: 'beef', value: 'Beef' },
+        { name: 'pork', value: 'Pork' }
+      ];
     function showDropdownMenu(){
         setShowMenu(!showMenu);
     }
@@ -11,16 +18,16 @@ const Search = ({handleSearchInputChange}) => {
                 
                 <div className="search-left flex-1 flex flex-col">
                     <div className="flex items-center justify-between px-4 xl:w-1/2 py-4 bg-[beige] cursor-pointer" onClick={showDropdownMenu}>
-                        <div>Choose a category</div> 
+                        <div>{selectedCategory}</div> 
                         <span className="triangle1"></span>
                     </div>
                     {
                         showMenu && (
-                            <div className="pl-3 w-1/2 bg-[beige]">
+                            <div className="categoryMenu pl-4 w-1/2 bg-[beige]"  >
                                 <ul className="flex flex-col gap-2">
-                                    <li>Vegetables</li>
-                                    <li>Chicken</li>
-                                    <li>Beef</li>
+                                    {categories.map((item, index) => (
+                                    <li key={index} value={item.value} className="cursor-pointer" onClick={handleCategoryChange}>{item.name}</li>
+                                    ))}
                                 </ul>
                             </div>
                         )
@@ -29,14 +36,6 @@ const Search = ({handleSearchInputChange}) => {
                 </div>
                 <div className="search-right flex-1 ">
                     <input className="px-4 py-4 w-full py-3 bg-[beige] outline-grey" placeholder="Search... " type="text" name='searchQuery'  onChange={handleSearchInputChange}></input>
-                        {/* <ul>
-                            {filteredData.map((post) => (
-                            <div>
-                                <li key={post.id}>{post.title}</li>
-                                <img src={post.image} />
-                            </div>
-                            ))}
-                        </ul> */}
                 </div>
                 
 
