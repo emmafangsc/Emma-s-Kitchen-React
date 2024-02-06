@@ -22,27 +22,22 @@ function Recipes() {
           })
       }, [])
 
-    const handleCategoryChange = (event) => {
-        setSelectedCategory(event.target.textContent);
-        if (selectedCategory === 'All category') {
-            setFilteredData(APIData.filter(item => item.title.toLowerCase().includes(searchQuery.toLowerCase())));
-          } else {
-            const filtered = APIData.filter(item => item.category === selectedCategory && item.title.toLowerCase().includes(searchQuery.toLowerCase()));
-            setFilteredData(filtered);
-          }
-        
+      const handleCategoryChange = (name) => {
+        setSelectedCategory(name);
       };
-    
+      
       const handleSearchInputChange = (event) => {
         setSearchQuery(event.target.value);
-        if (selectedCategory === 'All category') {
-          setFilteredData(APIData.filter(item => item.title.toLowerCase().includes(event.target.value.toLowerCase())));
-        } else {
-          const filtered = APIData.filter(item => item.category === selectedCategory && item.title.toLowerCase().includes(event.target.value.toLowerCase()));
-          setFilteredData(filtered);
-          console.log(filteredData);
-        }
       };
+      
+      useEffect(() => {
+        if (selectedCategory === 'All category'|| selectedCategory === 'Select a category') {
+          setFilteredData(APIData.filter(item => item.title.toLowerCase().includes(searchQuery.toLowerCase())));
+        } else {
+          const filtered = APIData.filter(item => item.category === selectedCategory && item.title.toLowerCase().includes(searchQuery.toLowerCase()));
+          setFilteredData(filtered);
+        }
+      }, [selectedCategory, searchQuery]);
     return(
         <div>
             <div className='header sticky top-0 z-20  bg-yellow'>

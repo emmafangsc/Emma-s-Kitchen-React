@@ -26,7 +26,7 @@ const Search = ({ handleCategoryChange, handleSearchInputChange, selectedCategor
                             <div className="categoryMenu pl-4 w-1/2 bg-[beige]"  >
                                 <ul className="flex flex-col gap-2">
                                     {categories.map((item, index) => (
-                                    <li key={index} value={item.value} className="cursor-pointer" onClick={handleCategoryChange}>{item.name}</li>
+                                    <li key={index} value={item.value} className="cursor-pointer" onClick={()=>{handleCategoryChange(item.name); setShowMenu(false);}}>{item.name}</li>
                                     ))}
                                 </ul>
                             </div>
