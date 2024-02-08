@@ -2,23 +2,7 @@ import Pagination from "./Pagination";
 import { useState, useEffect } from "react";
 import axios from "axios";
 const RecipeGallery = ({filteredData}) =>{
-    
-    // const [recipes, setRecipes] = useState([]);
-    // const [error, setError] = useState(null);
-
-    // useEffect(() => {
-    //     getRecipes();
-    //   }, []);
-    
-    
-    // function getRecipes() {
-    //     axios.get('https://test.emmafang.com/blog.php').then(function (response) {
-    //       console.log(response.data);
-    //       setRecipes(response.data);
-    //     }).catch(function (error) {
-    //       setError(error);
-    //     });
-    //   }
+  
     const recipes = filteredData;
     const itemsPerPage = 9;
     const [currentPage, setCurrentPage] = useState(1);

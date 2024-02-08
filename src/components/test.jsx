@@ -1,43 +1,12 @@
-function Recipes() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [APIData, setAPIData] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [filteredData, setFilteredData] = useState([]);
-  useEffect(() => {
-      axios.get(`https://emmaskitchen.emmafang.com/search.php`)
-        .then((response) => {
-          setAPIData(response.data);
-          setFilteredData(response.data);
-        })
-    }, [])
-    const handleCategoryChange = (event) => {
-      setSelectedCategory(event.target.textContent);
-      if (event.target.textContent === '') {
-          setFilteredData(APIData);
-          console.log(filteredData);
-        } else {
-          const filtered = APIData.filter(item => item.category === event.target.textContent);
-          setFilteredData(filtered);
-          console.log(filteredData);
-        }
-  };
-    const handleSearchInputChange = (event) => {
-      setSearchQuery(event.target.value);
-      if (selectedCategory === '') {
-        setFilteredData(APIData.filter(item => item.title.toLowerCase().includes(event.target.value.toLowerCase())));
-      } else {
-        const filtered = APIData.filter(item => item.category === selectedCategory && item.title.toLowerCase().includes(event.target.value.toLowerCase()));
-        setFilteredData(filtered);
-      }
-    };
-  return(
-      <div>
-          <div className="recipes-search">
-              <Search handleSearchInputChange={handleSearchInputChange} handleCategoryChange={handleCategoryChange}/>
-          </div>
-          <div className="recipes-gallery">
-              <RecipeGallery filteredData={filteredData}/>
-          </div>
+<div className="languageButton border-[red] border-[1px] flex gap-[1px] justify-center items-center text-[14px] w-[3rem] py-1 px-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuDesktop}>
+  language
+      <FaCaretDown />
+  </div>
+  {languageMenuDesktop && (
+      <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg w-[6rem]" >
+          <ul className="text-[12px] text-yellow text-center">
+              <li className="pb-2 cursor-pointer hover:text-white"  onClick={() => changeLanguage('en')}>{t('languagebutton.english')}</li>
+              <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('languagebutton.chinese')}</li>                                        
+          </ul>
       </div>
-  )
-}
+  )}
