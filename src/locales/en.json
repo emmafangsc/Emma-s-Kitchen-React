@@ -1,12 +1,11 @@
 {
     "languagebutton": {
-      "english": "English",
-      "chinese": "Chinese"
+      "english": "EN"
       
     },
     "language": {
-      "english": "En",
-      "chinese": "Ch",
+      "english": "ENGLISH",
+      "chinese": "CHINESE",
       "home": "Home",
       "cookingClass": "Cooking Class",
       "privateDining": "Private Dining",

@@ -11,7 +11,7 @@ const Nav = () => {
     const [languageMenuMobile, setLanguageMenuMobile] = useState(false);
     const refDesktop = useRef();
     const refMobile = useRef();
-    const [language, setLanguage] = useState('En');
+    const [language, setLanguage] = useState('en');
 
     const { t, i18n } = useTranslation();
   
@@ -90,12 +90,12 @@ const Nav = () => {
                 </div>
                 <div className="right flex items-center font-OrkneyRegular">
                     <div ref={refDesktop} className="flex flex-col justify-center relative">
-                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[4rem] py-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuDesktop}>
-                        {language === 'En' ? t('language.english') : t('language.chinese')}
+                        <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[3rem] py-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuDesktop}>
+                        {language === 'en' ? t('languagebutton.english') : t('languagebutton.chinese')}
                             <FaCaretDown />
                         </div>
                         {languageMenuDesktop && (
-                            <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg w-[4rem]" >
+                            <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg w-[6rem]" >
                                 <ul className="text-[12px] text-yellow text-center">
                                     <li className="pb-2 cursor-pointer hover:text-white"  onClick={() => changeLanguage('en')}>{t('language.english')}</li>
                                     <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('language.chinese')}</li>                                        
@@ -126,12 +126,12 @@ const Nav = () => {
                 </div>
                 <div ref={refMobile} className="flex flex-col justify-center relative" >
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[3rem] py-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuMobile}>
-                        {language === 'En' ? t('language.english') : t('language.chinese')}
+                        {language === 'en' ? t('languagebutton.english') : t('languagebutton.chinese')}
                             <FaCaretDown />
                         </div>
                         {languageMenuMobile && (
-                            <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[3rem] right-0 rounded-[10px] w-[4rem]" >
-                                <ul className="text-[12px] text-yellow">
+                            <div className="languageMenu flex-col absolute bg-black p-[0.5rem] top-[3rem] right-0 rounded-[10px] w-[5rem]" >
+                                <ul className="text-[12px] text-yellow text-center">
                                     <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('en')}>{t('language.english')}</li>
                                     <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('language.chinese')}</li>
                                 </ul>
