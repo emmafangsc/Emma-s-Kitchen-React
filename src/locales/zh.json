@@ -2,5 +2,17 @@
     "languagebutton": {
       "english": "英文",
       "chinese": "中文"
+      
+    },
+    "language": {
+      "english": "英文",
+      "chinese": "中文",
+      "home": "首页",
+      "cookingClass": "烹饪课程",
+      "privateDining": "私人宴会",
+      "recipes": "食谱",
+      "aboutMe": "关于我",
+      "signUp": "注册"
     }
   }
+

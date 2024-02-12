@@ -1,6 +1,5 @@
 import {FaCaretDown, FaAngleRight} from "react-icons/fa";
 import images from "../constants/images";
-// import { useState } from "react";
 import {useRef, useEffect, useState} from "react";
 import { translations } from "../constants/languageData";
 import { NavLink } from 'react-router-dom';
@@ -71,12 +70,12 @@ const Nav = () => {
                 </div>
                 <div className="menu hidden lg:flex justify-center items-center">
                     <ul className="flex flex-nowrap font-OrkneyRegular text-[16px] xl:text-[18px]">
-                        <li className="cursor-pointer px-[1rem] py-[2rem] font-black hover:text-white"><NavLink to="/home">{language === 'english' ? translations.home.english : translations.home.chinese}</NavLink></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] font-black hover:text-white"><NavLink to="/home">{t('language.home')}</NavLink></li>
                         <div className="subMenu group relative flex justify-center">
-                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/cooking-class">{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</NavLink></li>
+                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/cooking-class">{ t('language.cookingClass') }</NavLink></li>
                         </div>
                         <div className="subMenu group relative flex justify-center font-OrkneyRegular">
-                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/private-dining">{language === 'english' ? translations.menu2.english :  translations.menu2.chinese}<span className="triangle"></span></NavLink></li>
+                            <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/private-dining">{t('language.privateDining')}<span className="triangle"></span></NavLink></li>
                             <div className="subMenu__content group-hover:block hidden absolute top-20 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
                                 <ul className="text-yellow">
                                     <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">Item1</li>
@@ -85,21 +84,21 @@ const Nav = () => {
                                 </ul>
                             </div>
                         </div>
-                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/recipes">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</NavLink></li>
-                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/about-me">{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</NavLink></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/recipes">{t('language.recipes')}</NavLink></li>
+                        <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/about-me">{t('language.aboutMe') }</NavLink></li>
                     </ul>
                 </div>
                 <div className="right flex items-center font-OrkneyRegular">
                     <div ref={refDesktop} className="flex flex-col justify-center relative">
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[4rem] py-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuDesktop}>
-                        {language === 'en' ? t('languagebutton.english') : t('languagebutton.chinese')}
+                        {language === 'En' ? t('language.english') : t('language.chinese')}
                             <FaCaretDown />
                         </div>
                         {languageMenuDesktop && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg w-[4rem]" >
                                 <ul className="text-[12px] text-yellow text-center">
-                                    <li className="pb-2 cursor-pointer hover:text-white"  onClick={() => changeLanguage('en')}>{t('languagebutton.english')}</li>
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('languagebutton.chinese')}</li>                                        
+                                    <li className="pb-2 cursor-pointer hover:text-white"  onClick={() => changeLanguage('en')}>{t('language.english')}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('language.chinese')}</li>                                        
                                 </ul>
                             </div>
                         )}
@@ -127,14 +126,14 @@ const Nav = () => {
                 </div>
                 <div ref={refMobile} className="flex flex-col justify-center relative" >
                         <div className="languageButton flex gap-[1px] justify-center items-center text-[14px] w-[3rem] py-1 bg-yellow text-black hover:bg-black hover:text-yellow cursor-pointer shadow-md rounded" onClick={showLanguageMenuMobile}>
-                        {language === 'en' ? t('languagebutton.english') : t('languagebutton.chinese')}
+                        {language === 'En' ? t('language.english') : t('language.chinese')}
                             <FaCaretDown />
                         </div>
                         {languageMenuMobile && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[3rem] right-0 rounded-[10px] w-[4rem]" >
                                 <ul className="text-[12px] text-yellow">
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('en')}>{t('languagebutton.english')}</li>
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('languagebutton.chinese')}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('en')}>{t('language.english')}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('language.chinese')}</li>
                                 </ul>
                             </div>
                         )}
@@ -144,13 +143,13 @@ const Nav = () => {
             <div className={`overlayMenu bg-black font-OrkneyRegular flex lg:hidden h-full w-auto px-[2rem] transition-opacity duration-500 ease-in-out ${hamburgerMenu ? "show" : "hide"}`}>
                 <ul className="text-[18px] w-full text-yellow">
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
-                        <li><NavLink to="/home">{language === 'english' ? translations.home.english : translations.home.chinese}</NavLink></li>
+                        <li><NavLink to="/home">{language === 'en' ? t('home.english') : t('home.chinese')}</NavLink></li>
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu1}>
-                        <li><NavLink to="/cooking-class">{language === 'english' ? translations.menu1.english : translations.menu1.chinese}</NavLink></li>
+                        <li><NavLink to="/cooking-class">{language === 'en' ? t('cookingClass.english') : t('cookingClass.chinese')}</NavLink></li>
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu2}>
-                        <li><NavLink to="/private-dining">{language === 'english' ? translations.menu2.english : translations.menu2.chinese}</NavLink></li>
+                        <li><NavLink to="/private-dining">{language === 'en' ? t('privateDining.english') : t('privateDining.chinese')}</NavLink></li>
                         <FaAngleRight className="text-[15px]"/>
                     </div>
                     <div className={`subMenu2 px-[1rem] ${subMenu2 ? "show" : "hide"}`}>
@@ -162,10 +161,10 @@ const Nav = () => {
                     </div>
                     
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
-                        <li><NavLink to="/recipes">{language === 'english' ? translations.recipes.english : translations.recipes.chinese}</NavLink></li>
+                        <li><NavLink to="/recipes">{language === 'en' ? t('recipes.english') : t('recipes.chinese')}</NavLink></li>
                     </div>
                     <div className="flex justify-between items-center py-6 hover:text-white cursor-pointer">
-                        <li><NavLink to="/about-me">{language === 'english' ? translations.aboutme.english : translations.aboutme.chinese}</NavLink></li>
+                        <li><NavLink to="/about-me">{language === 'en' ? t('aboutMe.english') : t('aboutMe.chinese')}</NavLink></li>
                     </div>
                 </ul>
             </div>

@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import styles from "../constants/style";
 import { SubHeading2 } from "./SubHeading";
 import { HashLink } from 'react-router-hash-link';

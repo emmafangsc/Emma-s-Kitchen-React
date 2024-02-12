@@ -1,7 +1,20 @@
 {
     "languagebutton": {
       "english": "English",
-      "chinese": "中文"
+      "chinese": "Chinese"
+      
+    },
+    "language": {
+      "english": "En",
+      "chinese": "Ch",
+      "home": "Home",
+      "cookingClass": "Cooking Class",
+      "privateDining": "Private Dining",
+      "recipes": "Recipes",
+      "aboutMe": "About Me",
+      "signUp": "Sign Up"
+    
     }
-  }
   
+  }
+   
