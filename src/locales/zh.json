@@ -12,7 +12,16 @@
       "privateDining": "私人宴会",
       "recipes": "食谱",
       "aboutMe": "关于我",
-      "signUp": "注册"
+      "signUp": "注册",
+      "title1": "开启川味之门",
+      "content1": "浏览我收集的超级正宗四川食谱吧"
+    },
+    "carousel": {
+      "slide1Title": "开启川味之门",
+      "slide1Content": "浏览我的超正宗川菜食谱收藏。",
+      "slide2Title": "提升川菜烹饪技巧",
+      "slide2Content": "在我们的烹饪课程上学习如何烹饪美味食物。",
+      "slide3Title": "欢迎来到我的博客"
     }
   }
 

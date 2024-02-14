@@ -11,9 +11,18 @@
       "privateDining": "Private Dining",
       "recipes": "Recipes",
       "aboutMe": "About Me",
-      "signUp": "Sign Up"
+      "signUp": "Sign Up"    
+    },
     
-    }
+      "carousel": {
+          "slide1Title": "Open the door to Sichuan flavor",
+          "slide1Content": "Check out my collection of super authentic Sichuan recipes.",
+          "slide2Title": "Level up your Sichuan cooking",
+          "slide2Content": "Learn to cook delicious food on our cooking course.",
+          "slide3Title": "Welcome to my blog",
+          "slide3Content": "I unlock Sichuan cuisine secrets and share my passion for Sichuan cuisine."
+      }
+  
   
   }
    
