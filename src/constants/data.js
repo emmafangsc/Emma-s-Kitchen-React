@@ -4,27 +4,28 @@ export const slides = [
 {
     id: 1,
     image: images.carousel1,
-    caption: {
-        title: "Open the door to Sichuan flavor",
-        content: "Check out my collection of super authentic Sichuan recipes."
-    }
+    // caption: {
+    //     title: "Open the door to Sichuan flavor",
+    //     content: "Check out my collection of super authentic Sichuan recipes."
+    // }
 },
 {
     id: 2,
     image: images.carousel2,
-    caption: {
-        title: "Level up your Sichuan cooking",
-        content: "Learn to cook delicious food on our cooking course."
-    }
+    // caption: {
+    //     title: "Level up your Sichuan cooking",
+    //     content: "Learn to cook delicious food on our cooking course."
+    // }
 },
 {
     id: 3,
     image: images.carousel3,
-    caption: {
-        title: "Welcome to my blog",
-        content: "I unlock Sichuan cuisine secrets and share my passition for Sichuan cusine."
-    }
+    // caption: {
+    //     title: "Welcome to my blog",
+    //     content: "I unlock Sichuan cuisine secrets and share my passition for Sichuan cusine."
+    // }
 }
+
 ]
 const section1 = 
 {
@@ -57,8 +58,6 @@ const section3 =
     <div>
         <p>Hey there, I am Emma, a passionate food lover from Sichuan, China, which is known for its delicious and spicy cuisine! </p>
         ​<p>Growing up in Sichuan, I was surrounded by all kinds of tasty food. I found it difficult to find the authentic Sichuan flavour from restaurants while living abroad, so I decided to create my own kitchen to recreate the authentic taste. I are on a mission to introduce the amazing Sichuan cuisine to as many people as possible. In Emma’s Kitchen, I will share every key step to get the most authentic flavour with you. </p>
-        {/* ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p> */}
-        {/* ​<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?</p> */}
     </div>,
 
     image3: images.section3
@@ -102,21 +101,18 @@ export const testimonials =
     title: 'Testimonial 1',
     content: 'The feedback I have received has all been very positive, that it was a super good event, that it was fun to cook with the colleagues, that the food was good and that you were phenomenal at keeping an overview in an occasionally rather hectic kitchen. several members who have already expressed their desire for us to do a new cooking event for next year.',
     author: "Emma"
-    // image: images.section4
     },
     {
         id: 2,
         title: 'Testimonial 2',
         content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?',
         author: "Ted"
-        // image: images.section4
     },
     {
         id: 3,
         title: 'Testimonial 3',
         content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?',
         author: "Marie"
-        // image: images.section4
     },
 ]
 

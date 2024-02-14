@@ -1,28 +1,100 @@
+
 {
-    "languagebutton": {
-      "english": "EN"
-      
-    },
-    "language": {
-      "english": "ENGLISH",
-      "chinese": "CHINESE",
-      "home": "Home",
-      "cookingClass": "Cooking Class",
-      "privateDining": "Private Dining",
-      "recipes": "Recipes",
-      "aboutMe": "About Me",
-      "signUp": "Sign Up"    
-    },
+  "languagebutton": {
+    "english": "EN"
     
-      "carousel": {
-          "slide1Title": "Open the door to Sichuan flavor",
-          "slide1Content": "Check out my collection of super authentic Sichuan recipes.",
-          "slide2Title": "Level up your Sichuan cooking",
-          "slide2Content": "Learn to cook delicious food on our cooking course.",
-          "slide3Title": "Welcome to my blog",
-          "slide3Content": "I unlock Sichuan cuisine secrets and share my passion for Sichuan cuisine."
+  },
+  "language": {
+    "english": "ENGLISH",
+    "chinese": "CHINESE",
+    "home": "Home",
+    "cookingClass": "Cooking Class",
+    "privateDining": "Private Dining",
+    "recipes": "Recipes",
+    "aboutMe": "About Me",
+    "signUp": "Sign Up",
+    "emma's recipes": "Emma's Recipes",
+    "item1": "Item 1" , 
+    "item2": "Item 2",  
+    "item3": "Item 3",
+    "learnMore": "Learn more",
+    "newsletter-title": "Newsletter",
+    "newsletter-content": "be the first to hear my news, subscribe from my newsletter",
+    "newsletter-firstName": "First name",
+    "newsletter-lastName": "Last name",
+    "newsletter-email": "email",
+    "newsletter-subscribe": "Subscribe",
+    "copyright": "Copyright © 2024 emmafang. All rights reserved."
+
+  },
+  
+  "slides": [
+    {
+      "id": 1,
+      "caption": {
+          "title": "Open the door to Sichuan flavor",
+          "content": "Check out my collection of super authentic Sichuan recipes."
       }
+    },
   
+    {
+        "id": 2,
+        "caption": {
+            "title": "Level up your Sichuan cooking",
+            "content": "Learn to cook delicious food on our cooking course."
+        }
+    },
+    {
+        "id": 3,
+        "caption": {
+            "title": "Welcome to my blog",
+            "content": "I unlock Sichuan cuisine secrets and share my passition for Sichuan cusine."
+        }
+    }
+    
+  ],
+  "home-section1": {
+    "title": "Come to Sichuan cooking class!",
+    "p1": "Do you love to cook and would you like to become even better at it? Or are you perhaps looking for a different, fun, and not least tasty activity that you can do with your friends, family, or colleagues? Then you should attend the Sichuan cooking class at Emma's Kitchen!",
+    "p2": "In our premises in the heart of Copenhagen, we offer a cooking course with a focus on food culture, useful tips and tricks, and great culinary experiences. We are located very close to a metro station, and with good options for public transport, you can easily get here if you come from a bit outside the city, for example Lyngby or Herlev.",
+    "p3": "Come to our Sichuan cooking class and let yourself be inspired by our cooking universe!"
+  },
+  "home-section2": {
+    "title": "Have a fantastic meal with a private chef",
+    "p1": "Are you looking for a special and interesting food experience that you can share with family, friends or as an activity for a work event? Then you can spoil yourself, your colleagues and your loved ones with a completely unique private dining experience in Emma's Kitchen. Here you get a fantastic dinner, which is prepared together with your own private chef.",
+    "p2": "With a kitchen centrally located in Copenhagen, we hold private dining parties for customers who come from the entire area around the capital, including Lyngby and Herlev. We cook with fresh, quality ingredients, and we specialize in Sichuan cooking, which is mostly about promoting the qualities and taste potential of the individual ingredients. You can therefore look forward to an evening with a focus on both fantastic food and great company."
+  },
+  "home-section3": {
+    "title": "About me",
+    "p1": "Hey there, I am Emma, a passionate food lover from Sichuan, China, which is known for its delicious and spicy cuisine!",
+    "p2": "Growing up in Sichuan, I was surrounded by all kinds of tasty food. I found it difficult to find the authentic Sichuan flavour from restaurants while living abroad, so I decided to create my own kitchen to recreate the authentic taste. I are on a mission to introduce the amazing Sichuan cuisine to as many people as possible. In Emma’s Kitchen, I will share every key step to get the most authentic flavour with you."
+  },
+    
+  "testimonials": 
+[
+    {
+    "id": 1,
+    "title": "Testimonial 1",
+    "content": "The feedback I have received has all been very positive, that it was a super good event, that it was fun to cook with the colleagues, that the food was good and that you were phenomenal at keeping an overview in an occasionally rather hectic kitchen. several members who have already expressed their desire for us to do a new cooking event for next year.",
+    "author": "Emma"
+    },
+    {
+        "id": 2,
+        "title": "Testimonial 2",
+        "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?",
+        "author": "Ted"
+    },
+    {
+        "id": 3,
+        "title": "Testimonial 3",
+        "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laudantium ea numquam suscipit nostrum temporibus quia sed ducimus deserunt eveniet. Ex, repellendus animi. Quidem enim itaque doloribus blanditiis sapiente. Eveniet?",
+        "author": "Marie"
+    }
+    
+]
+    
+    
+
   
-  }
+}
    
