@@ -39,10 +39,10 @@ const Carousel = () => {
       <div className="slideContainer group relative">
         <div className="slide flex flex-col overflow-hidden relative" 
           onMouseEnter={() => {
-          setPaused({ paused: true });
+          setPaused(true);
         }}
           onMouseLeave={() => {
-          setPaused({ paused: false });
+          setPaused(false);
         }}
         >
           <div
