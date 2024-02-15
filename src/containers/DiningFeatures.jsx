@@ -1,9 +1,10 @@
 import {DiningFeature} from "../components/Feature";
-// import images from "../constants/images";
 import { diningFeatures } from "../constants/data";
 import React, { useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
+    const { t } = useTranslation()
     const [startIndex, setStartIndex] = useState(0);
 
     const Prev = () => {
@@ -28,7 +29,7 @@ const Features = () => {
     return (
         <div className="flex flex-col features px-[1rem] md:px-[4rem] xl:px-[6rem]">
             <div className="pt-4 lg:pt-0">
-                <h2 className="font-OrkneyRegular text-[18px] md:text-[34px] pt-4 lg:pt-0 text-center">Sichuan Food Inspirations</h2>
+                <h2 className="font-OrkneyRegular text-[18px] md:text-[34px] pt-4 lg:pt-0 text-center">{t('language.foodInspiration')}</h2>
             </div>
             <div className="flex link-wrapper justify-end">
                 <div className="link inline-flex gap-[13px] pb-4">
@@ -57,7 +58,7 @@ const Features = () => {
             <div className="features flex flex-col lg:flex-row gap-[30px] justify-start items-start w-full overflow-hidden ">
             {visibleFeatures.map((feature, index)=>(
                     <div key={feature.id}>
-                    <DiningFeature title={feature.title} image={feature.image} content={feature.content}/>
+                    <DiningFeature title={t(`diningFeatures.${feature.id-1}.title`)} image={feature.image} content={feature.content}/>
                     </div>
                     ))}
             </div>

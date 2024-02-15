@@ -27,7 +27,16 @@
     "copyright": "Copyright © 2024 emmafang. All rights reserved.",
     "cookingClass-header": "Find inspiration for everyday life on our cooking course",
     "foodInspiration": "Sichuan Food Inspirations",
-    "seeRecipe": "See recipe"
+    "seeRecipe": "See recipe",
+    "privateDining-header": "We offer a unique private dining experience",
+    "contactMe": "Contact me",
+    "bookATable": "Book a table",
+    "recipes-header": "Sichuan home cooking to satisfy your belly and soul",
+    "search-title": "Explore the recipe categories, select a meal and follow my cooking instructions to enjoy the authentic flavors of Sichuan in your kitchen.",
+    "search-category": "Select a category",
+    "search-search": "Search",
+    "aboutMe-header": "Welcome to Emma's Kitchen!"
+    
 
   },
   
@@ -63,9 +72,9 @@
     "p3": "Come to our Sichuan cooking class and let yourself be inspired by our cooking universe!"
   },
   "home-section2": {
-    "title": "Have a fantastic meal with a private chef",
-    "p1": "Are you looking for a special and interesting food experience that you can share with family, friends or as an activity for a work event? Then you can spoil yourself, your colleagues and your loved ones with a completely unique private dining experience in Emma's Kitchen. Here you get a fantastic dinner, which is prepared together with your own private chef.",
-    "p2": "With a kitchen centrally located in Copenhagen, we hold private dining parties for customers who come from the entire area around the capital, including Lyngby and Herlev. We cook with fresh, quality ingredients, and we specialize in Sichuan cooking, which is mostly about promoting the qualities and taste potential of the individual ingredients. You can therefore look forward to an evening with a focus on both fantastic food and great company."
+    "title": "Private Dining",
+    "p1": "Get a unique and intimate dining experience with our private dining concept, where chef Emma will prepare and serve a tailor-made menu for you.",
+    "p2": "With a kitchen centrally located in Copenhagen, we hold private dining parties for customers who come from the entire area around the capital, including Lyngby and Herlev. We specialize in Sichuan cooking, which mostly focuses on amplifying the vibrant flavors and tantalizing sensory profiles of each individual ingredient. From fiery chili peppers to numbing Sichuan peppercorns, our dishes dance with complexity and leave an indelible impression on your taste buds. You can therefore look forward to an evening with a focus on both fantastic food and great company."
   },
   "home-section3": {
     "title": "About me",
@@ -87,9 +96,70 @@
     "li3": "​learn to enhance the taste experience with our expert guidance",
     "li4": "and of course we round off by eating all the delicious food and enjoying the good company"
   },
+  "privateDining-section1": {
+    "title": "Have a fantastic meal with a private chef",
+    "p1": "If you’re seeking a unique, enjoyable, and delicious experience to share with friends, family, or colleagues, our private dining events are the perfect choice. Located in the heart of Copenhagen, our venue offers a culinary journey focused on food culture, practical tips, and delightful flavors. Whether you’re celebrating a special occasion or simply enjoying quality time with loved ones, our warm and comfortable dining environment awaits you. Here you get a fantastic dinner, which is prepared together with your own private chef.",
+    "p2": "At Emma’s Kitchen, you’ll savor unforgettable dishes, create lasting memories, and indulge your taste buds. Join us for an exceptional dining experience that combines exquisite cuisine with a cozy ambiance."
+  },
+  "privateDining-section2": {
+    "title": "Private dining for festive events",
+    "p1": "In Emma's Kitchen, we invite our guests into the kitchen, where we teach and talk about the proud Italian food traditions. Here you are not just served a delicious meal – you get the opportunity to prepare it yourself and develop your culinary skills. It is also an entertaining and pleasant activity where you and your guests get to know each other and have fun together.",
+    "p2": "Our private dining experience is therefore quite obvious if you have to organize a party, a company event or another special occasion that is something out of the ordinary.",
+    "p3": "We can also offer to hold brunch, lunch and dinner parties - each with 3 starters, 3 main courses and 3 desserts, made together. You will therefore have the opportunity to try a large selection of the different recipes that we have carefully developed over the years. We also offer food courses & Gastronomic team building."
+  },
 
+  "aboutMe": {
+    "p1": "Sichuan cuisine is one of the most popular and diverse cuisines in China and the world. The dishes of Sichuan cuisine are known for their deep and rich flavours, especially the taste of Sichuan pepper which is rare in other regional cuisines. Sichuan cuisine holds a reputation for its variety of seasonings used, as each dish requires different cooking methods. In Emma’s Kitchen, I will show you how to cook with different cooking methods include frying, steaming, braising and the most popular of which is stir-frying. ",
+    "p2": "Emma’s Kitchen is the perfect destination for food lovers who want to experience the authentic taste of Sichuan cuisine. You will have the opportunity to try some of the most famous Sichuan dishes, such as Mapo Tofu, Kung Pao Chicken, and Chili Chicken. In addition, you will also get to taste many of the family daily dishes such as Double Cooked Pork Belly, Scrambled Eggs with Tomato, and Stir-fried Green Veggies. Emma’s Kitchen is a real food trip to Sichuan, where you can indulge in the rich and deep flavours of Sichuan cuisine."
+  },
 
-    
+  "contact": {
+    "banner": "Lets Connect!",
+    "title": "Emma's Kitchen",
+    "p1": "If you have any questions about our events, courses or opening hours, you are always welcome to contact us below.",
+    "p2": "We are looking forward to hear from you.",
+    "tele-title": "Call us directly",
+    "tele": "Telephone: +45 99999999",
+    "e-title": "Send an email",
+    "email": "emmafangsc@gmail.com",
+    "address-title": "Address information",
+    "address": "Rued Langgaards Vej, 2300 Copenhagen"
+  },
+
+  "diningFeatures":
+  [
+      {
+          "id": 1,
+          "title": "Table 1",
+          "content": ""
+      },
+      {
+          "id": 2,
+          "title": "Table 2",
+          "content": ""
+      },
+      {
+          "id": 3,
+          "title": "Table 3",
+          "content": ""
+      },
+      {
+          "id": 4,
+          "title": "Table 4",
+          "content": ""
+      },
+      {
+          "id": 5,
+          "title": "Table 5",
+          "content": ""
+      },
+      {
+          "id": 6,
+          "title": "Table 6",
+          "content": ""
+      }
+  ],
+
   "testimonials": 
 [
     {

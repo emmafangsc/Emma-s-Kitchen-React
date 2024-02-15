@@ -1,4 +1,3 @@
-// import ContactBar from "../components/ContactBar";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Newsletter from "../components/Newsletter";
@@ -9,15 +8,16 @@ import PrivateDining1 from "../containers/PrivateDining1";
 import PrivateDining2 from "../containers/PrivateDining2";
 import DiningFeatures from "../containers/DiningFeatures";
 import ScrollToTop from "../components/ScrollToTop";
+import { useTranslation } from 'react-i18next';
 function PrivateDining() {
-    return (
+    const { t } = useTranslation();
+     return (
         <div className="relative m-auto max-w-screen-2xl" id='nav' >
             <div className='header sticky top-0 z-20  bg-yellow'>
-            {/* <ContactBar /> */}
             <Nav />
             </div>
             <div>
-                <Header title="We offer a unique private dining experience"/>
+                <Header title={t('language.privateDining-header')}/>
             </div>
             <div className="mt-16">
                 <PrivateDining1 />

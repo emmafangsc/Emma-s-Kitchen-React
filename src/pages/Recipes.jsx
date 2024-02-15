@@ -1,4 +1,3 @@
-// import ContactBar from "../components/ContactBar";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Search from "../components/Search";
@@ -9,11 +8,14 @@ import BackToTopButton from "../components/BackToTopButton";
 import ScrollToTop from "../components/ScrollToTop";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
 function Recipes() {
+  const { t } = useTranslation();
     const [searchQuery, setSearchQuery] = useState('');
     const [APIData, setAPIData] = useState([]);
-    const [selectedCategory, setSelectedCategory] = useState('Select a category');
+    const [selectedCategory, setSelectedCategory] = useState(t('language.search-category'));
     const [filteredData, setFilteredData] = useState([]);
+    
     useEffect(() => {
         axios.get(`https://emmaskitchen.emmafang.com/search.php`)
           .then((response) => {
@@ -45,7 +47,7 @@ function Recipes() {
                 <Nav />
             </div>
             <div>
-                <Header title="Sichuan home cooking to satisfy your belly and soul"/>
+                <Header title={t('language.recipes-header')}/>
             </div>
             <div className="recipes-search">
                 <Search  handleCategoryChange={handleCategoryChange} handleSearchInputChange={handleSearchInputChange} selectedCategory={selectedCategory}/>
