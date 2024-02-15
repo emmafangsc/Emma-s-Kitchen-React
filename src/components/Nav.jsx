@@ -11,14 +11,29 @@ const Nav = () => {
     const [languageMenuMobile, setLanguageMenuMobile] = useState(false);
     const refDesktop = useRef();
     const refMobile = useRef();
-    const [language, setLanguage] = useState('en');
+    // const [language, setLanguage] = useState('en');
 
     const { t, i18n } = useTranslation();
+
+    const [language, setLanguage] = useState(localStorage.getItem('language') || 'en');
+
+  const handleLanguageChange = (selectedLanguage) => {
+    i18n.changeLanguage(selectedLanguage);
+    setLanguage(selectedLanguage);
+    localStorage.setItem('language', selectedLanguage);
+  };
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+    }
+  }, []);
   
-    const changeLanguage = (language) => {
-      i18n.changeLanguage(language);
-      setLanguage(language);
-    };
+    // const changeLanguage = (language) => {
+    //   i18n.changeLanguage(language);
+    //   setLanguage(language);
+    // };
 
     useEffect(() => {
         const handleClickOutside = (event, ref, menu) => {
@@ -97,8 +112,8 @@ const Nav = () => {
                         {languageMenuDesktop && (
                             <div className="languageMenu flex-col absolute bg-black p-[1rem] top-[2rem] right-0 rounded-[10px] shadow-lg w-[6rem]" >
                                 <ul className="text-[12px] text-yellow text-center">
-                                    <li className="pb-2 cursor-pointer hover:text-white"  onClick={() => changeLanguage('en')}>{t('language.english')}</li>
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('language.chinese')}</li>                                        
+                                    <li className="pb-2 cursor-pointer hover:text-white"  onClick={() => handleLanguageChange('en')}>{t('language.english')}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => handleLanguageChange('zh')}>{t('language.chinese')}</li>                                        
                                 </ul>
                             </div>
                         )}
@@ -132,8 +147,8 @@ const Nav = () => {
                         {languageMenuMobile && (
                             <div className="languageMenu flex-col absolute bg-black p-[0.5rem] top-[3rem] right-0 rounded-[10px] w-[5rem]" >
                                 <ul className="text-[12px] text-yellow text-center">
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('en')}>{t('language.english')}</li>
-                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => changeLanguage('zh')}>{t('language.chinese')}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => handleLanguageChange('en')}>{t('language.english')}</li>
+                                    <li className="pb-2 cursor-pointer hover:text-white" onClick={() => handleLanguageChange('zh')}>{t('language.chinese')}</li>
                                 </ul>
                             </div>
                         )}
