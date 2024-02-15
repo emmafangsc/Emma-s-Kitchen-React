@@ -15,7 +15,8 @@ const HomeSection = () => {
                         <p className="pb-6">{t('home-section1.p2')}</p>
                         <p>{t('home-section1.p3')}</p>
                     </div>}  
-                    image={sections.section1.image1} link="/cooking-class"/>
+                    image={sections.section1.image1} 
+                    link="/cooking-class"/>
             </div>
             <div className="section2 pb-16 md:pb-0">
                 <img src={images.sectionTopBG} alt="headerBG"/>

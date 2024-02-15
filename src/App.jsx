@@ -5,6 +5,8 @@ import PrivateDining from "./pages/PrivateDining";
 import Recipes from "./pages/Recipes";
 import AboutMe from "./pages/AboutMeSection";
 import Thankyou from "./pages/Thankyou";
+import IndividualRecipe from "./pages/IndividualRecipe";
+import BookTable from "./pages/BookTable";
 function App() {
   
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/recipes" element={<Recipes />}/>
           <Route path="/about-me" element={<AboutMe />}/>
           <Route path="/thank-you" element={<Thankyou />}/>
+          <Route path="/recipe" element={<IndividualRecipe />}/>
+          <Route path="/book-table" element={<BookTable />}/>
         </Routes>
       </BrowserRouter>
         

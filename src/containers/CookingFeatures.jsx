@@ -58,7 +58,7 @@ const Features = () => {
             <div className="features flex flex-col lg:flex-row gap-[30px] justify-start items-start w-full overflow-hidden ">
             {visibleFeatures.map((feature, index)=>(
                     <div key={feature.id}>
-                    <CookingFeature title={feature.title} image={feature.image} content={feature.content}/>
+                    <CookingFeature title={feature.title} image={feature.image} content={feature.content} />
                     </div>
                     ))}
             </div>

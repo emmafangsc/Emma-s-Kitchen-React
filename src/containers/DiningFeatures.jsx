@@ -58,7 +58,7 @@ const Features = () => {
             <div className="features flex flex-col lg:flex-row gap-[30px] justify-start items-start w-full overflow-hidden ">
             {visibleFeatures.map((feature, index)=>(
                     <div key={feature.id}>
-                    <DiningFeature title={t(`diningFeatures.${feature.id-1}.title`)} image={feature.image} content={feature.content}/>
+                    <DiningFeature title={t(`diningFeatures.${feature.id-1}.title`)} image={feature.image} content={feature.content} link="/book-table"/>
                     </div>
                     ))}
             </div>
