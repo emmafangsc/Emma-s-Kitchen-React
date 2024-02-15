@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next"
 export const CookingFeature = ({title, image, content})=>{
+    const { t } = useTranslation();
     return(
         <div className="feature-container flex items-start justify-start bg-yellow">
                 <div className="feature flex flex-col items-center">
@@ -9,7 +11,7 @@ export const CookingFeature = ({title, image, content})=>{
                         <h2 className="text-[18px] xl:text-[20px] py-2 font-OrkneyLight">{title}</h2>
                         <p className="text-[15px] leading-[32px] text-justify font-OrkneyRegular">{content}</p>
                         <div className="link flex self-end gap-[13px] items-center group">
-                            <button className="leading-[44px] text-[18px] text-[#288CF9] font-OrkneyRegular group-hover:text-white opacity-70">See recipe</button>
+                            <button className="leading-[44px] text-[18px] text-[#288CF9] font-OrkneyRegular group-hover:text-white opacity-70">{t('language.seeRecipe')}</button>
                             <div className="arrow rotate-90 cursor-pointer ">
                                 <span className="block w-[9px] h-[9px] border-t-[1px] border-l-[1px] border-[#288CF9] rotate-45 group-hover:border-white opacity-70"></span>
                             </div>

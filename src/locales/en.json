@@ -24,7 +24,10 @@
     "newsletter-lastName": "Last name",
     "newsletter-email": "email",
     "newsletter-subscribe": "Subscribe",
-    "copyright": "Copyright © 2024 emmafang. All rights reserved."
+    "copyright": "Copyright © 2024 emmafang. All rights reserved.",
+    "cookingClass-header": "Find inspiration for everyday life on our cooking course",
+    "foodInspiration": "Sichuan Food Inspirations",
+    "seeRecipe": "See recipe"
 
   },
   
@@ -69,6 +72,23 @@
     "p1": "Hey there, I am Emma, a passionate food lover from Sichuan, China, which is known for its delicious and spicy cuisine!",
     "p2": "Growing up in Sichuan, I was surrounded by all kinds of tasty food. I found it difficult to find the authentic Sichuan flavour from restaurants while living abroad, so I decided to create my own kitchen to recreate the authentic taste. I are on a mission to introduce the amazing Sichuan cuisine to as many people as possible. In Emma’s Kitchen, I will share every key step to get the most authentic flavour with you."
   },
+  "cookingClass-section1": {
+    "title": "Come on a cooking course in Emma's Kitchen",
+    "p1": "Are you getting tired of always returning to the same old, boring dishes when you have to cook dinner? Would you like to develop your skills in the kitchen, learn about the qualities of different ingredients and become better at letting yourself be inspired? In Emma's Kitchen, you can attend a cooking course where you can learn all this and much more!",
+    "p2": "Learn to cook with either friends, colleagues or family in our cozy premises, located in the middle of Copenhagen. We arrange a cooking course according to your personal needs, and we welcome visitors who want to expand their culinary horizons from a larger area, including Herlev and Lyngby. See our selection of food courses here"
+  },
+  "cookingClass-section2": {
+    "title": "Get a basic understanding and good craftsmanship",
+    "p1": "When you come to a cooking course at our cooking school , we don't just want to hand over a recipe and just let you follow it to the letter. Instead, we want to give you a basic understanding of the Italian traditions and equip you with good craftsmanship that brings out the best taste experience.",
+    "p2": "During your day on our cooking course, you will, among other things: ",
+    "p3": "You will then be sent home with new food knowledge, inspiring recipes and an experience you will never forget! ",
+    "li1": "get a short cultural presentation",
+    "li2": "​be introduced to the dishes we will make with fresh ingredients of the best quality",
+    "li3": "​learn to enhance the taste experience with our expert guidance",
+    "li4": "and of course we round off by eating all the delicious food and enjoying the good company"
+  },
+
+
     
   "testimonials": 
 [

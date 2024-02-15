@@ -9,7 +9,9 @@ import CookingFeatures from "../containers/CookingFeatures";
 import Testimonial from "../components/Testimonial";
 import CookingSection2 from "../containers/CookingSection2";
 import ScrollToTop from "../components/ScrollToTop";
+import { useTranslation } from 'react-i18next';
 function CookingClass() {
+    const { t } = useTranslation();
     return (
         <div className="relative m-auto max-w-screen-2xl" id='nav' >
             <div className='header sticky top-0 z-20  bg-yellow'>
@@ -17,7 +19,7 @@ function CookingClass() {
             <Nav />
             </div>
             <div>
-                <Header title="Find inspiration for everyday life on our cooking course"/>
+                <Header title={t('language.cookingClass-header')}/>
             </div>
             <div className="mt-16">
                 <CookingSection1 />
