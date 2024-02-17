@@ -8,7 +8,7 @@ const AboutMeSection = () => {
             <Section 
             title={aboutMeSection.title} 
             content={<div>
-                <p className="pb-6">{t('aboutMe.p1')}</p>
+                <p className="pb-4">{t('aboutMe.p1')}</p>
                 <p>{t('aboutMe.p2')}</p>
             </div>
 

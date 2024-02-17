@@ -7,7 +7,7 @@
   },
   "language": {
     "english": "ENGLISH",
-    "chinese": "CHINESE",
+    "chinese": "中文",
     "home": "Home",
     "cookingClass": "Cooking Class",
     "privateDining": "Private Dining",
@@ -20,7 +20,7 @@
     "item3": "Item 3",
     "learnMore": "Learn more",
     "newsletter-title": "Newsletter",
-    "newsletter-content": "be the first to hear my news, subscribe from my newsletter",
+    "newsletter-content": "Be the first to hear my news, subscribe from my newsletter",
     "newsletter-firstName": "First name",
     "newsletter-lastName": "Last name",
     "newsletter-email": "email",
@@ -80,7 +80,7 @@
   "home-section3": {
     "title": "About me",
     "p1": "Hey there, I am Emma, a passionate food lover from Sichuan, China, which is known for its delicious and spicy cuisine!",
-    "p2": "Growing up in Sichuan, I was surrounded by all kinds of tasty food. I found it difficult to find the authentic Sichuan flavour from restaurants while living abroad, so I decided to create my own kitchen to recreate the authentic taste. I are on a mission to introduce the amazing Sichuan cuisine to as many people as possible. In Emma’s Kitchen, I will share every key step to get the most authentic flavour with you."
+    "p2": "Growing up in Sichuan, I was surrounded by all kinds of tasty food. I found it difficult to find the authentic Sichuan flavour from restaurants while living abroad, so I decided to create my own kitchen to recreate the authentic taste. I am on a mission to introduce the amazing Sichuan cuisine to as many people as possible. In Emma’s Kitchen, I will share every key step to get the most authentic flavour with you."
   },
   "cookingClass-section1": {
     "title": "Come on a cooking course in Emma's Kitchen",
@@ -89,7 +89,7 @@
   },
   "cookingClass-section2": {
     "title": "Get a basic understanding and good craftsmanship",
-    "p1": "When you come to a cooking course at our cooking school , we don't just want to hand over a recipe and just let you follow it to the letter. Instead, we want to give you a basic understanding of the Italian traditions and equip you with good craftsmanship that brings out the best taste experience.",
+    "p1": "When you come to a cooking course at our cooking school , we don't just want to hand over a recipe and just let you follow it to the letter. Instead, we want to give you a basic understanding of the Sichuan traditions and equip you with good craftsmanship that brings out the best taste experience.",
     "p2": "During your day on our cooking course, you will, among other things: ",
     "p3": "You will then be sent home with new food knowledge, inspiring recipes and an experience you will never forget! ",
     "li1": "get a short cultural presentation",
@@ -104,7 +104,7 @@
   },
   "privateDining-section2": {
     "title": "Private dining for festive events",
-    "p1": "In Emma's Kitchen, we invite our guests into the kitchen, where we teach and talk about the proud Italian food traditions. Here you are not just served a delicious meal – you get the opportunity to prepare it yourself and develop your culinary skills. It is also an entertaining and pleasant activity where you and your guests get to know each other and have fun together.",
+    "p1": "In Emma's Kitchen, we invite our guests into the kitchen, where we teach and talk about the proud Sichuan food traditions. Here you are not just served a delicious meal – you get the opportunity to prepare it yourself and develop your culinary skills. It is also an entertaining and pleasant activity where you and your guests get to know each other and have fun together.",
     "p2": "Our private dining experience is therefore quite obvious if you have to organize a party, a company event or another special occasion that is something out of the ordinary.",
     "p3": "We can also offer to hold brunch, lunch and dinner parties - each with 3 starters, 3 main courses and 3 desserts, made together. You will therefore have the opportunity to try a large selection of the different recipes that we have carefully developed over the years. We also offer food courses & Gastronomic team building."
   },

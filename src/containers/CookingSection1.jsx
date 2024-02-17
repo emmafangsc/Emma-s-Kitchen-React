@@ -8,7 +8,7 @@ const CookingSection1 = () => {
             <Section 
             title={t('cookingClass-section1.title')} 
             content={<div>
-                <p className="pb-6">{t('cookingClass-section1.p1')}</p> 
+                <p className="pb-4">{t('cookingClass-section1.p1')}</p> 
                 <p>{t('cookingClass-section1.p2')}</p> 
 
             </div>}

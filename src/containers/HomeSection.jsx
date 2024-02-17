@@ -11,8 +11,8 @@ const HomeSection = () => {
                 <Section  
                     title={t('home-section1.title')} 
                     content={<div>
-                        <p className="pb-6">{t('home-section1.p1')}</p>
-                        <p className="pb-6">{t('home-section1.p2')}</p>
+                        <p className="pb-4">{t('home-section1.p1')}</p>
+                        <p className="pb-4">{t('home-section1.p2')}</p>
                         <p>{t('home-section1.p3')}</p>
                     </div>}  
                     image={sections.section1.image1} 
@@ -23,8 +23,8 @@ const HomeSection = () => {
                 <div className="bg-yellow">
                     <Section  title={t('home-section2.title')} 
                     content={<div>
-                        <p className="pb-6">{t('home-section2.p1')}</p>
-                        <p className="pb-6">{t('home-section2.p2')}</p>
+                        <p className="pb-4">{t('home-section2.p1')}</p>
+                        <p className="pb-4">{t('home-section2.p2')}</p>
                         
                     </div>}   
                     image={sections.section2.image2} link="/private-dining"/>
@@ -34,8 +34,8 @@ const HomeSection = () => {
             <div className="section3 pb-16 md:pb-0">
                 <Section  title={t('home-section3.title')} 
                 content={<div>
-                    <p className="pb-6">{t('home-section3.p1')}</p>
-                    <p className="pb-6">{t('home-section3.p2')}</p>
+                    <p className="pb-4">{t('home-section3.p1')}</p>
+                    <p className="pb-4">{t('home-section3.p2')}</p>
                     
                 </div>}  
                 image={sections.section3.image3}  link="/about-me"/>
