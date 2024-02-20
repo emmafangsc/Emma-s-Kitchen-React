@@ -43,7 +43,6 @@ function Recipes() {
     return(
         <div>
             <div className='header sticky top-0 z-20  bg-yellow'>
-                {/* <ContactBar /> */}
                 <Nav />
             </div>
             <div>

@@ -1,6 +1,4 @@
-// import React, { useState } from 'react';
 function Pagination({ totalItems, itemsPerPage, handleClick, currentPage }) {
-  // const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   
   return (

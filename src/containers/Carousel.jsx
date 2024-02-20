@@ -45,6 +45,7 @@ const Carousel = () => {
           setPaused(false);
         }}
         >
+          {/* big arrow start */}
           <div
             onClick={prevSlide}
             className="absolute left-8 inset-y-1/2 cursor-pointer z-10 hidden md:flex items-center"
@@ -53,6 +54,7 @@ const Carousel = () => {
               <span className="opacity-0 group-hover:opacity-80 duration-300 block w-12 lg:w-16 h-12 lg:h-16 border-b-[6px] border-r-[6px] border-white transform rotate-45 group-hover:animate-scale hover:scale-110"></span>
             </div>
           </div>
+          {/* big arrow end */}
           <AiOutlineLeft
             onClick={prevSlide}
             className="absolute left-0 text-white text-3xl opacity-80 inset-y-1/2 cursor-pointer z-10 sm:hidden"
@@ -111,7 +113,7 @@ const Carousel = () => {
             onClick={nextSlide}
             className="absolute right-0 text-white text-3xl opacity-80 inset-y-1/2 cursor-pointer sm:hidden"
           />
-          {/* big arrow */}
+          {/* big arrow start*/}
           <div
             onClick={nextSlide}
             className="absolute right-16 -translate-x-full inset-y-1/2 cursor-pointer z-10 hidden md:flex items-center"
@@ -121,7 +123,7 @@ const Carousel = () => {
               <span className="opacity-0 group-hover:opacity-80 duration-300 block w-12 lg:w-16 h-12 lg:h-16 border-t-[6px] border-l-[6px] border-white transform rotate-45 -m-5 group-hover:animate-scale  hover:scale-110"></span>
             </div>
           </div>
-          {/* big arrow */}
+          {/* big arrow end*/}
         </div>
       </div>
       

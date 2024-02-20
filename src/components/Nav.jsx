@@ -1,7 +1,6 @@
 import {FaCaretDown} from "react-icons/fa";
 import images from "../constants/images";
 import {useRef, useEffect, useState} from "react";
-// import { translations } from "../constants/languageData";
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import {  useTranslation } from 'react-i18next';
@@ -11,30 +10,24 @@ const Nav = () => {
     const [languageMenuMobile, setLanguageMenuMobile] = useState(false);
     const refDesktop = useRef();
     const refMobile = useRef();
-    // const [language, setLanguage] = useState('en');
 
     const { t, i18n } = useTranslation();
 
     const [language, setLanguage] = useState(localStorage.getItem('language') || 'en');
 
-  const handleLanguageChange = (selectedLanguage) => {
-    i18n.changeLanguage(selectedLanguage);
-    setLanguage(selectedLanguage);
-    localStorage.setItem('language', selectedLanguage);
-  };
+    const handleLanguageChange = (selectedLanguage) => {
+        i18n.changeLanguage(selectedLanguage);
+        setLanguage(selectedLanguage);
+        localStorage.setItem('language', selectedLanguage);
+    };
 
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem('language');
-    if (savedLanguage) {
-      setLanguage(savedLanguage);
-    }
-  }, []);
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+        setLanguage(savedLanguage);
+        }
+    }, []);
   
-    // const changeLanguage = (language) => {
-    //   i18n.changeLanguage(language);
-    //   setLanguage(language);
-    // };
-
     useEffect(() => {
         const handleClickOutside = (event, ref, menu) => {
           if (!ref?.current?.contains(event.target)) {
@@ -91,13 +84,6 @@ const Nav = () => {
                         </div>
                         <div className="subMenu group relative flex justify-center font-OrkneyRegular">
                             <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/private-dining">{t('language.privateDining')}</NavLink></li>
-                            {/* <div className="subMenu__content group-hover:block hidden absolute top-20 w-[80%] bg-[black] p-[1rem] rounded-[3px]">
-                                <ul className="text-yellow">
-                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">{t('language.item1')}</li>
-                                    <li className="pb-[1rem] cursor-pointer hover:text-white text-[16px]">{t('language.item2')}</li>
-                                    <li className="cursor-pointer hover:text-white text-[16px]">{t('language.item3')}</li>
-                                </ul>
-                            </div> */}
                         </div>
                         <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/recipes">{t('language.recipes')}</NavLink></li>
                         <li className="cursor-pointer px-[1rem] py-[2rem] hover:text-white"><NavLink to="/about-me">{t('language.aboutMe') }</NavLink></li>
@@ -165,16 +151,7 @@ const Nav = () => {
                     </div>
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer" onClick={showSubMenu2}>
                         <li><NavLink to="/private-dining">{ t('language.privateDining') }</NavLink></li>
-                        {/* <FaAngleRight className="text-[15px]"/> */}
                     </div>
-                    {/* <div className={`subMenu2 px-[1rem] ${subMenu2 ? "show" : "hide"}`}>
-                        <ul className="text-[16px]">
-                            <li className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">{t('language.item1')}</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">{t('language.item2')}</li>
-                            <li  className="p-[1rem] border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">{t('language.item3')}</li>
-                        </ul>
-                    </div> */}
-                    
                     <div className="flex justify-between items-center py-6 border-b border-yellow border-opacity-50 hover:text-white cursor-pointer">
                         <li><NavLink to="/recipes">{ t('language.recipes') }</NavLink></li>
                     </div>

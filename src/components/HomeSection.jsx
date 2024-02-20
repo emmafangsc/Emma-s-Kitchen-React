@@ -1,4 +1,3 @@
-// import images from "../constants/images";
 import { NavLink } from "react-router-dom";
 import {SubHeading1} from "../components/SubHeading"
 import styles from "../constants/style";

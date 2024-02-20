@@ -39,8 +39,6 @@ const Search = ({ handleCategoryChange, handleSearchInputChange, selectedCategor
                 <div className="search-right flex-1 ">
                     <input className="px-4 py-4 w-full py-3 bg-[beige] outline-grey" placeholder={t('language.search-search')} type="text" name='searchQuery'  onChange={handleSearchInputChange}></input>
                 </div>
-                
-
             </div>
         </div>
     )
