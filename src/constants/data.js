@@ -173,6 +173,101 @@ export const features =
         image: images.feature9
     },
 ]
+export const recipes =
+[
+    {
+        id: 1,
+        title: 'Steamed pork with rice flour',
+        content: "",
+        image: images.feature1
+    },
+    {
+        id: 2,
+        title: 'Yuxiang flavored eggplant',
+        content: "",
+        image: images.feature2
+    },
+    {
+        id: 3,
+        title: 'Steamed ribs with sticky rice',
+        content: "",
+        image: images.feature3
+    },
+    {
+        id: 4,
+        title: 'Crispy pork',
+        content: "",
+        image: images.feature4
+    },
+    {
+        id: 5,
+        title: 'Chinese handmade pasta',
+        content: "",
+        image: images.feature5
+    },
+    {
+        id: 6,
+        title: 'Cold noodles with shredded chicken',
+        content: "",
+        image: images.feature6
+    },
+    {
+        id: 7,
+        title: 'Stri-fried long beans with pork',
+        content: "",
+        image: images.feature7
+    },
+    {
+        id: 8,
+        title: 'Chili chicken',
+        content: "",
+        image: images.feature8
+    },
+    {
+        id: 9,
+        title: 'Zajiang noodles',
+        content: "",
+        image: images.feature9
+    },
+    {
+        id: 1,
+        title: 'Steamed pork with rice flour',
+        content: "",
+        image: images.feature1
+    },
+    {
+        id: 2,
+        title: 'Yuxiang flavored eggplant',
+        content: "",
+        image: images.feature2
+    },
+    {
+        id: 3,
+        title: 'Steamed ribs with sticky rice',
+        content: "",
+        image: images.feature3
+    },
+    {
+        id: 4,
+        title: 'Crispy pork',
+        content: "",
+        image: images.feature4
+    },
+    {
+        id: 5,
+        title: 'Chinese handmade pasta',
+        content: "",
+        image: images.feature5
+    },
+    {
+        id: 6,
+        title: 'Cold noodles with shredded chicken',
+        content: "",
+        image: images.feature6
+    },
+    
+    
+]
 export const diningFeatures =
 [
     {

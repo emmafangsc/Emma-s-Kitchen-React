@@ -1,8 +1,7 @@
 import Pagination from "./Pagination";
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from "react";
+// import { recipes } from "../constants/data";
 const RecipeGallery = ({filteredData}) =>{
-  
     const recipes = filteredData;
     const itemsPerPage = 9;
     const [currentPage, setCurrentPage] = useState(1);
@@ -12,9 +11,14 @@ const RecipeGallery = ({filteredData}) =>{
     
     function handleChange(pageNumber) {
         setCurrentPage(pageNumber);
-        
+        const firstImageId = pageNumber;
+        const firstImageElement = document.getElementById(firstImageId);
+        if (firstImageElement) {
+          const imagePosition = firstImageElement.getBoundingClientRect().top;
+          window.scrollTo({ top: imagePosition, behavior: 'smooth' });
+        }
       }
-  
+      
     return (
       <div>
         <div className="recipeGallery grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-[1rem] md:px-[4rem] xl:px-[6rem] w-full flex-wrap">
