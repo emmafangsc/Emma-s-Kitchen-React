@@ -3,11 +3,14 @@
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $email = $_POST['email'];
+$message = 'I am the message';
 
 $servername = "localhost";
 $database = "u754894839_my_database";
 $username = "u754894839_my_database";
 $password = "My_database1";
+ 
+// Create connection
  
 $conn = mysqli_connect($servername, $username, $password, $database);
 
@@ -26,14 +29,15 @@ $emailBody = "
     <title>$email is contacting you</title>
     </head>
     <body style=\"background-color:#fafafa;\">
-        <div style=\"padding:20px;\">
-            Form details: <span style=\"color:#888\"></span><br>
-            <br>
-            Name: <span style=\"color:#888\">$firstName $lastName</span>
-            <br>
-            Email: <span style=\"color:#888\">$email</span>
-            <br>
-        </div>
+    <div style=\"padding:20px;\">
+    Form details: <span style=\"color:#888\"></span><br>
+    <br>
+    Name: <span style=\"color:#888\">$firstName $lastName</span>
+    <br>
+    Email: <span style=\"color:#888\">$email</span>
+    <br>
+    Message: <div style=\"color:#888\">$message</div>
+    </div>
     </body>
     </html>
     ";
@@ -54,16 +58,17 @@ $emailBody = "
     <title>Submission was successful</title>
     </head>
     <body style=\"background-color:#fafafa;\">
-        <div style=\"padding:20px;\">
-            Thank you for contacting me!<br>
-            <br>
-            Form details: <span style=\"color:#888\"></span>
-            <br>
-            Name: <span style=\"color:#888\">$firstName $lastName</span>
-            <br>
-            Email: <span style=\"color:#888\">$email</span>
-            <br>
-        </div>
+    <div style=\"padding:20px;\">
+    Thank you for contacting me!<br>
+    <br>
+    Form details: <span style=\"color:#888\"></span>
+    <br>
+    Name: <span style=\"color:#888\">$firstName $lastName</span>
+    <br>
+    Email: <span style=\"color:#888\">$email</span>
+    <br>
+    Message: <div style=\"color:#888\">$message</div>
+    </div>
     </body>
     </html>
     ";
