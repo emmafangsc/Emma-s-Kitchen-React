@@ -3,15 +3,12 @@
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $email = $_POST['email'];
-$message = 'I am the message';
 
 $servername = "localhost";
 $database = "u754894839_my_database";
 $username = "u754894839_my_database";
 $password = "My_database1";
- 
-// Create connection
- 
+  
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 $sql = "INSERT INTO emmaskitchen (firstName, lastName, email) VALUES ('$firstName', '$lastName', '$email')";
@@ -36,7 +33,6 @@ $emailBody = "
     <br>
     Email: <span style=\"color:#888\">$email</span>
     <br>
-    Message: <div style=\"color:#888\">$message</div>
     </div>
     </body>
     </html>
@@ -67,7 +63,6 @@ $emailBody = "
     <br>
     Email: <span style=\"color:#888\">$email</span>
     <br>
-    Message: <div style=\"color:#888\">$message</div>
     </div>
     </body>
     </html>
