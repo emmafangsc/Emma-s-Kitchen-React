@@ -74,6 +74,7 @@ const Carousel = () => {
                     <img
                       src={slide.image}
                       alt="This is a carousel slide"
+                      loading="lazy"
                       className="w-screen object-cover"
                       
                     />

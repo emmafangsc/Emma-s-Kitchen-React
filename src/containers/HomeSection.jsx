@@ -19,7 +19,7 @@ const HomeSection = () => {
                     link="/cooking-class"/>
             </div>
             <div className="section2 pb-16 md:pb-0">
-                <img src={images.sectionTopBG} alt="headerBG"/>
+                <img src={images.sectionTopBG} alt="headerBG" loading="lazy"/>
                 <div className="bg-yellow">
                     <Section  title={t('home-section2.title')} 
                     content={<div>

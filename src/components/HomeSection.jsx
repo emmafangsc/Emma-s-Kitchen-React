@@ -8,7 +8,7 @@ const HomeSection = ({title, content, image, link}) => {
         <div className="wrapper px-[2rem] md:px-[4rem] xl:px-[6rem] flex">
             <div className="section flex flex-col lg:flex-row lg:gap-[7rem] justify-center items-start">
                 <div className="section__image flex flex-1 w-full md:items-start">
-                    <img src={image} alt="section" className="rounded-xl min-w-full object-cover md:h-[500px] lg:h-[700px]"/>
+                    <img src={image} alt="section" loading="lazy" className="rounded-xl min-w-full object-cover md:h-[500px] lg:h-[700px]"/>
                 </div>
                 <div className="section__content flex-1">
                     <SubHeading1 title={title} />

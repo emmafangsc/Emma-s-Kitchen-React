@@ -19,7 +19,7 @@ const PrivateDining2 = () => {
                 </p>
             </div>
             <div className="image flex-1 h-full">
-            <img src={images.dining2} alt="cooking" className="h-full w-full object-cover" />
+            <img src={images.dining2} alt="cooking" loading="lazy" className="h-full w-full object-cover" />
             </div>
 
         </div>

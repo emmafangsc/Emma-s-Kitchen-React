@@ -29,7 +29,7 @@ const CookingSection2 = () => {
 
             </div>
             <div className="image flex-1 h-full">
-            <img src={images.cooking2} alt="cooking" className="h-full w-full object-cover" />
+            <img src={images.cooking2} alt="cooking" loading="lazy" className="h-full w-full object-cover" />
             </div>
 
         </div>
